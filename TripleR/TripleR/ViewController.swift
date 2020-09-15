@@ -15,6 +15,21 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func settingsButtonPressed(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func recordButtonPressed(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func rightsButtonPressed(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func reportButtonPressed(_ sender: UIButton) {
+        
+    }
+    
 }
 
