@@ -3,7 +3,7 @@
 
 ## What is TripleR?
 
-###enter description here
+### enter description here
 
 ## Features
 
@@ -11,7 +11,7 @@
 * feature 2
 * feature 3
 
-### Credits
+## Credits
 
 #### Melissa Ma
 
