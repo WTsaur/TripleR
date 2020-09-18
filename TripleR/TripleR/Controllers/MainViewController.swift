@@ -8,14 +8,40 @@
 
 import UIKit
 import CoreLocation
+import AVKit
 import AVFoundation
+import MobileCoreServices
 
 class MainViewController: UIViewController {
     
 //    let locationManager = CLLocationManager()
+    var mediaController = UIImagePickerController()
+    let fileName = "/video.mp4"
+    
+    var recordingSession: AVAudioSession!
+    var audioRecorder: AVAudioRecorder!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        recordingSession = AVAudioSession.sharedInstance()
+//
+//        do {
+//            try recordingSession.setCategory(.playAndRecord, mode: .default)
+//            try recordingSession.setActive(true)
+//            recordingSession.requestRecordPermission() { [unowned self] allowed in
+//                DispatchQueue.main.async {
+//                    if allowed {
+//                        self.loadRecordingUI()
+//                    } else {
+//                        // failed to record!
+//                    }
+//                }
+//            }
+//        } catch {
+//            // failed to record!
+//        }
+        
         
 //        vidPerm = requestMicrophonePermission()
 //        audPerm = requestVideoPermission()
@@ -37,13 +63,12 @@ class MainViewController: UIViewController {
         let audPerm = requestMediaPermission(for: .audio)
         
         if vidPerm == true {
-            setupCaptureSession(for: .video)
+            recordVideo()
         } else if audPerm == true {
-            setupCaptureSession(for: .audio)
+            //setupCaptureSession(for: .audio)
         } else {
             // Permissions not granted
         }
-        
         
     }
     
@@ -63,24 +88,15 @@ class MainViewController: UIViewController {
     
     //MARK: - Capture Media
     
-    func setupCaptureSession(for mediaType: AVMediaType) {
-        
-        let captureSession = AVCaptureSession()
-
-        // Find the default audio device.
-        guard let mediaDevice = AVCaptureDevice.default(for: mediaType) else { return }
-
-        do {
-            // Wrap the audio device in a capture device input.
-            let mediaInput = try AVCaptureDeviceInput(device: mediaDevice)
-            // If the input can be added, add it to the session.
-            if captureSession.canAddInput(mediaInput) {
-                captureSession.addInput(mediaInput)
-            }
-        } catch {
-            fatalError()
+    func recordVideo() {
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            mediaController.sourceType = .camera
+            mediaController.mediaTypes = [kUTTypeMovie as String]
+            mediaController.delegate = self
+            present(mediaController, animated: true, completion: nil)
+        } else {
+            //camera is unavailable
         }
-        
     }
     
     //MARK: - Request Permissions
@@ -119,6 +135,15 @@ class MainViewController: UIViewController {
 
 }
 
+// MARK: - UIImagePickerControllerDelegate
+extension MainViewController: UIImagePickerControllerDelegate {
+    
+}
+
+// MARK: - UINavigationControllerDelegate
+extension MainViewController: UINavigationControllerDelegate {
+
+}
 
 
 //MARK: - CLLocationManagerDelegate
