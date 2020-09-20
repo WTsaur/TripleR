@@ -1,0 +1,6 @@
+framework module Pods_TripleR {
+  umbrella header "Pods-TripleR-umbrella.h"
+
+  export *
+  module * { export * }
+}

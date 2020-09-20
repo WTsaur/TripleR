@@ -1,0 +1,627 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1931448D680CAEBB339F32C6AFADECCA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		24E44C948C5DA035DD9B220EDDFF97A1 /* OBShapedButton.h in Headers */ = {isa = PBXBuildFile; fileRef = F23C9252C23839E0CEA92C9EB8CB71E5 /* OBShapedButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B248C92536D9FEFEF8B8D8DD3BF17DA /* Pods-TripleR-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D699FA740384BD589A20C5982708527A /* Pods-TripleR-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		538893C9BDF97E07E76C758B4F9A2879 /* OBShapedButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B19B14449D7D8C7108E376A8FEC246AB /* OBShapedButton-dummy.m */; };
+		54EE0E5EFF31AA383A37DD9E0625C796 /* Pods-TripleR-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 223DC79402BE10A6CBB9CF9CD9752636 /* Pods-TripleR-dummy.m */; };
+		9F8B28E743D7699A0E4B2FC4B5D34B08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		B50EE964B236B6D68A63FEE0E2726D6A /* OBShapedButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB53F911190537CD2DF18A3682E4857 /* OBShapedButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC2B8B333D397666C2F53E627C610D91 /* OBShapedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 330FE18BF1404A8F297BD5BE26D8F2C6 /* OBShapedButton.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F2C6C2ECF5FE6EC66FF9FD81EC1B15D5 /* UIImage+ColorAtPixel.h in Headers */ = {isa = PBXBuildFile; fileRef = 60BAA1B4BC2CCA10DAAC1BA60F07019D /* UIImage+ColorAtPixel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFFFE834B4C96891559E6F19A0770EBE /* UIImage+ColorAtPixel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9179376FA1BD0C2F4B9D7F7A33A3005E /* UIImage+ColorAtPixel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		358976E9969690886A7A90893D3BB9AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B4497ED99C1D2F2CB9CE9ADE068BED6;
+			remoteInfo = OBShapedButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C9332D7716C20B58F11BCD40A4D85B5 /* Pods-TripleR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TripleR.debug.xcconfig"; sourceTree = "<group>"; };
+		10DA48888B864C8D632ADE8AC0D3CED3 /* OBShapedButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "OBShapedButton-Info.plist"; sourceTree = "<group>"; };
+		223DC79402BE10A6CBB9CF9CD9752636 /* Pods-TripleR-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TripleR-dummy.m"; sourceTree = "<group>"; };
+		2556F051A2959FEA976A889714BE53C6 /* OBShapedButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OBShapedButton.debug.xcconfig; sourceTree = "<group>"; };
+		261776E93BAB060C0809C438F82604F1 /* Pods-TripleR-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TripleR-frameworks.sh"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		330FE18BF1404A8F297BD5BE26D8F2C6 /* OBShapedButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OBShapedButton.m; path = OBShapedButton/OBShapedButton.m; sourceTree = "<group>"; };
+		4B80F2EE4348AA59BB260140D989D56C /* Pods-TripleR-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TripleR-acknowledgements.markdown"; sourceTree = "<group>"; };
+		52B167543DDD574106BB1E357ABC3A17 /* OBShapedButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OBShapedButton-prefix.pch"; sourceTree = "<group>"; };
+		60BAA1B4BC2CCA10DAAC1BA60F07019D /* UIImage+ColorAtPixel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ColorAtPixel.h"; path = "UIImage+ColorAtPixel/UIImage+ColorAtPixel.h"; sourceTree = "<group>"; };
+		61FDA90E218AB475786E84E7E059C980 /* Pods-TripleR.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TripleR.modulemap"; sourceTree = "<group>"; };
+		8ACAD6A55BCD28211DA4D150B779C24D /* OBShapedButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OBShapedButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9179376FA1BD0C2F4B9D7F7A33A3005E /* UIImage+ColorAtPixel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ColorAtPixel.m"; path = "UIImage+ColorAtPixel/UIImage+ColorAtPixel.m"; sourceTree = "<group>"; };
+		96ABB645839962FE68B0D24392294E27 /* OBShapedButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OBShapedButton.release.xcconfig; sourceTree = "<group>"; };
+		9C2EE96E1A0FBB9796E84D52D50EFD29 /* Pods-TripleR-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TripleR-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A25C99E45B9A7431AF7A7D76C81AF8A8 /* Pods-TripleR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TripleR.release.xcconfig"; sourceTree = "<group>"; };
+		B19B14449D7D8C7108E376A8FEC246AB /* OBShapedButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OBShapedButton-dummy.m"; sourceTree = "<group>"; };
+		D699FA740384BD589A20C5982708527A /* Pods-TripleR-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TripleR-umbrella.h"; sourceTree = "<group>"; };
+		DDB53F911190537CD2DF18A3682E4857 /* OBShapedButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OBShapedButton-umbrella.h"; sourceTree = "<group>"; };
+		ED127C6B786EE5AC23D404986523233D /* Pods-TripleR-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TripleR-acknowledgements.plist"; sourceTree = "<group>"; };
+		EE560C3EA182159E0DA61DF7CBAD19E2 /* Pods_TripleR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TripleR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F23C9252C23839E0CEA92C9EB8CB71E5 /* OBShapedButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OBShapedButton.h; path = OBShapedButton/OBShapedButton.h; sourceTree = "<group>"; };
+		F606C865F1276DED42F05F1685A48EC0 /* OBShapedButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OBShapedButton.modulemap; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21E7364281DBD07D13594BA46EB6D5AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1931448D680CAEBB339F32C6AFADECCA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFA543B2FBB1C22EFCFC78A9D8A2E864 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F8B28E743D7699A0E4B2FC4B5D34B08 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CC6E1D10CC59F2FA6579BF9284226EE /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				76326AF187E2959B5ABA68C6B50B8039 /* Pods-TripleR */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		205396D1C5AEB394B1E6E281498CC2EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E5CF2B3AE3A1FAA44D8B5BECB34F2FD /* OBShapedButton */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5E5CF2B3AE3A1FAA44D8B5BECB34F2FD /* OBShapedButton */ = {
+			isa = PBXGroup;
+			children = (
+				F23C9252C23839E0CEA92C9EB8CB71E5 /* OBShapedButton.h */,
+				330FE18BF1404A8F297BD5BE26D8F2C6 /* OBShapedButton.m */,
+				60BAA1B4BC2CCA10DAAC1BA60F07019D /* UIImage+ColorAtPixel.h */,
+				9179376FA1BD0C2F4B9D7F7A33A3005E /* UIImage+ColorAtPixel.m */,
+				6A5C9DBBE0FC20DA20AA01B2A59D9407 /* Support Files */,
+			);
+			path = OBShapedButton;
+			sourceTree = "<group>";
+		};
+		613A54416E42ADD9160E1F92603E865B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8ACAD6A55BCD28211DA4D150B779C24D /* OBShapedButton.framework */,
+				EE560C3EA182159E0DA61DF7CBAD19E2 /* Pods_TripleR.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A5C9DBBE0FC20DA20AA01B2A59D9407 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F606C865F1276DED42F05F1685A48EC0 /* OBShapedButton.modulemap */,
+				B19B14449D7D8C7108E376A8FEC246AB /* OBShapedButton-dummy.m */,
+				10DA48888B864C8D632ADE8AC0D3CED3 /* OBShapedButton-Info.plist */,
+				52B167543DDD574106BB1E357ABC3A17 /* OBShapedButton-prefix.pch */,
+				DDB53F911190537CD2DF18A3682E4857 /* OBShapedButton-umbrella.h */,
+				2556F051A2959FEA976A889714BE53C6 /* OBShapedButton.debug.xcconfig */,
+				96ABB645839962FE68B0D24392294E27 /* OBShapedButton.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/OBShapedButton";
+			sourceTree = "<group>";
+		};
+		76326AF187E2959B5ABA68C6B50B8039 /* Pods-TripleR */ = {
+			isa = PBXGroup;
+			children = (
+				61FDA90E218AB475786E84E7E059C980 /* Pods-TripleR.modulemap */,
+				4B80F2EE4348AA59BB260140D989D56C /* Pods-TripleR-acknowledgements.markdown */,
+				ED127C6B786EE5AC23D404986523233D /* Pods-TripleR-acknowledgements.plist */,
+				223DC79402BE10A6CBB9CF9CD9752636 /* Pods-TripleR-dummy.m */,
+				261776E93BAB060C0809C438F82604F1 /* Pods-TripleR-frameworks.sh */,
+				9C2EE96E1A0FBB9796E84D52D50EFD29 /* Pods-TripleR-Info.plist */,
+				D699FA740384BD589A20C5982708527A /* Pods-TripleR-umbrella.h */,
+				0C9332D7716C20B58F11BCD40A4D85B5 /* Pods-TripleR.debug.xcconfig */,
+				A25C99E45B9A7431AF7A7D76C81AF8A8 /* Pods-TripleR.release.xcconfig */,
+			);
+			name = "Pods-TripleR";
+			path = "Target Support Files/Pods-TripleR";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				205396D1C5AEB394B1E6E281498CC2EA /* Pods */,
+				613A54416E42ADD9160E1F92603E865B /* Products */,
+				0CC6E1D10CC59F2FA6579BF9284226EE /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		40C3C35E9AC89A8E4219076F5D933735 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B248C92536D9FEFEF8B8D8DD3BF17DA /* Pods-TripleR-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51C1FE895C40B7228E27AA57B69263AB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B50EE964B236B6D68A63FEE0E2726D6A /* OBShapedButton-umbrella.h in Headers */,
+				24E44C948C5DA035DD9B220EDDFF97A1 /* OBShapedButton.h in Headers */,
+				F2C6C2ECF5FE6EC66FF9FD81EC1B15D5 /* UIImage+ColorAtPixel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3B4497ED99C1D2F2CB9CE9ADE068BED6 /* OBShapedButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D23F97049201B8A19C412B180AC184EB /* Build configuration list for PBXNativeTarget "OBShapedButton" */;
+			buildPhases = (
+				51C1FE895C40B7228E27AA57B69263AB /* Headers */,
+				CE8671C04C78A366FCFA26F87EE84E59 /* Sources */,
+				CFA543B2FBB1C22EFCFC78A9D8A2E864 /* Frameworks */,
+				9CD684BE03B5B41116B3228631AD59B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OBShapedButton;
+			productName = OBShapedButton;
+			productReference = 8ACAD6A55BCD28211DA4D150B779C24D /* OBShapedButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4BF1B6C72FDEBC16DEE544037B9EA124 /* Pods-TripleR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E392D48327F8B1092EC8ED4C9B88D1A3 /* Build configuration list for PBXNativeTarget "Pods-TripleR" */;
+			buildPhases = (
+				40C3C35E9AC89A8E4219076F5D933735 /* Headers */,
+				7E357E0852FF2909D550DAC01F3FD5F8 /* Sources */,
+				21E7364281DBD07D13594BA46EB6D5AB /* Frameworks */,
+				ECDD3080DC1E8B8EF4B7E1381225E108 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2024F4A848F5631D3B77C9DB0CD3D9FB /* PBXTargetDependency */,
+			);
+			name = "Pods-TripleR";
+			productName = "Pods-TripleR";
+			productReference = EE560C3EA182159E0DA61DF7CBAD19E2 /* Pods_TripleR.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1200;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 613A54416E42ADD9160E1F92603E865B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B4497ED99C1D2F2CB9CE9ADE068BED6 /* OBShapedButton */,
+				4BF1B6C72FDEBC16DEE544037B9EA124 /* Pods-TripleR */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9CD684BE03B5B41116B3228631AD59B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECDD3080DC1E8B8EF4B7E1381225E108 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E357E0852FF2909D550DAC01F3FD5F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54EE0E5EFF31AA383A37DD9E0625C796 /* Pods-TripleR-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE8671C04C78A366FCFA26F87EE84E59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				538893C9BDF97E07E76C758B4F9A2879 /* OBShapedButton-dummy.m in Sources */,
+				EC2B8B333D397666C2F53E627C610D91 /* OBShapedButton.m in Sources */,
+				FFFFE834B4C96891559E6F19A0770EBE /* UIImage+ColorAtPixel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2024F4A848F5631D3B77C9DB0CD3D9FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OBShapedButton;
+			target = 3B4497ED99C1D2F2CB9CE9ADE068BED6 /* OBShapedButton */;
+			targetProxy = 358976E9969690886A7A90893D3BB9AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		09A89B7A4F40C827B2C6E6946D8E9BBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C9332D7716C20B58F11BCD40A4D85B5 /* Pods-TripleR.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = DZCJKHLK73;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TripleR/Pods-TripleR-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TripleR/Pods-TripleR.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1422B121EAEAEA11307496903FA623C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		546ECCC49F145090003D4D7F90D8E02D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96ABB645839962FE68B0D24392294E27 /* OBShapedButton.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = DZCJKHLK73;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OBShapedButton/OBShapedButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OBShapedButton/OBShapedButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/OBShapedButton/OBShapedButton.modulemap";
+				PRODUCT_MODULE_NAME = OBShapedButton;
+				PRODUCT_NAME = OBShapedButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		699DF1E26EDF219886EF1885F7B1CB71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2556F051A2959FEA976A889714BE53C6 /* OBShapedButton.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = DZCJKHLK73;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OBShapedButton/OBShapedButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OBShapedButton/OBShapedButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/OBShapedButton/OBShapedButton.modulemap";
+				PRODUCT_MODULE_NAME = OBShapedButton;
+				PRODUCT_NAME = OBShapedButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CFFEDD588443E894B02276DD0C8FB6D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A25C99E45B9A7431AF7A7D76C81AF8A8 /* Pods-TripleR.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = DZCJKHLK73;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TripleR/Pods-TripleR-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TripleR/Pods-TripleR.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ED7888FA6713EABBF66D26A8003AD1CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED7888FA6713EABBF66D26A8003AD1CA /* Debug */,
+				1422B121EAEAEA11307496903FA623C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D23F97049201B8A19C412B180AC184EB /* Build configuration list for PBXNativeTarget "OBShapedButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				699DF1E26EDF219886EF1885F7B1CB71 /* Debug */,
+				546ECCC49F145090003D4D7F90D8E02D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E392D48327F8B1092EC8ED4C9B88D1A3 /* Build configuration list for PBXNativeTarget "Pods-TripleR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09A89B7A4F40C827B2C6E6946D8E9BBE /* Debug */,
+				CFFEDD588443E894B02276DD0C8FB6D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

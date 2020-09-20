@@ -1,0 +1,16 @@
+PODS:
+  - OBShapedButton (1.2.0)
+
+DEPENDENCIES:
+  - OBShapedButton
+
+SPEC REPOS:
+  trunk:
+    - OBShapedButton
+
+SPEC CHECKSUMS:
+  OBShapedButton: 1e7653e4d0170fa9aa9803e972a2eb65f65b6f33
+
+PODFILE CHECKSUM: a07bbdadab5da529259d47a5ed393f29cb67d6e6
+
+COCOAPODS: 1.9.3

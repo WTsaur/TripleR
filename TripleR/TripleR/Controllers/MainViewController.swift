@@ -11,6 +11,7 @@ import CoreLocation
 import AVKit
 import AVFoundation
 import MobileCoreServices
+import OBShapedButton
 
 class MainViewController: UIViewController {
     
@@ -54,11 +55,7 @@ class MainViewController: UIViewController {
 //        locationManager.startUpdatingLocation()
     }
     
-    @IBAction func recordButtonPressed(_ sender: UIButton) {
-        //open camera or start a voice recording
-        
-        //Maybe have setting for user preference on taking video or recording audio
-        
+    @IBAction func recordButtonPressed(_ sender: OBShapedButton) {
         let vidPerm = requestMediaPermission(for: .video)
         let audPerm = requestMediaPermission(for: .audio)
         
@@ -69,7 +66,6 @@ class MainViewController: UIViewController {
         } else {
             // Permissions not granted
         }
-        
     }
     
     /* Maybe don't need the 3 functions below */
@@ -116,6 +112,7 @@ class MainViewController: UIViewController {
         case .restricted:
             return res
         case .denied:
+            
             return res
         @unknown default:
             fatalError()
@@ -137,12 +134,14 @@ class MainViewController: UIViewController {
 
 // MARK: - UIImagePickerControllerDelegate
 extension MainViewController: UIImagePickerControllerDelegate {
-    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+    }
 }
 
 // MARK: - UINavigationControllerDelegate
 extension MainViewController: UINavigationControllerDelegate {
-
+    
 }
 
 
