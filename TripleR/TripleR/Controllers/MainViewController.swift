@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import CoreLocation
 import AVKit
 import AVFoundation
 import MobileCoreServices
@@ -15,7 +14,6 @@ import OBShapedButton
 
 class MainViewController: UIViewController {
     
-//    let locationManager = CLLocationManager()
     var mediaController = UIImagePickerController()
     let fileName = "/video.mp4"
     
@@ -47,13 +45,7 @@ class MainViewController: UIViewController {
 //        vidPerm = requestMicrophonePermission()
 //        audPerm = requestVideoPermission()
         
-//        locationManager.delegate = self
-//        locationManager.requestWhenInUseAuthorization()
-//
-//        locationManager.requestLocation()
-//        //OR
-//        locationManager.startUpdatingLocation()
-    }
+}
     
     @IBAction func recordButtonPressed(_ sender: OBShapedButton) {
         let vidPerm = requestMediaPermission(for: .video)
@@ -68,19 +60,6 @@ class MainViewController: UIViewController {
         }
     }
     
-    /* Maybe don't need the 3 functions below */
-    
-    @IBAction func settingsButtonPressed(_ sender: UIButton) {
-        //code
-    }
-    
-    @IBAction func rightsButtonPressed(_ sender: UIButton) {
-        //code
-    }
-    
-    @IBAction func reportButtonPressed(_ sender: UIButton) {
-        //code
-    }
     
     //MARK: - Capture Media
     
@@ -143,19 +122,3 @@ extension MainViewController: UIImagePickerControllerDelegate {
 extension MainViewController: UINavigationControllerDelegate {
     
 }
-
-
-//MARK: - CLLocationManagerDelegate
-
-//extension MainViewController: CLLocationManagerDelegate {
-//    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-//        if let loc = locations.last {
-//            let lat = loc.coordinate.latitude
-//            let long = loc.coordinate.longitude
-//        }
-//    }
-//
-//    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-//        print(error)
-//    }
-//}

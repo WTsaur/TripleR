@@ -163,8 +163,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IfT-cf-dWi">
-                                <rect key="frame" x="20" y="49" width="50" height="41"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IfT-cf-dWi" userLabel="Home Button">
+                                <rect key="frame" x="19.999999999999996" y="49" width="49.666666666666657" height="41"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="house.fill" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="35"/>
@@ -173,19 +173,72 @@
                                     <action selector="homeButtonPressed:" destination="Be7-Zs-FFG" eventType="touchUpInside" id="xI9-ok-dTu"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="dZN-FS-Iot">
+                                <rect key="frame" x="20" y="140" width="374" height="83"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="w75-5I-cVf">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qnY-cG-fL0">
+                                                <rect key="frame" x="0.0" y="0.0" width="182" height="34"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" red="0.64945906399999997" green="0.13338679079999999" blue="0.066593706609999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="address-level1"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RL9-fS-nQH">
+                                                <rect key="frame" x="192" y="0.0" width="182" height="34"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" red="0.64945906399999997" green="0.13338679079999999" blue="0.066593706609999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.64945906399999997" green="0.13338679079999999" blue="0.066593706609999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="address-level2"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dq8-4v-uto">
+                                        <rect key="frame" x="0.0" y="49" width="374" height="34"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="0.64945906399999997" green="0.13338679079999999" blue="0.066593706609999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.64945906399999997" green="0.13338679079999999" blue="0.066593706609999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="street-address"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XYL-J0-PQP" userLabel="Location Button">
+                                <rect key="frame" x="350.33333333333331" y="51" width="43.666666666666686" height="42.333333333333343"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="location.circle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="37"/>
+                                </state>
+                                <connections>
+                                    <action selector="locationButtonPressed:" destination="Be7-Zs-FFG" eventType="touchUpInside" id="9MB-PZ-NvE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="b6Y-r1-YvU"/>
                         <color key="backgroundColor" red="0.62914723159999997" green="0.1225113198" blue="0.098986126480000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="IfT-cf-dWi" firstAttribute="leading" secondItem="b6Y-r1-YvU" secondAttribute="leading" constant="20" id="1AD-lv-xYX"/>
+                            <constraint firstItem="dZN-FS-Iot" firstAttribute="top" secondItem="IfT-cf-dWi" secondAttribute="bottom" constant="50" id="JfF-eq-zjj"/>
                             <constraint firstItem="IfT-cf-dWi" firstAttribute="top" secondItem="b6Y-r1-YvU" secondAttribute="top" constant="5" id="QPi-z2-9wl"/>
+                            <constraint firstItem="XYL-J0-PQP" firstAttribute="top" secondItem="b6Y-r1-YvU" secondAttribute="top" constant="7" id="c4R-E2-rMW"/>
+                            <constraint firstItem="b6Y-r1-YvU" firstAttribute="trailing" secondItem="dZN-FS-Iot" secondAttribute="trailing" constant="20" id="h4q-aq-V8E"/>
+                            <constraint firstItem="b6Y-r1-YvU" firstAttribute="trailing" secondItem="XYL-J0-PQP" secondAttribute="trailing" constant="20" id="jIH-Dj-FTd"/>
+                            <constraint firstItem="dZN-FS-Iot" firstAttribute="leading" secondItem="b6Y-r1-YvU" secondAttribute="leading" constant="20" id="pnN-wU-x0g"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4sp-LQ-dw4"/>
+                    <connections>
+                        <outlet property="addressTextField" destination="dq8-4v-uto" id="T2a-ZF-WW6"/>
+                        <outlet property="cityTextField" destination="RL9-fS-nQH" id="Uhc-xh-Kj5"/>
+                        <outlet property="stateTextField" destination="qnY-cG-fL0" id="Jkg-3G-HCA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WLw-FI-cNw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="157" y="617"/>
+            <point key="canvasLocation" x="155.07246376811597" y="616.74107142857144"/>
         </scene>
         <!--Rights View Controller Scene-->
         <scene sceneID="hSH-RR-KNn">
@@ -224,6 +277,7 @@
         <image name="appNameButton" width="866.66668701171875" height="382.66665649414062"/>
         <image name="city_TripleR" width="500" height="500"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="location.circle" catalog="system" width="128" height="121"/>
         <image name="recordButton" width="866.66668701171875" height="382.66665649414062"/>
         <image name="reportButton" width="866.66668701171875" height="382.66665649414062"/>
         <image name="rightsButton" width="866.66668701171875" height="382.66665649414062"/>
