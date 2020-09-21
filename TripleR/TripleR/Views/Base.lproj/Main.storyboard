@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -22,76 +23,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="9ia-Hl-IDN">
-                                <rect key="frame" x="147" y="177" width="120" height="560"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PeV-fU-IWJ" userLabel="Record" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
-                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="120" id="O8U-wC-6d8"/>
-                                            <constraint firstAttribute="width" constant="120" id="uog-16-L8i"/>
-                                        </constraints>
-                                        <color key="tintColor" red="0.62436548223350252" green="0.62436548223350252" blue="0.62436548223350252" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" image="camera.fill" catalog="system">
-                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="65"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="25"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="recordButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c1X-yp-KoJ"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZJ-Jz-YHf" userLabel="Report" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
-                                        <rect key="frame" x="0.0" y="220" width="120" height="120"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="120" id="APx-ke-Q21"/>
-                                            <constraint firstAttribute="width" constant="120" id="Nu6-3O-WOP"/>
-                                        </constraints>
-                                        <color key="tintColor" red="0.62436548223350252" green="0.62436548223350252" blue="0.62436548223350252" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" image="pencil" catalog="system">
-                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="65"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="25"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <segue destination="Be7-Zs-FFG" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="aQY-kY-3pK"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9DA-QT-LQy" userLabel="Rights" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
-                                        <rect key="frame" x="0.0" y="440" width="120" height="120"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="120" id="QfW-BM-ciQ"/>
-                                            <constraint firstAttribute="height" constant="120" id="bdt-i7-CGR"/>
-                                        </constraints>
-                                        <color key="tintColor" red="0.62436548223350252" green="0.62436548223350252" blue="0.62436548223350252" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" image="book.fill" catalog="system">
-                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="65"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="25"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <segue destination="ndh-u2-BdL" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="fux-St-Saj"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3d7-sa-08B" userLabel="Settings">
-                                <rect key="frame" x="352.66666666666669" y="45" width="42.333333333333314" height="40.666666666666657"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="42.333333333333314" id="qtD-Cd-5HG"/>
-                                </constraints>
+                                <rect key="frame" x="352.33333333333331" y="45" width="50.666666666666686" height="49"/>
                                 <color key="tintColor" red="0.62436548223350252" green="0.62436548223350252" blue="0.62436548223350252" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="gear" catalog="system">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="33"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="40"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -99,38 +35,140 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="axd-cn-343" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="9dI-Gi-zTk"/>
+                                    <segue destination="axd-cn-343" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="pbp-8Y-Dv7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VLt-fT-EY1">
-                                <rect key="frame" x="138" y="45" width="138" height="83"/>
-                                <fontDescription key="fontDescription" name="Pacifico-Regular" family="Pacifico" pointSize="40"/>
-                                <state key="normal" title="TripleR">
-                                    <color key="titleColor" red="0.62436548223350252" green="0.62436548223350252" blue="0.62436548223350252" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="CXc-5U-2UG" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="H2g-V1-yk3"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="71" translatesAutoresizingMaskIntoConstraints="NO" id="Mhv-fs-qfd">
+                                <rect key="frame" x="102" y="50" width="210" height="693"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ePD-a9-OPc" userLabel="Triple R Button View">
+                                        <rect key="frame" x="0.0" y="0.0" width="210" height="120"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGU-8z-URd">
+                                                <rect key="frame" x="12" y="8" width="187" height="104"/>
+                                                <fontDescription key="fontDescription" name="Pacifico-Regular" family="Pacifico" pointSize="50"/>
+                                                <state key="normal" title="Triple R">
+                                                    <color key="titleColor" red="0.62436548219999999" green="0.62436548219999999" blue="0.62436548219999999" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="CXc-5U-2UG" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="jlQ-BG-vpX"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="sGU-8z-URd" secondAttribute="bottom" constant="8" id="bQl-sU-g7y"/>
+                                            <constraint firstItem="sGU-8z-URd" firstAttribute="top" secondItem="ePD-a9-OPc" secondAttribute="top" constant="8" id="d5a-ms-6ba"/>
+                                            <constraint firstAttribute="trailing" secondItem="sGU-8z-URd" secondAttribute="trailing" constant="11" id="iVe-dV-jfe"/>
+                                            <constraint firstItem="sGU-8z-URd" firstAttribute="leading" secondItem="ePD-a9-OPc" secondAttribute="leading" constant="12" id="lKk-Xm-xYN"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Blk-b5-UpK" userLabel="Record Button View">
+                                        <rect key="frame" x="45" y="191" width="120" height="120"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZ2-6K-TB8" userLabel="recordButton" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                                <rect key="frame" x="5" y="5" width="110" height="110"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="110" id="89q-By-fi4"/>
+                                                    <constraint firstAttribute="height" constant="110" id="vpV-vM-lSz"/>
+                                                </constraints>
+                                                <color key="tintColor" red="0.62436548219999999" green="0.62436548219999999" blue="0.62436548219999999" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="0.62436548219999999" green="0.62436548219999999" blue="0.62436548219999999" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <imageReference key="image" image="camera.fill" catalog="system" symbolScale="medium"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="70"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="7"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="recordButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x4B-aY-CQi"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="oZ2-6K-TB8" firstAttribute="centerY" secondItem="Blk-b5-UpK" secondAttribute="centerY" id="5Cz-U6-KHH"/>
+                                            <constraint firstItem="oZ2-6K-TB8" firstAttribute="centerX" secondItem="Blk-b5-UpK" secondAttribute="centerX" id="mpf-9J-uDs"/>
+                                            <constraint firstAttribute="height" constant="120" id="qyr-IJ-0HH"/>
+                                            <constraint firstAttribute="width" constant="120" id="rMe-du-xJZ"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SJ4-pE-G2z" userLabel="Report Button View">
+                                        <rect key="frame" x="45" y="382" width="120" height="120"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMz-z4-dtG" userLabel="reportButton" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                                <rect key="frame" x="5" y="5" width="110" height="110"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="110" id="IC2-mV-u2K"/>
+                                                    <constraint firstAttribute="height" constant="110" id="Y8v-aZ-0S1"/>
+                                                </constraints>
+                                                <color key="tintColor" red="0.62436548219999999" green="0.62436548219999999" blue="0.62436548219999999" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="0.62436548219999999" green="0.62436548219999999" blue="0.62436548219999999" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <imageReference key="image" image="pencil" catalog="system" symbolScale="medium"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="70"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="7"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="Be7-Zs-FFG" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="F1V-cp-iTS"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="FM8-ks-TpR"/>
+                                            <constraint firstItem="zMz-z4-dtG" firstAttribute="centerX" secondItem="SJ4-pE-G2z" secondAttribute="centerX" id="eUP-MP-Vra"/>
+                                            <constraint firstAttribute="height" constant="120" id="qVI-Sh-4pK"/>
+                                            <constraint firstItem="zMz-z4-dtG" firstAttribute="centerY" secondItem="SJ4-pE-G2z" secondAttribute="centerY" id="qvT-R5-1Lu"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BAh-cn-jtx" userLabel="Rights Button View">
+                                        <rect key="frame" x="45" y="573" width="120" height="120"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikZ-Yn-KBz" userLabel="rightsButton" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                                <rect key="frame" x="5" y="5" width="110" height="110"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="110" id="Cf7-bL-T8s"/>
+                                                    <constraint firstAttribute="width" constant="110" id="iQc-v4-UWQ"/>
+                                                </constraints>
+                                                <color key="tintColor" red="0.62436548219999999" green="0.62436548219999999" blue="0.62436548219999999" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="0.62436548219999999" green="0.62436548219999999" blue="0.62436548219999999" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <imageReference key="image" image="book.fill" catalog="system" symbolScale="medium"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="70"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="7"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="ndh-u2-BdL" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="Nb1-dw-KSJ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="ikZ-Yn-KBz" firstAttribute="centerX" secondItem="BAh-cn-jtx" secondAttribute="centerX" id="80c-T6-Z2Z"/>
+                                            <constraint firstAttribute="height" constant="120" id="FtQ-kJ-Ohz"/>
+                                            <constraint firstAttribute="width" constant="120" id="aYk-uo-ref"/>
+                                            <constraint firstItem="ikZ-Yn-KBz" firstAttribute="centerY" secondItem="BAh-cn-jtx" secondAttribute="centerY" id="cEl-uc-wV4"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="VLt-fT-EY1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="138" id="21e-zM-A7r"/>
-                            <constraint firstItem="VLt-fT-EY1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="1" id="514-7T-3u5"/>
-                            <constraint firstItem="3d7-sa-08B" firstAttribute="top" secondItem="VLt-fT-EY1" secondAttribute="top" id="9Mp-Q5-bBm"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9ia-Hl-IDN" secondAttribute="bottom" constant="125" id="E29-fo-vbz"/>
-                            <constraint firstItem="9ia-Hl-IDN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="147" id="MQu-2a-byW"/>
-                            <constraint firstItem="3d7-sa-08B" firstAttribute="leading" secondItem="VLt-fT-EY1" secondAttribute="trailing" constant="76.670000000000002" id="NUh-h7-3xQ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9ia-Hl-IDN" secondAttribute="trailing" constant="147" id="Wkn-mg-3qE"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3d7-sa-08B" secondAttribute="trailing" constant="18.999999999999943" id="ZQe-ae-hCb"/>
-                            <constraint firstItem="9ia-Hl-IDN" firstAttribute="top" secondItem="VLt-fT-EY1" secondAttribute="bottom" constant="49" id="x1S-D9-4rD"/>
-                            <constraint firstItem="9ia-Hl-IDN" firstAttribute="top" secondItem="VLt-fT-EY1" secondAttribute="bottom" constant="49" id="z0Z-0f-hk3"/>
+                            <constraint firstItem="3d7-sa-08B" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="1" id="0Q0-GA-Mgh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3d7-sa-08B" secondAttribute="trailing" constant="11" id="IiR-WN-e4W"/>
+                            <constraint firstItem="Mhv-fs-qfd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="50" id="c3T-KB-vGn"/>
+                            <constraint firstItem="Mhv-fs-qfd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cee-Sh-S19"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Mhv-fs-qfd" secondAttribute="bottom" constant="119" id="juL-4l-7HV"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="yj2-uh-dFD"/>
@@ -147,9 +185,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="city_TripleR" translatesAutoresizingMaskIntoConstraints="NO" id="dY2-JI-6KQ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="city_TripleR" translatesAutoresizingMaskIntoConstraints="NO" id="dY2-JI-6KQ">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpk-yl-ABV" userLabel="Home">
                                 <rect key="frame" x="23" y="46" width="50" height="41"/>
@@ -165,8 +202,14 @@
                         <viewLayoutGuide key="safeArea" id="wAj-yz-Nd3"/>
                         <color key="backgroundColor" red="0.99991267920000004" green="1" blue="0.99988144639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="dY2-JI-6KQ" firstAttribute="leading" secondItem="o1Z-9b-OSX" secondAttribute="leading" id="8uu-sA-wDB"/>
+                            <constraint firstItem="dY2-JI-6KQ" firstAttribute="top" secondItem="o1Z-9b-OSX" secondAttribute="top" id="EZH-Xo-uwf"/>
+                            <constraint firstAttribute="trailing" secondItem="dY2-JI-6KQ" secondAttribute="trailing" id="MBg-gJ-Zpp"/>
+                            <constraint firstItem="dY2-JI-6KQ" firstAttribute="centerX" secondItem="o1Z-9b-OSX" secondAttribute="centerX" id="VBx-LZ-id9"/>
+                            <constraint firstAttribute="bottom" secondItem="dY2-JI-6KQ" secondAttribute="bottom" id="dO6-cF-h6U"/>
                             <constraint firstItem="cpk-yl-ABV" firstAttribute="leading" secondItem="wAj-yz-Nd3" secondAttribute="leading" constant="23" id="fEQ-BE-LML"/>
                             <constraint firstItem="cpk-yl-ABV" firstAttribute="top" secondItem="wAj-yz-Nd3" secondAttribute="top" constant="2" id="m2e-uQ-VO4"/>
+                            <constraint firstItem="dY2-JI-6KQ" firstAttribute="centerY" secondItem="o1Z-9b-OSX" secondAttribute="centerY" id="qxS-YQ-hcU"/>
                         </constraints>
                     </view>
                 </viewController>
