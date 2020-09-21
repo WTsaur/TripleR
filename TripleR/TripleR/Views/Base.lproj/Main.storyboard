@@ -5,8 +5,14 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Pacifico-Regular.ttf">
+            <string>Pacifico-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Main View Controller Scene-->
         <scene sceneID="tne-QT-ifu">
@@ -16,70 +22,115 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Lka-PH-unH">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="9ia-Hl-IDN">
+                                <rect key="frame" x="147" y="177" width="120" height="560"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLv-mo-DPf" userLabel="AboutUs" customClass="OBShapedButton">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="163.66666666666666"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" image="appNameButton">
-                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PeV-fU-IWJ" userLabel="Record" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="O8U-wC-6d8"/>
+                                            <constraint firstAttribute="width" constant="120" id="uog-16-L8i"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.62436548223350252" green="0.62436548223350252" blue="0.62436548223350252" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="camera.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="65"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="CXc-5U-2UG" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="6q3-u4-w86"/>
+                                            <action selector="recordButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c1X-yp-KoJ"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FkI-p6-3yT" userLabel="Record" customClass="OBShapedButton">
-                                        <rect key="frame" x="0.0" y="163.66666666666669" width="414" height="163.66666666666669"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" image="recordButton">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZJ-Jz-YHf" userLabel="Report" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                        <rect key="frame" x="0.0" y="220" width="120" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="APx-ke-Q21"/>
+                                            <constraint firstAttribute="width" constant="120" id="Nu6-3O-WOP"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.62436548223350252" green="0.62436548223350252" blue="0.62436548223350252" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="pencil" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="65"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="recordButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wxN-3I-Szw"/>
+                                            <segue destination="Be7-Zs-FFG" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="aQY-kY-3pK"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I33-PZ-cPk" userLabel="Report" customClass="OBShapedButton">
-                                        <rect key="frame" x="0.0" y="327.33333333333331" width="414" height="163.33333333333331"/>
-                                        <state key="normal" image="reportButton">
-                                            <color key="titleColor" red="0.69878619909999995" green="0.060757093130000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9DA-QT-LQy" userLabel="Rights" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                        <rect key="frame" x="0.0" y="440" width="120" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="QfW-BM-ciQ"/>
+                                            <constraint firstAttribute="height" constant="120" id="bdt-i7-CGR"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.62436548223350252" green="0.62436548223350252" blue="0.62436548223350252" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="book.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="65"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="Be7-Zs-FFG" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="qeu-AC-kJp"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZGl-Zi-0HY" userLabel="Rights" customClass="OBShapedButton">
-                                        <rect key="frame" x="0.0" y="490.66666666666669" width="414" height="163.66666666666669"/>
-                                        <state key="normal" image="rightsButton">
-                                            <color key="titleColor" red="0.69878619909999995" green="0.060757093130000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="ndh-u2-BdL" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="xQg-rl-oAi"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B1D-mN-m6T" userLabel="Settings" customClass="OBShapedButton">
-                                        <rect key="frame" x="0.0" y="654.33333333333337" width="414" height="163.66666666666663"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" image="settingsButton">
-                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="axd-cn-343" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="vIj-et-K0R"/>
+                                            <segue destination="ndh-u2-BdL" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="fux-St-Saj"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3d7-sa-08B" userLabel="Settings">
+                                <rect key="frame" x="352.66666666666669" y="45" width="42.333333333333314" height="40.666666666666657"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42.333333333333314" id="qtD-Cd-5HG"/>
+                                </constraints>
+                                <color key="tintColor" red="0.62436548223350252" green="0.62436548223350252" blue="0.62436548223350252" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="gear" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="33"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="45"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="axd-cn-343" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="9dI-Gi-zTk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VLt-fT-EY1">
+                                <rect key="frame" x="138" y="45" width="138" height="83"/>
+                                <fontDescription key="fontDescription" name="Pacifico-Regular" family="Pacifico" pointSize="40"/>
+                                <state key="normal" title="TripleR">
+                                    <color key="titleColor" red="0.62436548223350252" green="0.62436548223350252" blue="0.62436548223350252" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="CXc-5U-2UG" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="H2g-V1-yk3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Lka-PH-unH" secondAttribute="trailing" id="NAh-XJ-wuj"/>
-                            <constraint firstItem="Lka-PH-unH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="PCn-OD-ICC"/>
-                            <constraint firstItem="Lka-PH-unH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Wqq-1m-tjx"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Lka-PH-unH" secondAttribute="bottom" id="eCo-iB-PKf"/>
+                            <constraint firstItem="VLt-fT-EY1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="138" id="21e-zM-A7r"/>
+                            <constraint firstItem="VLt-fT-EY1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="1" id="514-7T-3u5"/>
+                            <constraint firstItem="3d7-sa-08B" firstAttribute="top" secondItem="VLt-fT-EY1" secondAttribute="top" id="9Mp-Q5-bBm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9ia-Hl-IDN" secondAttribute="bottom" constant="125" id="E29-fo-vbz"/>
+                            <constraint firstItem="9ia-Hl-IDN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="147" id="MQu-2a-byW"/>
+                            <constraint firstItem="3d7-sa-08B" firstAttribute="leading" secondItem="VLt-fT-EY1" secondAttribute="trailing" constant="76.670000000000002" id="NUh-h7-3xQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9ia-Hl-IDN" secondAttribute="trailing" constant="147" id="Wkn-mg-3qE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3d7-sa-08B" secondAttribute="trailing" constant="18.999999999999943" id="ZQe-ae-hCb"/>
+                            <constraint firstItem="9ia-Hl-IDN" firstAttribute="top" secondItem="VLt-fT-EY1" secondAttribute="bottom" constant="49" id="x1S-D9-4rD"/>
+                            <constraint firstItem="9ia-Hl-IDN" firstAttribute="top" secondItem="VLt-fT-EY1" secondAttribute="bottom" constant="49" id="z0Z-0f-hk3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="yj2-uh-dFD"/>
@@ -179,18 +230,18 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="w75-5I-cVf">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qnY-cG-fL0">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="qnY-cG-fL0">
                                                 <rect key="frame" x="0.0" y="0.0" width="182" height="34"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="textColor" red="0.64945906399999997" green="0.13338679079999999" blue="0.066593706609999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="address-level1"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RL9-fS-nQH">
                                                 <rect key="frame" x="192" y="0.0" width="182" height="34"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                                                 <color key="tintColor" red="0.64945906399999997" green="0.13338679079999999" blue="0.066593706609999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <color key="textColor" red="0.64945906399999997" green="0.13338679079999999" blue="0.066593706609999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="address-level2"/>
                                             </textField>
@@ -198,9 +249,9 @@
                                     </stackView>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dq8-4v-uto">
                                         <rect key="frame" x="0.0" y="49" width="374" height="34"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                                         <color key="tintColor" red="0.64945906399999997" green="0.13338679079999999" blue="0.066593706609999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <color key="textColor" red="0.64945906399999997" green="0.13338679079999999" blue="0.066593706609999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="street-address"/>
                                     </textField>
@@ -274,13 +325,15 @@
         </scene>
     </scenes>
     <resources>
-        <image name="appNameButton" width="866.66668701171875" height="382.66665649414062"/>
+        <image name="book.fill" catalog="system" width="128" height="102"/>
+        <image name="camera.fill" catalog="system" width="128" height="94"/>
         <image name="city_TripleR" width="500" height="500"/>
+        <image name="gear" catalog="system" width="128" height="119"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="location.circle" catalog="system" width="128" height="121"/>
-        <image name="recordButton" width="866.66668701171875" height="382.66665649414062"/>
-        <image name="reportButton" width="866.66668701171875" height="382.66665649414062"/>
-        <image name="rightsButton" width="866.66668701171875" height="382.66665649414062"/>
-        <image name="settingsButton" width="866.66668701171875" height="382.66665649414062"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

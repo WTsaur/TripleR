@@ -1,16 +1,20 @@
 PODS:
+  - EMTNeumorphicView (1.0.4)
   - OBShapedButton (1.2.0)
 
 DEPENDENCIES:
+  - EMTNeumorphicView
   - OBShapedButton
 
 SPEC REPOS:
   trunk:
+    - EMTNeumorphicView
     - OBShapedButton
 
 SPEC CHECKSUMS:
+  EMTNeumorphicView: cb5e92953e43b1872ab47fefd451a9ce0c16fc77
   OBShapedButton: 1e7653e4d0170fa9aa9803e972a2eb65f65b6f33
 
-PODFILE CHECKSUM: a07bbdadab5da529259d47a5ed393f29cb67d6e6
+PODFILE CHECKSUM: 078060689864f841e849d8dc99398ae121d86e45
 
 COCOAPODS: 1.9.3

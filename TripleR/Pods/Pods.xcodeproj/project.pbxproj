@@ -3,24 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1931448D680CAEBB339F32C6AFADECCA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		24E44C948C5DA035DD9B220EDDFF97A1 /* OBShapedButton.h in Headers */ = {isa = PBXBuildFile; fileRef = F23C9252C23839E0CEA92C9EB8CB71E5 /* OBShapedButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2B248C92536D9FEFEF8B8D8DD3BF17DA /* Pods-TripleR-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D699FA740384BD589A20C5982708527A /* Pods-TripleR-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		538893C9BDF97E07E76C758B4F9A2879 /* OBShapedButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B19B14449D7D8C7108E376A8FEC246AB /* OBShapedButton-dummy.m */; };
-		54EE0E5EFF31AA383A37DD9E0625C796 /* Pods-TripleR-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 223DC79402BE10A6CBB9CF9CD9752636 /* Pods-TripleR-dummy.m */; };
+		178BAF16C456636DF8ABBC1E0D43B44B /* Pods-TripleR-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 223DC79402BE10A6CBB9CF9CD9752636 /* Pods-TripleR-dummy.m */; };
+		24E44C948C5DA035DD9B220EDDFF97A1 /* OBShapedButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 83243B85430533F86BB847F817D8164F /* OBShapedButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51321813BA07355609140E23D506354D /* UIColor+tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC06128CF105EB7A9D99718A7D96781 /* UIColor+tool.swift */; };
+		538893C9BDF97E07E76C758B4F9A2879 /* OBShapedButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D475E38196D0B2D8EF9853026E51B2 /* OBShapedButton-dummy.m */; };
+		72475C8F88EEA8F83681F40C93A4F102 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		78E7A9EAAC735B9E349C31A006B6ED30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		7B2BF2A4DD2B598ECD1BCA3D9E080C73 /* EMTNeumorphicView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7DCB34827AB39EB41F44599BAA042B /* EMTNeumorphicView-dummy.m */; };
 		9F8B28E743D7699A0E4B2FC4B5D34B08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		B50EE964B236B6D68A63FEE0E2726D6A /* OBShapedButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB53F911190537CD2DF18A3682E4857 /* OBShapedButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EC2B8B333D397666C2F53E627C610D91 /* OBShapedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 330FE18BF1404A8F297BD5BE26D8F2C6 /* OBShapedButton.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		F2C6C2ECF5FE6EC66FF9FD81EC1B15D5 /* UIImage+ColorAtPixel.h in Headers */ = {isa = PBXBuildFile; fileRef = 60BAA1B4BC2CCA10DAAC1BA60F07019D /* UIImage+ColorAtPixel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FFFFE834B4C96891559E6F19A0770EBE /* UIImage+ColorAtPixel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9179376FA1BD0C2F4B9D7F7A33A3005E /* UIImage+ColorAtPixel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B50EE964B236B6D68A63FEE0E2726D6A /* OBShapedButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A1326393E4CA32F309A2F462EC6B99A /* OBShapedButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB4C23AF8C24743FB58CA993D9A37033 /* EMTNeumorphicView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 28DACAAF9BB41A7D3D7306A6E3FA9F91 /* EMTNeumorphicView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8B9BB70D761EA7BC26D0F3E2B421496 /* Pods-TripleR-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D699FA740384BD589A20C5982708527A /* Pods-TripleR-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D572570A1405E02681483F2E4E34CDB7 /* EMTNeumorphicLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55939485D68804709A5A814988EC44EE /* EMTNeumorphicLayer.swift */; };
+		DBECE51AE3302A98334D9BBF65E149D0 /* EMTNeumorphicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358E3D1DDD10D6BD17B0A9024CD3C158 /* EMTNeumorphicView.swift */; };
+		EC2B8B333D397666C2F53E627C610D91 /* OBShapedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E67BE6EE8F02B441B0FB252D9B6F26FA /* OBShapedButton.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F2C6C2ECF5FE6EC66FF9FD81EC1B15D5 /* UIImage+ColorAtPixel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2127949ADF8E4752408250A4038196FB /* UIImage+ColorAtPixel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFFFE834B4C96891559E6F19A0770EBE /* UIImage+ColorAtPixel.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E70E522DBAA1CBFAA21B6AF097674C /* UIImage+ColorAtPixel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		358976E9969690886A7A90893D3BB9AF /* PBXContainerItemProxy */ = {
+		86B1C87387B89DFF112864C4587B8936 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CE6EE7AB67EEDB2785C26554B4B516A;
+			remoteInfo = EMTNeumorphicView;
+		};
+		A672602B3F02D0E8BCF8CA964B12743A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -30,38 +43,49 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		075C0720A898CC9428DD3D12EE282897 /* OBShapedButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "OBShapedButton-Info.plist"; sourceTree = "<group>"; };
 		0C9332D7716C20B58F11BCD40A4D85B5 /* Pods-TripleR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TripleR.debug.xcconfig"; sourceTree = "<group>"; };
-		10DA48888B864C8D632ADE8AC0D3CED3 /* OBShapedButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "OBShapedButton-Info.plist"; sourceTree = "<group>"; };
+		2127949ADF8E4752408250A4038196FB /* UIImage+ColorAtPixel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ColorAtPixel.h"; path = "UIImage+ColorAtPixel/UIImage+ColorAtPixel.h"; sourceTree = "<group>"; };
 		223DC79402BE10A6CBB9CF9CD9752636 /* Pods-TripleR-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TripleR-dummy.m"; sourceTree = "<group>"; };
-		2556F051A2959FEA976A889714BE53C6 /* OBShapedButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OBShapedButton.debug.xcconfig; sourceTree = "<group>"; };
 		261776E93BAB060C0809C438F82604F1 /* Pods-TripleR-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TripleR-frameworks.sh"; sourceTree = "<group>"; };
+		28DACAAF9BB41A7D3D7306A6E3FA9F91 /* EMTNeumorphicView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EMTNeumorphicView-umbrella.h"; sourceTree = "<group>"; };
+		2D4A0691B022B0D0DCC89A95406A728A /* OBShapedButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OBShapedButton.debug.xcconfig; sourceTree = "<group>"; };
+		2ED5B6020260906A10028C8B5F435B41 /* OBShapedButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OBShapedButton.modulemap; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		330FE18BF1404A8F297BD5BE26D8F2C6 /* OBShapedButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OBShapedButton.m; path = OBShapedButton/OBShapedButton.m; sourceTree = "<group>"; };
+		358E3D1DDD10D6BD17B0A9024CD3C158 /* EMTNeumorphicView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EMTNeumorphicView.swift; path = EMTNeumorphicView/Classes/EMTNeumorphicView.swift; sourceTree = "<group>"; };
+		4127B80FF1C2BAE8F54B9007CF09DCEA /* OBShapedButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OBShapedButton-prefix.pch"; sourceTree = "<group>"; };
+		47DFFBEF1ABE6BCD373CAF137DB3478D /* EMTNeumorphicView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EMTNeumorphicView.release.xcconfig; sourceTree = "<group>"; };
+		4A1326393E4CA32F309A2F462EC6B99A /* OBShapedButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OBShapedButton-umbrella.h"; sourceTree = "<group>"; };
 		4B80F2EE4348AA59BB260140D989D56C /* Pods-TripleR-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TripleR-acknowledgements.markdown"; sourceTree = "<group>"; };
-		52B167543DDD574106BB1E357ABC3A17 /* OBShapedButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OBShapedButton-prefix.pch"; sourceTree = "<group>"; };
-		60BAA1B4BC2CCA10DAAC1BA60F07019D /* UIImage+ColorAtPixel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ColorAtPixel.h"; path = "UIImage+ColorAtPixel/UIImage+ColorAtPixel.h"; sourceTree = "<group>"; };
+		4CDC562046A208F477B625D5AE67795F /* EMTNeumorphicView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EMTNeumorphicView.framework; path = EMTNeumorphicView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55939485D68804709A5A814988EC44EE /* EMTNeumorphicLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EMTNeumorphicLayer.swift; path = EMTNeumorphicView/Classes/EMTNeumorphicLayer.swift; sourceTree = "<group>"; };
+		5CA458EABC21EC6AABACCBED20C894BD /* EMTNeumorphicView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EMTNeumorphicView.debug.xcconfig; sourceTree = "<group>"; };
 		61FDA90E218AB475786E84E7E059C980 /* Pods-TripleR.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TripleR.modulemap"; sourceTree = "<group>"; };
-		8ACAD6A55BCD28211DA4D150B779C24D /* OBShapedButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OBShapedButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9179376FA1BD0C2F4B9D7F7A33A3005E /* UIImage+ColorAtPixel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ColorAtPixel.m"; path = "UIImage+ColorAtPixel/UIImage+ColorAtPixel.m"; sourceTree = "<group>"; };
-		96ABB645839962FE68B0D24392294E27 /* OBShapedButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OBShapedButton.release.xcconfig; sourceTree = "<group>"; };
+		83243B85430533F86BB847F817D8164F /* OBShapedButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OBShapedButton.h; path = OBShapedButton/OBShapedButton.h; sourceTree = "<group>"; };
+		87E70E522DBAA1CBFAA21B6AF097674C /* UIImage+ColorAtPixel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ColorAtPixel.m"; path = "UIImage+ColorAtPixel/UIImage+ColorAtPixel.m"; sourceTree = "<group>"; };
+		8ACAD6A55BCD28211DA4D150B779C24D /* OBShapedButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OBShapedButton.framework; path = OBShapedButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EE7E3AA2639C04FEE50EE3048127279 /* EMTNeumorphicView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "EMTNeumorphicView-Info.plist"; sourceTree = "<group>"; };
+		912CECDBB64DE42C2B513DDDD8CA7E86 /* EMTNeumorphicView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = EMTNeumorphicView.modulemap; sourceTree = "<group>"; };
+		964F8292BEF3AE4581C6B8FA47DA100D /* EMTNeumorphicView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EMTNeumorphicView-prefix.pch"; sourceTree = "<group>"; };
+		9B7DCB34827AB39EB41F44599BAA042B /* EMTNeumorphicView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EMTNeumorphicView-dummy.m"; sourceTree = "<group>"; };
 		9C2EE96E1A0FBB9796E84D52D50EFD29 /* Pods-TripleR-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TripleR-Info.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A25C99E45B9A7431AF7A7D76C81AF8A8 /* Pods-TripleR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TripleR.release.xcconfig"; sourceTree = "<group>"; };
-		B19B14449D7D8C7108E376A8FEC246AB /* OBShapedButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OBShapedButton-dummy.m"; sourceTree = "<group>"; };
+		A2D475E38196D0B2D8EF9853026E51B2 /* OBShapedButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OBShapedButton-dummy.m"; sourceTree = "<group>"; };
+		AF85D7630253D3F3972EF5F1E33C7FAB /* OBShapedButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OBShapedButton.release.xcconfig; sourceTree = "<group>"; };
 		D699FA740384BD589A20C5982708527A /* Pods-TripleR-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TripleR-umbrella.h"; sourceTree = "<group>"; };
-		DDB53F911190537CD2DF18A3682E4857 /* OBShapedButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OBShapedButton-umbrella.h"; sourceTree = "<group>"; };
+		E67BE6EE8F02B441B0FB252D9B6F26FA /* OBShapedButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OBShapedButton.m; path = OBShapedButton/OBShapedButton.m; sourceTree = "<group>"; };
 		ED127C6B786EE5AC23D404986523233D /* Pods-TripleR-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TripleR-acknowledgements.plist"; sourceTree = "<group>"; };
-		EE560C3EA182159E0DA61DF7CBAD19E2 /* Pods_TripleR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TripleR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F23C9252C23839E0CEA92C9EB8CB71E5 /* OBShapedButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OBShapedButton.h; path = OBShapedButton/OBShapedButton.h; sourceTree = "<group>"; };
-		F606C865F1276DED42F05F1685A48EC0 /* OBShapedButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OBShapedButton.modulemap; sourceTree = "<group>"; };
+		EDC06128CF105EB7A9D99718A7D96781 /* UIColor+tool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+tool.swift"; path = "EMTNeumorphicView/Classes/UIColor+tool.swift"; sourceTree = "<group>"; };
+		EE560C3EA182159E0DA61DF7CBAD19E2 /* Pods_TripleR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TripleR.framework; path = "Pods-TripleR.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		21E7364281DBD07D13594BA46EB6D5AB /* Frameworks */ = {
+		988D90447C8C336AE0C0A6DAB01A1D1D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1931448D680CAEBB339F32C6AFADECCA /* Foundation.framework in Frameworks */,
+				78E7A9EAAC735B9E349C31A006B6ED30 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +94,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F8B28E743D7699A0E4B2FC4B5D34B08 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9D1D83EE347B4880EE213D78629406B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72475C8F88EEA8F83681F40C93A4F102 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,48 +116,35 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		205396D1C5AEB394B1E6E281498CC2EA /* Pods */ = {
+		1E601C4EC28D77795771827C725F27C5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5E5CF2B3AE3A1FAA44D8B5BECB34F2FD /* OBShapedButton */,
+				65D3A1A89D76DADB7A8967D4818F44E3 /* EMTNeumorphicView */,
+				B92E2DB5DFBBE1C06B046C1A8E0F6D3F /* OBShapedButton */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		5E5CF2B3AE3A1FAA44D8B5BECB34F2FD /* OBShapedButton */ = {
+		4E49D34436812F27C7402A040FFF097E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F23C9252C23839E0CEA92C9EB8CB71E5 /* OBShapedButton.h */,
-				330FE18BF1404A8F297BD5BE26D8F2C6 /* OBShapedButton.m */,
-				60BAA1B4BC2CCA10DAAC1BA60F07019D /* UIImage+ColorAtPixel.h */,
-				9179376FA1BD0C2F4B9D7F7A33A3005E /* UIImage+ColorAtPixel.m */,
-				6A5C9DBBE0FC20DA20AA01B2A59D9407 /* Support Files */,
-			);
-			path = OBShapedButton;
-			sourceTree = "<group>";
-		};
-		613A54416E42ADD9160E1F92603E865B /* Products */ = {
-			isa = PBXGroup;
-			children = (
+				4CDC562046A208F477B625D5AE67795F /* EMTNeumorphicView.framework */,
 				8ACAD6A55BCD28211DA4D150B779C24D /* OBShapedButton.framework */,
 				EE560C3EA182159E0DA61DF7CBAD19E2 /* Pods_TripleR.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6A5C9DBBE0FC20DA20AA01B2A59D9407 /* Support Files */ = {
+		65D3A1A89D76DADB7A8967D4818F44E3 /* EMTNeumorphicView */ = {
 			isa = PBXGroup;
 			children = (
-				F606C865F1276DED42F05F1685A48EC0 /* OBShapedButton.modulemap */,
-				B19B14449D7D8C7108E376A8FEC246AB /* OBShapedButton-dummy.m */,
-				10DA48888B864C8D632ADE8AC0D3CED3 /* OBShapedButton-Info.plist */,
-				52B167543DDD574106BB1E357ABC3A17 /* OBShapedButton-prefix.pch */,
-				DDB53F911190537CD2DF18A3682E4857 /* OBShapedButton-umbrella.h */,
-				2556F051A2959FEA976A889714BE53C6 /* OBShapedButton.debug.xcconfig */,
-				96ABB645839962FE68B0D24392294E27 /* OBShapedButton.release.xcconfig */,
+				55939485D68804709A5A814988EC44EE /* EMTNeumorphicLayer.swift */,
+				358E3D1DDD10D6BD17B0A9024CD3C158 /* EMTNeumorphicView.swift */,
+				EDC06128CF105EB7A9D99718A7D96781 /* UIColor+tool.swift */,
+				A5536C7942A2FF46C0402DBB79E55F5E /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/OBShapedButton";
+			name = EMTNeumorphicView;
+			path = EMTNeumorphicView;
 			sourceTree = "<group>";
 		};
 		76326AF187E2959B5ABA68C6B50B8039 /* Pods-TripleR */ = {
@@ -145,6 +164,49 @@
 			path = "Target Support Files/Pods-TripleR";
 			sourceTree = "<group>";
 		};
+		A5536C7942A2FF46C0402DBB79E55F5E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				912CECDBB64DE42C2B513DDDD8CA7E86 /* EMTNeumorphicView.modulemap */,
+				9B7DCB34827AB39EB41F44599BAA042B /* EMTNeumorphicView-dummy.m */,
+				8EE7E3AA2639C04FEE50EE3048127279 /* EMTNeumorphicView-Info.plist */,
+				964F8292BEF3AE4581C6B8FA47DA100D /* EMTNeumorphicView-prefix.pch */,
+				28DACAAF9BB41A7D3D7306A6E3FA9F91 /* EMTNeumorphicView-umbrella.h */,
+				5CA458EABC21EC6AABACCBED20C894BD /* EMTNeumorphicView.debug.xcconfig */,
+				47DFFBEF1ABE6BCD373CAF137DB3478D /* EMTNeumorphicView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/EMTNeumorphicView";
+			sourceTree = "<group>";
+		};
+		A6FFF3F2339A4C226B830F870D6834E2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2ED5B6020260906A10028C8B5F435B41 /* OBShapedButton.modulemap */,
+				A2D475E38196D0B2D8EF9853026E51B2 /* OBShapedButton-dummy.m */,
+				075C0720A898CC9428DD3D12EE282897 /* OBShapedButton-Info.plist */,
+				4127B80FF1C2BAE8F54B9007CF09DCEA /* OBShapedButton-prefix.pch */,
+				4A1326393E4CA32F309A2F462EC6B99A /* OBShapedButton-umbrella.h */,
+				2D4A0691B022B0D0DCC89A95406A728A /* OBShapedButton.debug.xcconfig */,
+				AF85D7630253D3F3972EF5F1E33C7FAB /* OBShapedButton.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/OBShapedButton";
+			sourceTree = "<group>";
+		};
+		B92E2DB5DFBBE1C06B046C1A8E0F6D3F /* OBShapedButton */ = {
+			isa = PBXGroup;
+			children = (
+				83243B85430533F86BB847F817D8164F /* OBShapedButton.h */,
+				E67BE6EE8F02B441B0FB252D9B6F26FA /* OBShapedButton.m */,
+				2127949ADF8E4752408250A4038196FB /* UIImage+ColorAtPixel.h */,
+				87E70E522DBAA1CBFAA21B6AF097674C /* UIImage+ColorAtPixel.m */,
+				A6FFF3F2339A4C226B830F870D6834E2 /* Support Files */,
+			);
+			name = OBShapedButton;
+			path = OBShapedButton;
+			sourceTree = "<group>";
+		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,8 +220,8 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				205396D1C5AEB394B1E6E281498CC2EA /* Pods */,
-				613A54416E42ADD9160E1F92603E865B /* Products */,
+				1E601C4EC28D77795771827C725F27C5 /* Pods */,
+				4E49D34436812F27C7402A040FFF097E /* Products */,
 				0CC6E1D10CC59F2FA6579BF9284226EE /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -175,14 +237,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		40C3C35E9AC89A8E4219076F5D933735 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2B248C92536D9FEFEF8B8D8DD3BF17DA /* Pods-TripleR-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		51C1FE895C40B7228E27AA57B69263AB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -190,6 +244,22 @@
 				B50EE964B236B6D68A63FEE0E2726D6A /* OBShapedButton-umbrella.h in Headers */,
 				24E44C948C5DA035DD9B220EDDFF97A1 /* OBShapedButton.h in Headers */,
 				F2C6C2ECF5FE6EC66FF9FD81EC1B15D5 /* UIImage+ColorAtPixel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC7DACF02463677FABD4450920B6D292 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB4C23AF8C24743FB58CA993D9A37033 /* EMTNeumorphicView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED4F4EC708C26EFD005694ED3FD401D1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8B9BB70D761EA7BC26D0F3E2B421496 /* Pods-TripleR-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,21 +286,40 @@
 		};
 		4BF1B6C72FDEBC16DEE544037B9EA124 /* Pods-TripleR */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E392D48327F8B1092EC8ED4C9B88D1A3 /* Build configuration list for PBXNativeTarget "Pods-TripleR" */;
+			buildConfigurationList = F54299388AC202E7A1FB71C77C9E9E65 /* Build configuration list for PBXNativeTarget "Pods-TripleR" */;
 			buildPhases = (
-				40C3C35E9AC89A8E4219076F5D933735 /* Headers */,
-				7E357E0852FF2909D550DAC01F3FD5F8 /* Sources */,
-				21E7364281DBD07D13594BA46EB6D5AB /* Frameworks */,
-				ECDD3080DC1E8B8EF4B7E1381225E108 /* Resources */,
+				ED4F4EC708C26EFD005694ED3FD401D1 /* Headers */,
+				250BA52B176847E731B81AACEB73088E /* Sources */,
+				D9D1D83EE347B4880EE213D78629406B /* Frameworks */,
+				C5BD33936BF27FC598D1D0696D954A32 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2024F4A848F5631D3B77C9DB0CD3D9FB /* PBXTargetDependency */,
+				630A79F05016CB470B8B5138C47D76BF /* PBXTargetDependency */,
+				CF40A8B57F475996BEEE253C29714FCA /* PBXTargetDependency */,
 			);
 			name = "Pods-TripleR";
 			productName = "Pods-TripleR";
 			productReference = EE560C3EA182159E0DA61DF7CBAD19E2 /* Pods_TripleR.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8CE6EE7AB67EEDB2785C26554B4B516A /* EMTNeumorphicView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B447BF0A49CA0F61C057C8077AD7AB4 /* Build configuration list for PBXNativeTarget "EMTNeumorphicView" */;
+			buildPhases = (
+				AC7DACF02463677FABD4450920B6D292 /* Headers */,
+				9BE6596799A3D9CDE8558E6E14F6C998 /* Sources */,
+				988D90447C8C336AE0C0A6DAB01A1D1D /* Frameworks */,
+				1AE334D8D0C1DF4A34382F07BEDA0CE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EMTNeumorphicView;
+			productName = EMTNeumorphicView;
+			productReference = 4CDC562046A208F477B625D5AE67795F /* EMTNeumorphicView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -240,10 +329,10 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 12.0";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -251,10 +340,11 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 613A54416E42ADD9160E1F92603E865B /* Products */;
+			productRefGroup = 4E49D34436812F27C7402A040FFF097E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				8CE6EE7AB67EEDB2785C26554B4B516A /* EMTNeumorphicView */,
 				3B4497ED99C1D2F2CB9CE9ADE068BED6 /* OBShapedButton */,
 				4BF1B6C72FDEBC16DEE544037B9EA124 /* Pods-TripleR */,
 			);
@@ -262,6 +352,13 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1AE334D8D0C1DF4A34382F07BEDA0CE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9CD684BE03B5B41116B3228631AD59B1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -269,7 +366,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ECDD3080DC1E8B8EF4B7E1381225E108 /* Resources */ = {
+		C5BD33936BF27FC598D1D0696D954A32 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -279,11 +376,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7E357E0852FF2909D550DAC01F3FD5F8 /* Sources */ = {
+		250BA52B176847E731B81AACEB73088E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54EE0E5EFF31AA383A37DD9E0625C796 /* Pods-TripleR-dummy.m in Sources */,
+				178BAF16C456636DF8ABBC1E0D43B44B /* Pods-TripleR-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BE6596799A3D9CDE8558E6E14F6C998 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D572570A1405E02681483F2E4E34CDB7 /* EMTNeumorphicLayer.swift in Sources */,
+				7B2BF2A4DD2B598ECD1BCA3D9E080C73 /* EMTNeumorphicView-dummy.m in Sources */,
+				DBECE51AE3302A98334D9BBF65E149D0 /* EMTNeumorphicView.swift in Sources */,
+				51321813BA07355609140E23D506354D /* UIColor+tool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,55 +408,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2024F4A848F5631D3B77C9DB0CD3D9FB /* PBXTargetDependency */ = {
+		630A79F05016CB470B8B5138C47D76BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EMTNeumorphicView;
+			target = 8CE6EE7AB67EEDB2785C26554B4B516A /* EMTNeumorphicView */;
+			targetProxy = 86B1C87387B89DFF112864C4587B8936 /* PBXContainerItemProxy */;
+		};
+		CF40A8B57F475996BEEE253C29714FCA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = OBShapedButton;
 			target = 3B4497ED99C1D2F2CB9CE9ADE068BED6 /* OBShapedButton */;
-			targetProxy = 358976E9969690886A7A90893D3BB9AF /* PBXContainerItemProxy */;
+			targetProxy = A672602B3F02D0E8BCF8CA964B12743A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		09A89B7A4F40C827B2C6E6946D8E9BBE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C9332D7716C20B58F11BCD40A4D85B5 /* Pods-TripleR.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = DZCJKHLK73;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-TripleR/Pods-TripleR-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TripleR/Pods-TripleR.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		1422B121EAEAEA11307496903FA623C6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -375,7 +449,6 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -398,7 +471,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -410,9 +483,46 @@
 			};
 			name = Release;
 		};
+		1B832A7447B7943EE5C2AAF7E00B77BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47DFFBEF1ABE6BCD373CAF137DB3478D /* EMTNeumorphicView.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/EMTNeumorphicView/EMTNeumorphicView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EMTNeumorphicView/EMTNeumorphicView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/EMTNeumorphicView/EMTNeumorphicView.modulemap";
+				PRODUCT_MODULE_NAME = EMTNeumorphicView;
+				PRODUCT_NAME = EMTNeumorphicView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		546ECCC49F145090003D4D7F90D8E02D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 96ABB645839962FE68B0D24392294E27 /* OBShapedButton.release.xcconfig */;
+			baseConfigurationReference = AF85D7630253D3F3972EF5F1E33C7FAB /* OBShapedButton.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -420,14 +530,13 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = DZCJKHLK73;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/OBShapedButton/OBShapedButton-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/OBShapedButton/OBShapedButton-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -438,7 +547,6 @@
 				PRODUCT_NAME = OBShapedButton;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -450,7 +558,7 @@
 		};
 		699DF1E26EDF219886EF1885F7B1CB71 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2556F051A2959FEA976A889714BE53C6 /* OBShapedButton.debug.xcconfig */;
+			baseConfigurationReference = 2D4A0691B022B0D0DCC89A95406A728A /* OBShapedButton.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -458,14 +566,13 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = DZCJKHLK73;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/OBShapedButton/OBShapedButton-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/OBShapedButton/OBShapedButton-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -476,7 +583,6 @@
 				PRODUCT_NAME = OBShapedButton;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -485,7 +591,43 @@
 			};
 			name = Debug;
 		};
-		CFFEDD588443E894B02276DD0C8FB6D2 /* Release */ = {
+		8AA5928660F19331B6B079E8AE42FF9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CA458EABC21EC6AABACCBED20C894BD /* EMTNeumorphicView.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/EMTNeumorphicView/EMTNeumorphicView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EMTNeumorphicView/EMTNeumorphicView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/EMTNeumorphicView/EMTNeumorphicView.modulemap";
+				PRODUCT_MODULE_NAME = EMTNeumorphicView;
+				PRODUCT_NAME = EMTNeumorphicView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C171A988DF52BB41109E62E4D03FE9A3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A25C99E45B9A7431AF7A7D76C81AF8A8 /* Pods-TripleR.release.xcconfig */;
 			buildSettings = {
@@ -497,7 +639,6 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = DZCJKHLK73;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -518,7 +659,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -552,7 +692,6 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -578,7 +717,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -588,6 +727,44 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		FE529FAA5974B6235D24B35301A7F9C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C9332D7716C20B58F11BCD40A4D85B5 /* Pods-TripleR.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TripleR/Pods-TripleR-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TripleR/Pods-TripleR.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -603,6 +780,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		9B447BF0A49CA0F61C057C8077AD7AB4 /* Build configuration list for PBXNativeTarget "EMTNeumorphicView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AA5928660F19331B6B079E8AE42FF9A /* Debug */,
+				1B832A7447B7943EE5C2AAF7E00B77BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D23F97049201B8A19C412B180AC184EB /* Build configuration list for PBXNativeTarget "OBShapedButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -612,11 +798,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E392D48327F8B1092EC8ED4C9B88D1A3 /* Build configuration list for PBXNativeTarget "Pods-TripleR" */ = {
+		F54299388AC202E7A1FB71C77C9E9E65 /* Build configuration list for PBXNativeTarget "Pods-TripleR" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				09A89B7A4F40C827B2C6E6946D8E9BBE /* Debug */,
-				CFFEDD588443E894B02276DD0C8FB6D2 /* Release */,
+				FE529FAA5974B6235D24B35301A7F9C4 /* Debug */,
+				C171A988DF52BB41109E62E4D03FE9A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

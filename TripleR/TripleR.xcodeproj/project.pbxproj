@@ -15,6 +15,7 @@
 		6F7F97BE25117DEC0030237D /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7F97BD25117DEC0030237D /* ReportViewController.swift */; };
 		6F7F97C025117E010030237D /* RightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7F97BF25117E010030237D /* RightsViewController.swift */; };
 		6F7F97C225117EFB0030237D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7F97C125117EFB0030237D /* MainViewController.swift */; };
+		6FA0DA382518553700B591D4 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6FA0DA3525184D0D00B591D4 /* Pacifico-Regular.ttf */; };
 		6FB34E282516C70D00C66885 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FB34E272516C70D00C66885 /* Assets.xcassets */; };
 		6FB34E332516E52E00C66885 /* AboutPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB34E322516E52E00C66885 /* AboutPageViewController.swift */; };
 		AE37AE9DE43969553B7AD76B /* Pods_TripleR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEBCBE3AB00721C10E541593 /* Pods_TripleR.framework */; };
@@ -32,6 +33,7 @@
 		6F7F97BD25117DEC0030237D /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		6F7F97BF25117E010030237D /* RightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightsViewController.swift; sourceTree = "<group>"; };
 		6F7F97C125117EFB0030237D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		6FA0DA3525184D0D00B591D4 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
 		6FB34E272516C70D00C66885 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6FB34E322516E52E00C66885 /* AboutPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPageViewController.swift; sourceTree = "<group>"; };
 		DF8B92E5850C0A4D11A5791D /* Pods-TripleR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripleR.release.xcconfig"; path = "Target Support Files/Pods-TripleR/Pods-TripleR.release.xcconfig"; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 		6F7F97A4251060DD0030237D /* TripleR */ = {
 			isa = PBXGroup;
 			children = (
+				6FA0DA3425184CD200B591D4 /* fonts */,
 				6F7F97A5251060DD0030237D /* AppDelegate.swift */,
 				6F7F97A7251060DD0030237D /* SceneDelegate.swift */,
 				6FE2747A2516BE65007064E2 /* Models */,
@@ -110,6 +113,14 @@
 				6F7F97AB251060DD0030237D /* Main.storyboard */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		6FA0DA3425184CD200B591D4 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				6FA0DA3525184D0D00B591D4 /* Pacifico-Regular.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 		6FE2747A2516BE65007064E2 /* Models */ = {
@@ -188,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F7F97B2251060E00030237D /* LaunchScreen.storyboard in Resources */,
+				6FA0DA382518553700B591D4 /* Pacifico-Regular.ttf in Resources */,
 				6FB34E282516C70D00C66885 /* Assets.xcassets in Resources */,
 				6F7F97AD251060DD0030237D /* Main.storyboard in Resources */,
 			);
