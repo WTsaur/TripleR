@@ -6,10 +6,13 @@
 
 
 #### Authors: 
-Melissa Ma
+<div align="center"> Melissa Ma
+
 William Tsaur
+
 Rachael Scott
-Orlando Lewis
+
+Orlando Lewis</div>
 #### Programming Languages (5 points)
 List the programming languages use in your project, where you use them (what components of your project) and your reason for choosing them (whatever that may be). 
 #### Platforms, APIs, Databases, and other technologies used (5 points) 
