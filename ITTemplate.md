@@ -1,11 +1,11 @@
-# Software Implementation and Testing Document 
+# <div align="center"> Software Implementation and Testing Document 
 
 ## For Group 6
 ### Version 1.0
+</div>
 
 
-
-<div align="center"> #### Authors: </div>
+#### <div align="center"> Authors: </div>
 <div align="center"> 
 
 Melissa Ma
