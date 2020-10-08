@@ -10,9 +10,7 @@
 #endif
 #endif
 
-#import "OBShapedButton.h"
-#import "UIImage+ColorAtPixel.h"
 
-FOUNDATION_EXPORT double OBShapedButtonVersionNumber;
-FOUNDATION_EXPORT const unsigned char OBShapedButtonVersionString[];
+FOUNDATION_EXPORT double CheckboxListVersionNumber;
+FOUNDATION_EXPORT const unsigned char CheckboxListVersionString[];
 

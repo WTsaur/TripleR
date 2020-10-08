@@ -4,7 +4,8 @@ target 'TripleR' do
   use_frameworks!
 
   # Pods for TripleR
-  pod 'OBShapedButton'
+  pod 'CheckboxList'
   pod 'EMTNeumorphicView'
+  # pod 'RealmSwift'
 
 end

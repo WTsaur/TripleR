@@ -18,11 +18,15 @@
 		6FA0DA382518553700B591D4 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6FA0DA3525184D0D00B591D4 /* Pacifico-Regular.ttf */; };
 		6FB34E282516C70D00C66885 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FB34E272516C70D00C66885 /* Assets.xcassets */; };
 		6FB34E332516E52E00C66885 /* AboutPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB34E322516E52E00C66885 /* AboutPageViewController.swift */; };
-		AE37AE9DE43969553B7AD76B /* Pods_TripleR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEBCBE3AB00721C10E541593 /* Pods_TripleR.framework */; };
+		6FC81216252DA078003DF4DE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC81215252DA078003DF4DE /* Constants.swift */; };
+		6FC81219252DA63F003DF4DE /* ReportCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC81218252DA63F003DF4DE /* ReportCategory.swift */; };
+		6FC81229252DB10D003DF4DE /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC81228252DB10D003DF4DE /* Field.swift */; };
+		6FC8122D252E23A9003DF4DE /* ReportModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6FC8122B252E23A9003DF4DE /* ReportModel.xcdatamodeld */; };
+		6FF2CA90252D974900F663E2 /* ReportFieldsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF2CA8F252D974900F663E2 /* ReportFieldsViewController.swift */; };
+		7EA3E332E19635B65CE740BE /* Pods_TripleR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4DCAAADFDBC13A04E6DDDA /* Pods_TripleR.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6BA718D9172BE2071F4F0934 /* Pods-TripleR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripleR.debug.xcconfig"; path = "Target Support Files/Pods-TripleR/Pods-TripleR.debug.xcconfig"; sourceTree = "<group>"; };
 		6F7F97A2251060DD0030237D /* TripleR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripleR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F7F97A5251060DD0030237D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F7F97A7251060DD0030237D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,8 +40,14 @@
 		6FA0DA3525184D0D00B591D4 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
 		6FB34E272516C70D00C66885 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6FB34E322516E52E00C66885 /* AboutPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPageViewController.swift; sourceTree = "<group>"; };
-		DF8B92E5850C0A4D11A5791D /* Pods-TripleR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripleR.release.xcconfig"; path = "Target Support Files/Pods-TripleR/Pods-TripleR.release.xcconfig"; sourceTree = "<group>"; };
-		FEBCBE3AB00721C10E541593 /* Pods_TripleR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TripleR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FC81215252DA078003DF4DE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6FC81218252DA63F003DF4DE /* ReportCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportCategory.swift; sourceTree = "<group>"; };
+		6FC81228252DB10D003DF4DE /* Field.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
+		6FC8122C252E23A9003DF4DE /* ReportModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ReportModel.xcdatamodel; sourceTree = "<group>"; };
+		6FF2CA8F252D974900F663E2 /* ReportFieldsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportFieldsViewController.swift; sourceTree = "<group>"; };
+		7B4DCAAADFDBC13A04E6DDDA /* Pods_TripleR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TripleR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B6AA26B62E413073076F9FA /* Pods-TripleR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripleR.debug.xcconfig"; path = "Target Support Files/Pods-TripleR/Pods-TripleR.debug.xcconfig"; sourceTree = "<group>"; };
+		EE7E69C2FA02E2AB793847DC /* Pods-TripleR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripleR.release.xcconfig"; path = "Target Support Files/Pods-TripleR/Pods-TripleR.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE37AE9DE43969553B7AD76B /* Pods_TripleR.framework in Frameworks */,
+				7EA3E332E19635B65CE740BE /* Pods_TripleR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,8 +65,8 @@
 		60266735668FC95BEB38D08D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6BA718D9172BE2071F4F0934 /* Pods-TripleR.debug.xcconfig */,
-				DF8B92E5850C0A4D11A5791D /* Pods-TripleR.release.xcconfig */,
+				8B6AA26B62E413073076F9FA /* Pods-TripleR.debug.xcconfig */,
+				EE7E69C2FA02E2AB793847DC /* Pods-TripleR.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -67,7 +77,7 @@
 				6F7F97A4251060DD0030237D /* TripleR */,
 				6F7F97A3251060DD0030237D /* Products */,
 				60266735668FC95BEB38D08D /* Pods */,
-				E51EBBE118931EA9F2BC80DA /* Frameworks */,
+				D88E7F085C3E66FB97491C45 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,6 +101,7 @@
 				6F7F97B0251060E00030237D /* LaunchScreen.storyboard */,
 				6FB34E272516C70D00C66885 /* Assets.xcassets */,
 				6F7F97B3251060E00030237D /* Info.plist */,
+				6FC81215252DA078003DF4DE /* Constants.swift */,
 			);
 			path = TripleR;
 			sourceTree = "<group>";
@@ -103,6 +114,7 @@
 				6F7F97BD25117DEC0030237D /* ReportViewController.swift */,
 				6F7F97BF25117E010030237D /* RightsViewController.swift */,
 				6FB34E322516E52E00C66885 /* AboutPageViewController.swift */,
+				6FF2CA8F252D974900F663E2 /* ReportFieldsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -126,14 +138,17 @@
 		6FE2747A2516BE65007064E2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6FC81218252DA63F003DF4DE /* ReportCategory.swift */,
+				6FC81228252DB10D003DF4DE /* Field.swift */,
+				6FC8122B252E23A9003DF4DE /* ReportModel.xcdatamodeld */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		E51EBBE118931EA9F2BC80DA /* Frameworks */ = {
+		D88E7F085C3E66FB97491C45 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FEBCBE3AB00721C10E541593 /* Pods_TripleR.framework */,
+				7B4DCAAADFDBC13A04E6DDDA /* Pods_TripleR.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -145,11 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F7F97B6251060E00030237D /* Build configuration list for PBXNativeTarget "TripleR" */;
 			buildPhases = (
-				FD97847FB5E1A71132724DAA /* [CP] Check Pods Manifest.lock */,
+				0DD0B9AB18EE391003FDBF14 /* [CP] Check Pods Manifest.lock */,
 				6F7F979E251060DD0030237D /* Sources */,
 				6F7F979F251060DD0030237D /* Frameworks */,
 				6F7F97A0251060DD0030237D /* Resources */,
-				8354510323F3FB69FE1D154C /* [CP] Embed Pods Frameworks */,
+				443321F25EAEB9C1BECB3DDB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -208,24 +223,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8354510323F3FB69FE1D154C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TripleR/Pods-TripleR-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TripleR/Pods-TripleR-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TripleR/Pods-TripleR-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FD97847FB5E1A71132724DAA /* [CP] Check Pods Manifest.lock */ = {
+		0DD0B9AB18EE391003FDBF14 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -247,6 +245,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		443321F25EAEB9C1BECB3DDB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TripleR/Pods-TripleR-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TripleR/Pods-TripleR-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TripleR/Pods-TripleR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -254,13 +269,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FF2CA90252D974900F663E2 /* ReportFieldsViewController.swift in Sources */,
+				6FC81219252DA63F003DF4DE /* ReportCategory.swift in Sources */,
 				6F7F97A6251060DD0030237D /* AppDelegate.swift in Sources */,
 				6F7F97A8251060DD0030237D /* SceneDelegate.swift in Sources */,
 				6FB34E332516E52E00C66885 /* AboutPageViewController.swift in Sources */,
+				6FC8122D252E23A9003DF4DE /* ReportModel.xcdatamodeld in Sources */,
 				6F7F97BE25117DEC0030237D /* ReportViewController.swift in Sources */,
 				6F7F97C225117EFB0030237D /* MainViewController.swift in Sources */,
 				6F7F97BC25117DD00030237D /* SettingsViewController.swift in Sources */,
 				6F7F97C025117E010030237D /* RightsViewController.swift in Sources */,
+				6FC81216252DA078003DF4DE /* Constants.swift in Sources */,
+				6FC81229252DB10D003DF4DE /* Field.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,7 +424,7 @@
 		};
 		6F7F97B7251060E00030237D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6BA718D9172BE2071F4F0934 /* Pods-TripleR.debug.xcconfig */;
+			baseConfigurationReference = 8B6AA26B62E413073076F9FA /* Pods-TripleR.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -423,7 +443,7 @@
 		};
 		6F7F97B8251060E00030237D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF8B92E5850C0A4D11A5791D /* Pods-TripleR.release.xcconfig */;
+			baseConfigurationReference = EE7E69C2FA02E2AB793847DC /* Pods-TripleR.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -462,6 +482,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6FC8122B252E23A9003DF4DE /* ReportModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6FC8122C252E23A9003DF4DE /* ReportModel.xcdatamodel */,
+			);
+			currentVersion = 6FC8122C252E23A9003DF4DE /* ReportModel.xcdatamodel */;
+			path = ReportModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6F7F979A251060DD0030237D /* Project object */;
 }

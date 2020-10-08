@@ -1,20 +1,20 @@
 PODS:
+  - CheckboxList (1.0.2)
   - EMTNeumorphicView (1.0.4)
-  - OBShapedButton (1.2.0)
 
 DEPENDENCIES:
+  - CheckboxList
   - EMTNeumorphicView
-  - OBShapedButton
 
 SPEC REPOS:
   trunk:
+    - CheckboxList
     - EMTNeumorphicView
-    - OBShapedButton
 
 SPEC CHECKSUMS:
+  CheckboxList: 08627283f4b543d8aa902616c5f79f87b813800f
   EMTNeumorphicView: cb5e92953e43b1872ab47fefd451a9ce0c16fc77
-  OBShapedButton: 1e7653e4d0170fa9aa9803e972a2eb65f65b6f33
 
-PODFILE CHECKSUM: 078060689864f841e849d8dc99398ae121d86e45
+PODFILE CHECKSUM: 946870bc089d68cfee9474908ca17f21cfa81d01
 
 COCOAPODS: 1.9.3

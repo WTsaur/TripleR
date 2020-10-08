@@ -1,9 +1,9 @@
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/EMTNeumorphicView" "${PODS_CONFIGURATION_BUILD_DIR}/OBShapedButton"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/CheckboxList" "${PODS_CONFIGURATION_BUILD_DIR}/EMTNeumorphicView"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/EMTNeumorphicView/EMTNeumorphicView.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/OBShapedButton/OBShapedButton.framework/Headers"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/CheckboxList/CheckboxList.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/EMTNeumorphicView/EMTNeumorphicView.framework/Headers"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_LDFLAGS = $(inherited) -framework "EMTNeumorphicView" -framework "OBShapedButton"
+OTHER_LDFLAGS = $(inherited) -framework "CheckboxList" -framework "EMTNeumorphicView"
 OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

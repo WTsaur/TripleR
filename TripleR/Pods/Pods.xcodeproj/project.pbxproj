@@ -7,80 +7,92 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		178BAF16C456636DF8ABBC1E0D43B44B /* Pods-TripleR-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 223DC79402BE10A6CBB9CF9CD9752636 /* Pods-TripleR-dummy.m */; };
-		24E44C948C5DA035DD9B220EDDFF97A1 /* OBShapedButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 83243B85430533F86BB847F817D8164F /* OBShapedButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		51321813BA07355609140E23D506354D /* UIColor+tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC06128CF105EB7A9D99718A7D96781 /* UIColor+tool.swift */; };
-		538893C9BDF97E07E76C758B4F9A2879 /* OBShapedButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D475E38196D0B2D8EF9853026E51B2 /* OBShapedButton-dummy.m */; };
-		72475C8F88EEA8F83681F40C93A4F102 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		500B07CE9EE36D3BA1C3512E3B473DD9 /* CheckedCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9998357F57E728ED4956E413574377 /* CheckedCircle.png */; };
+		51321813BA07355609140E23D506354D /* UIColor+tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A8F5EA3CB8AAFE6EC7FF4C980B305E /* UIColor+tool.swift */; };
+		66F83B49D0DF51C4BEB39A73C980603D /* CheckboxList-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0847229A3F7C8B31F7A98B562BCA63AD /* CheckboxList-dummy.m */; };
 		78E7A9EAAC735B9E349C31A006B6ED30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		7B2BF2A4DD2B598ECD1BCA3D9E080C73 /* EMTNeumorphicView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7DCB34827AB39EB41F44599BAA042B /* EMTNeumorphicView-dummy.m */; };
-		9F8B28E743D7699A0E4B2FC4B5D34B08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		B50EE964B236B6D68A63FEE0E2726D6A /* OBShapedButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A1326393E4CA32F309A2F462EC6B99A /* OBShapedButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BB4C23AF8C24743FB58CA993D9A37033 /* EMTNeumorphicView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 28DACAAF9BB41A7D3D7306A6E3FA9F91 /* EMTNeumorphicView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C8B9BB70D761EA7BC26D0F3E2B421496 /* Pods-TripleR-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D699FA740384BD589A20C5982708527A /* Pods-TripleR-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D572570A1405E02681483F2E4E34CDB7 /* EMTNeumorphicLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55939485D68804709A5A814988EC44EE /* EMTNeumorphicLayer.swift */; };
-		DBECE51AE3302A98334D9BBF65E149D0 /* EMTNeumorphicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358E3D1DDD10D6BD17B0A9024CD3C158 /* EMTNeumorphicView.swift */; };
-		EC2B8B333D397666C2F53E627C610D91 /* OBShapedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E67BE6EE8F02B441B0FB252D9B6F26FA /* OBShapedButton.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		F2C6C2ECF5FE6EC66FF9FD81EC1B15D5 /* UIImage+ColorAtPixel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2127949ADF8E4752408250A4038196FB /* UIImage+ColorAtPixel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FFFFE834B4C96891559E6F19A0770EBE /* UIImage+ColorAtPixel.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E70E522DBAA1CBFAA21B6AF097674C /* UIImage+ColorAtPixel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7B2BF2A4DD2B598ECD1BCA3D9E080C73 /* EMTNeumorphicView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0A0CD89CDBDF773B8144B015751DDB /* EMTNeumorphicView-dummy.m */; };
+		7EF653B5DF860C0B10F256F54F85B576 /* CheckBoxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C0495ECF686446DA2E1A332C51AE32 /* CheckBoxButton.swift */; };
+		9D53A9BD0D2AA11E532C3397CD8D774B /* UncheckedCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 9736A929E73480FD08297F056BB1255B /* UncheckedCircle.png */; };
+		AE619C43A003A442861E6E22E9434CCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		BB4C23AF8C24743FB58CA993D9A37033 /* EMTNeumorphicView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C56C469EFD0F385BFB9E1CF35120C06 /* EMTNeumorphicView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C80B404E2CDBED8D28FAFB1E334551A2 /* UncheckedBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CA56EB3CBD372DA883BDE4C5A17B61A /* UncheckedBox.png */; };
+		CE664A2B9D795A01504452EE35F209D1 /* Pods-TripleR-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 223DC79402BE10A6CBB9CF9CD9752636 /* Pods-TripleR-dummy.m */; };
+		CFECD36D3CEDA58D3DF11742E2487210 /* CheckedBox.png in Resources */ = {isa = PBXBuildFile; fileRef = E233A98678BB09EA8EB54F892AE6642D /* CheckedBox.png */; };
+		D572570A1405E02681483F2E4E34CDB7 /* EMTNeumorphicLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA39BD664E421B1768DD691A468611 /* EMTNeumorphicLayer.swift */; };
+		DBECE51AE3302A98334D9BBF65E149D0 /* EMTNeumorphicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C359C281EA5F8E614B8F064777A85D /* EMTNeumorphicView.swift */; };
+		EC4AC97F55C214C17ECDCD1D9BB27C9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		EFCBB2D903D449E88FA3965F1BA794A6 /* ChecklistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6721864BE348D400952BD42B239FF5B3 /* ChecklistView.swift */; };
+		F7A15E61DBE3E403B5F330B42ED3B36A /* CheckboxList-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8491F872E480B0C905B319F1AEB8DCA8 /* CheckboxList-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA52CA4A2917C3474862C518F673827E /* Pods-TripleR-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D699FA740384BD589A20C5982708527A /* Pods-TripleR-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		86B1C87387B89DFF112864C4587B8936 /* PBXContainerItemProxy */ = {
+		4E74D17F07369470789F9F3631921BD7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8CE6EE7AB67EEDB2785C26554B4B516A;
 			remoteInfo = EMTNeumorphicView;
 		};
-		A672602B3F02D0E8BCF8CA964B12743A /* PBXContainerItemProxy */ = {
+		72BFD623337F09E21CBC1ED09D1FA54E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3B4497ED99C1D2F2CB9CE9ADE068BED6;
-			remoteInfo = OBShapedButton;
+			remoteGlobalIDString = 8AB2851D0CC817A0400EA3416629E73B;
+			remoteInfo = CheckboxList;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		075C0720A898CC9428DD3D12EE282897 /* OBShapedButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "OBShapedButton-Info.plist"; sourceTree = "<group>"; };
+		00A8F5EA3CB8AAFE6EC7FF4C980B305E /* UIColor+tool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+tool.swift"; path = "EMTNeumorphicView/Classes/UIColor+tool.swift"; sourceTree = "<group>"; };
+		0847229A3F7C8B31F7A98B562BCA63AD /* CheckboxList-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CheckboxList-dummy.m"; sourceTree = "<group>"; };
+		0A9998357F57E728ED4956E413574377 /* CheckedCircle.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = CheckedCircle.png; path = CheckboxListSwift/CheckedCircle.png; sourceTree = "<group>"; };
 		0C9332D7716C20B58F11BCD40A4D85B5 /* Pods-TripleR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TripleR.debug.xcconfig"; sourceTree = "<group>"; };
-		2127949ADF8E4752408250A4038196FB /* UIImage+ColorAtPixel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ColorAtPixel.h"; path = "UIImage+ColorAtPixel/UIImage+ColorAtPixel.h"; sourceTree = "<group>"; };
+		136E5E4E98E6D330D4D2FEC2EDD32F1D /* EMTNeumorphicView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = EMTNeumorphicView.modulemap; sourceTree = "<group>"; };
+		1952B480801605475CAF09DA8AD514B2 /* CheckboxList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CheckboxList.release.xcconfig; sourceTree = "<group>"; };
+		220E04F133F8E98EF5958B28F0A7D8BF /* EMTNeumorphicView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EMTNeumorphicView.debug.xcconfig; sourceTree = "<group>"; };
 		223DC79402BE10A6CBB9CF9CD9752636 /* Pods-TripleR-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TripleR-dummy.m"; sourceTree = "<group>"; };
 		261776E93BAB060C0809C438F82604F1 /* Pods-TripleR-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TripleR-frameworks.sh"; sourceTree = "<group>"; };
-		28DACAAF9BB41A7D3D7306A6E3FA9F91 /* EMTNeumorphicView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EMTNeumorphicView-umbrella.h"; sourceTree = "<group>"; };
-		2D4A0691B022B0D0DCC89A95406A728A /* OBShapedButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OBShapedButton.debug.xcconfig; sourceTree = "<group>"; };
-		2ED5B6020260906A10028C8B5F435B41 /* OBShapedButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OBShapedButton.modulemap; sourceTree = "<group>"; };
+		2A0A0CD89CDBDF773B8144B015751DDB /* EMTNeumorphicView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EMTNeumorphicView-dummy.m"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		358E3D1DDD10D6BD17B0A9024CD3C158 /* EMTNeumorphicView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EMTNeumorphicView.swift; path = EMTNeumorphicView/Classes/EMTNeumorphicView.swift; sourceTree = "<group>"; };
-		4127B80FF1C2BAE8F54B9007CF09DCEA /* OBShapedButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OBShapedButton-prefix.pch"; sourceTree = "<group>"; };
-		47DFFBEF1ABE6BCD373CAF137DB3478D /* EMTNeumorphicView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EMTNeumorphicView.release.xcconfig; sourceTree = "<group>"; };
-		4A1326393E4CA32F309A2F462EC6B99A /* OBShapedButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OBShapedButton-umbrella.h"; sourceTree = "<group>"; };
+		48C0495ECF686446DA2E1A332C51AE32 /* CheckBoxButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CheckBoxButton.swift; path = CheckboxListSwift/CheckBoxButton.swift; sourceTree = "<group>"; };
 		4B80F2EE4348AA59BB260140D989D56C /* Pods-TripleR-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TripleR-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4CDC562046A208F477B625D5AE67795F /* EMTNeumorphicView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EMTNeumorphicView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		55939485D68804709A5A814988EC44EE /* EMTNeumorphicLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EMTNeumorphicLayer.swift; path = EMTNeumorphicView/Classes/EMTNeumorphicLayer.swift; sourceTree = "<group>"; };
-		5CA458EABC21EC6AABACCBED20C894BD /* EMTNeumorphicView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EMTNeumorphicView.debug.xcconfig; sourceTree = "<group>"; };
+		4CDC562046A208F477B625D5AE67795F /* EMTNeumorphicView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EMTNeumorphicView.framework; path = EMTNeumorphicView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CA56EB3CBD372DA883BDE4C5A17B61A /* UncheckedBox.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = UncheckedBox.png; path = CheckboxListSwift/UncheckedBox.png; sourceTree = "<group>"; };
 		61FDA90E218AB475786E84E7E059C980 /* Pods-TripleR.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TripleR.modulemap"; sourceTree = "<group>"; };
-		83243B85430533F86BB847F817D8164F /* OBShapedButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OBShapedButton.h; path = OBShapedButton/OBShapedButton.h; sourceTree = "<group>"; };
-		87E70E522DBAA1CBFAA21B6AF097674C /* UIImage+ColorAtPixel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ColorAtPixel.m"; path = "UIImage+ColorAtPixel/UIImage+ColorAtPixel.m"; sourceTree = "<group>"; };
-		8ACAD6A55BCD28211DA4D150B779C24D /* OBShapedButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OBShapedButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8EE7E3AA2639C04FEE50EE3048127279 /* EMTNeumorphicView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "EMTNeumorphicView-Info.plist"; sourceTree = "<group>"; };
-		912CECDBB64DE42C2B513DDDD8CA7E86 /* EMTNeumorphicView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = EMTNeumorphicView.modulemap; sourceTree = "<group>"; };
-		964F8292BEF3AE4581C6B8FA47DA100D /* EMTNeumorphicView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EMTNeumorphicView-prefix.pch"; sourceTree = "<group>"; };
-		9B7DCB34827AB39EB41F44599BAA042B /* EMTNeumorphicView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EMTNeumorphicView-dummy.m"; sourceTree = "<group>"; };
+		641CD93EEAD5A9E017DB04ABB47FC5A8 /* CheckboxList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CheckboxList.framework; path = CheckboxList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6721864BE348D400952BD42B239FF5B3 /* ChecklistView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChecklistView.swift; path = CheckboxListSwift/ChecklistView.swift; sourceTree = "<group>"; };
+		8491F872E480B0C905B319F1AEB8DCA8 /* CheckboxList-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CheckboxList-umbrella.h"; sourceTree = "<group>"; };
+		8C56C469EFD0F385BFB9E1CF35120C06 /* EMTNeumorphicView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EMTNeumorphicView-umbrella.h"; sourceTree = "<group>"; };
+		94EA39BD664E421B1768DD691A468611 /* EMTNeumorphicLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EMTNeumorphicLayer.swift; path = EMTNeumorphicView/Classes/EMTNeumorphicLayer.swift; sourceTree = "<group>"; };
+		9736A929E73480FD08297F056BB1255B /* UncheckedCircle.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = UncheckedCircle.png; path = CheckboxListSwift/UncheckedCircle.png; sourceTree = "<group>"; };
+		9BDA344A3C30F2D992656CCB47A609E5 /* EMTNeumorphicView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EMTNeumorphicView-prefix.pch"; sourceTree = "<group>"; };
 		9C2EE96E1A0FBB9796E84D52D50EFD29 /* Pods-TripleR-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TripleR-Info.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A25C99E45B9A7431AF7A7D76C81AF8A8 /* Pods-TripleR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TripleR.release.xcconfig"; sourceTree = "<group>"; };
-		A2D475E38196D0B2D8EF9853026E51B2 /* OBShapedButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OBShapedButton-dummy.m"; sourceTree = "<group>"; };
-		AF85D7630253D3F3972EF5F1E33C7FAB /* OBShapedButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OBShapedButton.release.xcconfig; sourceTree = "<group>"; };
+		AD777EF9A276C1CD600447E2100CEDBE /* EMTNeumorphicView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "EMTNeumorphicView-Info.plist"; sourceTree = "<group>"; };
+		ADEB35B7C17CB87ECACF09F24BE939F1 /* CheckboxList-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CheckboxList-Info.plist"; sourceTree = "<group>"; };
+		B8700A05C5935E68EB3548E7697AE0D6 /* CheckboxList-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CheckboxList-prefix.pch"; sourceTree = "<group>"; };
+		D1CB15732E60D2D450C1B670E1D014E4 /* CheckboxList.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CheckboxList.modulemap; sourceTree = "<group>"; };
 		D699FA740384BD589A20C5982708527A /* Pods-TripleR-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TripleR-umbrella.h"; sourceTree = "<group>"; };
-		E67BE6EE8F02B441B0FB252D9B6F26FA /* OBShapedButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OBShapedButton.m; path = OBShapedButton/OBShapedButton.m; sourceTree = "<group>"; };
+		D7C359C281EA5F8E614B8F064777A85D /* EMTNeumorphicView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EMTNeumorphicView.swift; path = EMTNeumorphicView/Classes/EMTNeumorphicView.swift; sourceTree = "<group>"; };
+		DC1629E567A22D59FAA6C7D178E62A25 /* EMTNeumorphicView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EMTNeumorphicView.release.xcconfig; sourceTree = "<group>"; };
+		E233A98678BB09EA8EB54F892AE6642D /* CheckedBox.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = CheckedBox.png; path = CheckboxListSwift/CheckedBox.png; sourceTree = "<group>"; };
+		E84CBF73DB255B732DCF40D12DCC117D /* CheckboxList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CheckboxList.debug.xcconfig; sourceTree = "<group>"; };
 		ED127C6B786EE5AC23D404986523233D /* Pods-TripleR-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TripleR-acknowledgements.plist"; sourceTree = "<group>"; };
-		EDC06128CF105EB7A9D99718A7D96781 /* UIColor+tool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+tool.swift"; path = "EMTNeumorphicView/Classes/UIColor+tool.swift"; sourceTree = "<group>"; };
-		EE560C3EA182159E0DA61DF7CBAD19E2 /* Pods_TripleR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TripleR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE560C3EA182159E0DA61DF7CBAD19E2 /* Pods_TripleR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TripleR.framework; path = "Pods-TripleR.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1D73AAC7E1E24E5B4BC8A6723AF1C1B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE619C43A003A442861E6E22E9434CCE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		988D90447C8C336AE0C0A6DAB01A1D1D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -89,19 +101,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CFA543B2FBB1C22EFCFC78A9D8A2E864 /* Frameworks */ = {
+		DF229F3BC0FA2FEEC67DC318F26B0CA1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F8B28E743D7699A0E4B2FC4B5D34B08 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D9D1D83EE347B4880EE213D78629406B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				72475C8F88EEA8F83681F40C93A4F102 /* Foundation.framework in Frameworks */,
+				EC4AC97F55C214C17ECDCD1D9BB27C9E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,33 +120,35 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		1E601C4EC28D77795771827C725F27C5 /* Pods */ = {
+		0E64B689AD70E777F13E8C9F6826A745 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				65D3A1A89D76DADB7A8967D4818F44E3 /* EMTNeumorphicView */,
-				B92E2DB5DFBBE1C06B046C1A8E0F6D3F /* OBShapedButton */,
+				E233A98678BB09EA8EB54F892AE6642D /* CheckedBox.png */,
+				0A9998357F57E728ED4956E413574377 /* CheckedCircle.png */,
+				5CA56EB3CBD372DA883BDE4C5A17B61A /* UncheckedBox.png */,
+				9736A929E73480FD08297F056BB1255B /* UncheckedCircle.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		47F81C6EE3BD4E470752D46BE930C5EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B21A23F7173E0C091A7DAF55F1516D19 /* CheckboxList */,
+				5C126981E7266924A05FE2CE4374045B /* EMTNeumorphicView */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		4E49D34436812F27C7402A040FFF097E /* Products */ = {
+		5C126981E7266924A05FE2CE4374045B /* EMTNeumorphicView */ = {
 			isa = PBXGroup;
 			children = (
-				4CDC562046A208F477B625D5AE67795F /* EMTNeumorphicView.framework */,
-				8ACAD6A55BCD28211DA4D150B779C24D /* OBShapedButton.framework */,
-				EE560C3EA182159E0DA61DF7CBAD19E2 /* Pods_TripleR.framework */,
+				94EA39BD664E421B1768DD691A468611 /* EMTNeumorphicLayer.swift */,
+				D7C359C281EA5F8E614B8F064777A85D /* EMTNeumorphicView.swift */,
+				00A8F5EA3CB8AAFE6EC7FF4C980B305E /* UIColor+tool.swift */,
+				8D80D3B7D7E38E0ABC6EF3715869115C /* Support Files */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		65D3A1A89D76DADB7A8967D4818F44E3 /* EMTNeumorphicView */ = {
-			isa = PBXGroup;
-			children = (
-				55939485D68804709A5A814988EC44EE /* EMTNeumorphicLayer.swift */,
-				358E3D1DDD10D6BD17B0A9024CD3C158 /* EMTNeumorphicView.swift */,
-				EDC06128CF105EB7A9D99718A7D96781 /* UIColor+tool.swift */,
-				A5536C7942A2FF46C0402DBB79E55F5E /* Support Files */,
-			);
+			name = EMTNeumorphicView;
 			path = EMTNeumorphicView;
 			sourceTree = "<group>";
 		};
@@ -163,46 +169,46 @@
 			path = "Target Support Files/Pods-TripleR";
 			sourceTree = "<group>";
 		};
-		A5536C7942A2FF46C0402DBB79E55F5E /* Support Files */ = {
+		8A1DCFF5E3B4E81C41DC0F777062A817 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				912CECDBB64DE42C2B513DDDD8CA7E86 /* EMTNeumorphicView.modulemap */,
-				9B7DCB34827AB39EB41F44599BAA042B /* EMTNeumorphicView-dummy.m */,
-				8EE7E3AA2639C04FEE50EE3048127279 /* EMTNeumorphicView-Info.plist */,
-				964F8292BEF3AE4581C6B8FA47DA100D /* EMTNeumorphicView-prefix.pch */,
-				28DACAAF9BB41A7D3D7306A6E3FA9F91 /* EMTNeumorphicView-umbrella.h */,
-				5CA458EABC21EC6AABACCBED20C894BD /* EMTNeumorphicView.debug.xcconfig */,
-				47DFFBEF1ABE6BCD373CAF137DB3478D /* EMTNeumorphicView.release.xcconfig */,
+				D1CB15732E60D2D450C1B670E1D014E4 /* CheckboxList.modulemap */,
+				0847229A3F7C8B31F7A98B562BCA63AD /* CheckboxList-dummy.m */,
+				ADEB35B7C17CB87ECACF09F24BE939F1 /* CheckboxList-Info.plist */,
+				B8700A05C5935E68EB3548E7697AE0D6 /* CheckboxList-prefix.pch */,
+				8491F872E480B0C905B319F1AEB8DCA8 /* CheckboxList-umbrella.h */,
+				E84CBF73DB255B732DCF40D12DCC117D /* CheckboxList.debug.xcconfig */,
+				1952B480801605475CAF09DA8AD514B2 /* CheckboxList.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CheckboxList";
+			sourceTree = "<group>";
+		};
+		8D80D3B7D7E38E0ABC6EF3715869115C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				136E5E4E98E6D330D4D2FEC2EDD32F1D /* EMTNeumorphicView.modulemap */,
+				2A0A0CD89CDBDF773B8144B015751DDB /* EMTNeumorphicView-dummy.m */,
+				AD777EF9A276C1CD600447E2100CEDBE /* EMTNeumorphicView-Info.plist */,
+				9BDA344A3C30F2D992656CCB47A609E5 /* EMTNeumorphicView-prefix.pch */,
+				8C56C469EFD0F385BFB9E1CF35120C06 /* EMTNeumorphicView-umbrella.h */,
+				220E04F133F8E98EF5958B28F0A7D8BF /* EMTNeumorphicView.debug.xcconfig */,
+				DC1629E567A22D59FAA6C7D178E62A25 /* EMTNeumorphicView.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/EMTNeumorphicView";
 			sourceTree = "<group>";
 		};
-		A6FFF3F2339A4C226B830F870D6834E2 /* Support Files */ = {
+		B21A23F7173E0C091A7DAF55F1516D19 /* CheckboxList */ = {
 			isa = PBXGroup;
 			children = (
-				2ED5B6020260906A10028C8B5F435B41 /* OBShapedButton.modulemap */,
-				A2D475E38196D0B2D8EF9853026E51B2 /* OBShapedButton-dummy.m */,
-				075C0720A898CC9428DD3D12EE282897 /* OBShapedButton-Info.plist */,
-				4127B80FF1C2BAE8F54B9007CF09DCEA /* OBShapedButton-prefix.pch */,
-				4A1326393E4CA32F309A2F462EC6B99A /* OBShapedButton-umbrella.h */,
-				2D4A0691B022B0D0DCC89A95406A728A /* OBShapedButton.debug.xcconfig */,
-				AF85D7630253D3F3972EF5F1E33C7FAB /* OBShapedButton.release.xcconfig */,
+				48C0495ECF686446DA2E1A332C51AE32 /* CheckBoxButton.swift */,
+				6721864BE348D400952BD42B239FF5B3 /* ChecklistView.swift */,
+				0E64B689AD70E777F13E8C9F6826A745 /* Resources */,
+				8A1DCFF5E3B4E81C41DC0F777062A817 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/OBShapedButton";
-			sourceTree = "<group>";
-		};
-		B92E2DB5DFBBE1C06B046C1A8E0F6D3F /* OBShapedButton */ = {
-			isa = PBXGroup;
-			children = (
-				83243B85430533F86BB847F817D8164F /* OBShapedButton.h */,
-				E67BE6EE8F02B441B0FB252D9B6F26FA /* OBShapedButton.m */,
-				2127949ADF8E4752408250A4038196FB /* UIImage+ColorAtPixel.h */,
-				87E70E522DBAA1CBFAA21B6AF097674C /* UIImage+ColorAtPixel.m */,
-				A6FFF3F2339A4C226B830F870D6834E2 /* Support Files */,
-			);
-			path = OBShapedButton;
+			name = CheckboxList;
+			path = CheckboxList;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -218,8 +224,8 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				1E601C4EC28D77795771827C725F27C5 /* Pods */,
-				4E49D34436812F27C7402A040FFF097E /* Products */,
+				47F81C6EE3BD4E470752D46BE930C5EF /* Pods */,
+				F073B1CE3519078A30C1C4A2826228DA /* Products */,
 				0CC6E1D10CC59F2FA6579BF9284226EE /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -232,16 +238,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F073B1CE3519078A30C1C4A2826228DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				641CD93EEAD5A9E017DB04ABB47FC5A8 /* CheckboxList.framework */,
+				4CDC562046A208F477B625D5AE67795F /* EMTNeumorphicView.framework */,
+				EE560C3EA182159E0DA61DF7CBAD19E2 /* Pods_TripleR.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		51C1FE895C40B7228E27AA57B69263AB /* Headers */ = {
+		7E04D538471069BF9B39BD7100F13ACF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B50EE964B236B6D68A63FEE0E2726D6A /* OBShapedButton-umbrella.h in Headers */,
-				24E44C948C5DA035DD9B220EDDFF97A1 /* OBShapedButton.h in Headers */,
-				F2C6C2ECF5FE6EC66FF9FD81EC1B15D5 /* UIImage+ColorAtPixel.h in Headers */,
+				FA52CA4A2917C3474862C518F673827E /* Pods-TripleR-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,53 +267,53 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ED4F4EC708C26EFD005694ED3FD401D1 /* Headers */ = {
+		B57A11C5DBFCBE973F44F7E09572C369 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8B9BB70D761EA7BC26D0F3E2B421496 /* Pods-TripleR-umbrella.h in Headers */,
+				F7A15E61DBE3E403B5F330B42ED3B36A /* CheckboxList-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3B4497ED99C1D2F2CB9CE9ADE068BED6 /* OBShapedButton */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D23F97049201B8A19C412B180AC184EB /* Build configuration list for PBXNativeTarget "OBShapedButton" */;
-			buildPhases = (
-				51C1FE895C40B7228E27AA57B69263AB /* Headers */,
-				CE8671C04C78A366FCFA26F87EE84E59 /* Sources */,
-				CFA543B2FBB1C22EFCFC78A9D8A2E864 /* Frameworks */,
-				9CD684BE03B5B41116B3228631AD59B1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = OBShapedButton;
-			productName = OBShapedButton;
-			productReference = 8ACAD6A55BCD28211DA4D150B779C24D /* OBShapedButton.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		4BF1B6C72FDEBC16DEE544037B9EA124 /* Pods-TripleR */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F54299388AC202E7A1FB71C77C9E9E65 /* Build configuration list for PBXNativeTarget "Pods-TripleR" */;
+			buildConfigurationList = 3F2EE4FEEBC2C82A210D38D4BA98407A /* Build configuration list for PBXNativeTarget "Pods-TripleR" */;
 			buildPhases = (
-				ED4F4EC708C26EFD005694ED3FD401D1 /* Headers */,
-				250BA52B176847E731B81AACEB73088E /* Sources */,
-				D9D1D83EE347B4880EE213D78629406B /* Frameworks */,
-				C5BD33936BF27FC598D1D0696D954A32 /* Resources */,
+				7E04D538471069BF9B39BD7100F13ACF /* Headers */,
+				1E645AD7DE5DB1AA2AF5E7DD9A63CD94 /* Sources */,
+				1D73AAC7E1E24E5B4BC8A6723AF1C1B0 /* Frameworks */,
+				90DB86AB3AEA2F359FECC50B3E8C9452 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				630A79F05016CB470B8B5138C47D76BF /* PBXTargetDependency */,
-				CF40A8B57F475996BEEE253C29714FCA /* PBXTargetDependency */,
+				9692FE656D34266FA699BD9FB7EC191D /* PBXTargetDependency */,
+				B7C0EF7D06B9A7BCC55D4991CA1D30FA /* PBXTargetDependency */,
 			);
 			name = "Pods-TripleR";
 			productName = "Pods-TripleR";
 			productReference = EE560C3EA182159E0DA61DF7CBAD19E2 /* Pods_TripleR.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8AB2851D0CC817A0400EA3416629E73B /* CheckboxList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0F116664E9A3D7601033D84AD15BF08 /* Build configuration list for PBXNativeTarget "CheckboxList" */;
+			buildPhases = (
+				B57A11C5DBFCBE973F44F7E09572C369 /* Headers */,
+				E1F0C77900806C9E8DACC7E1DFC9F312 /* Sources */,
+				DF229F3BC0FA2FEEC67DC318F26B0CA1 /* Frameworks */,
+				4E2A9E5D0BA6CDBD3E79951593AE7D74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CheckboxList;
+			productName = CheckboxList;
+			productReference = 641CD93EEAD5A9E017DB04ABB47FC5A8 /* CheckboxList.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		8CE6EE7AB67EEDB2785C26554B4B516A /* EMTNeumorphicView */ = {
@@ -327,7 +341,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 10.0";
@@ -338,12 +352,12 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 4E49D34436812F27C7402A040FFF097E /* Products */;
+			productRefGroup = F073B1CE3519078A30C1C4A2826228DA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				8AB2851D0CC817A0400EA3416629E73B /* CheckboxList */,
 				8CE6EE7AB67EEDB2785C26554B4B516A /* EMTNeumorphicView */,
-				3B4497ED99C1D2F2CB9CE9ADE068BED6 /* OBShapedButton */,
 				4BF1B6C72FDEBC16DEE544037B9EA124 /* Pods-TripleR */,
 			);
 		};
@@ -357,14 +371,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9CD684BE03B5B41116B3228631AD59B1 /* Resources */ = {
+		4E2A9E5D0BA6CDBD3E79951593AE7D74 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFECD36D3CEDA58D3DF11742E2487210 /* CheckedBox.png in Resources */,
+				500B07CE9EE36D3BA1C3512E3B473DD9 /* CheckedCircle.png in Resources */,
+				C80B404E2CDBED8D28FAFB1E334551A2 /* UncheckedBox.png in Resources */,
+				9D53A9BD0D2AA11E532C3397CD8D774B /* UncheckedCircle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C5BD33936BF27FC598D1D0696D954A32 /* Resources */ = {
+		90DB86AB3AEA2F359FECC50B3E8C9452 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -374,11 +392,11 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		250BA52B176847E731B81AACEB73088E /* Sources */ = {
+		1E645AD7DE5DB1AA2AF5E7DD9A63CD94 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				178BAF16C456636DF8ABBC1E0D43B44B /* Pods-TripleR-dummy.m in Sources */,
+				CE664A2B9D795A01504452EE35F209D1 /* Pods-TripleR-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,240 +411,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE8671C04C78A366FCFA26F87EE84E59 /* Sources */ = {
+		E1F0C77900806C9E8DACC7E1DFC9F312 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				538893C9BDF97E07E76C758B4F9A2879 /* OBShapedButton-dummy.m in Sources */,
-				EC2B8B333D397666C2F53E627C610D91 /* OBShapedButton.m in Sources */,
-				FFFFE834B4C96891559E6F19A0770EBE /* UIImage+ColorAtPixel.m in Sources */,
+				7EF653B5DF860C0B10F256F54F85B576 /* CheckBoxButton.swift in Sources */,
+				66F83B49D0DF51C4BEB39A73C980603D /* CheckboxList-dummy.m in Sources */,
+				EFCBB2D903D449E88FA3965F1BA794A6 /* ChecklistView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		630A79F05016CB470B8B5138C47D76BF /* PBXTargetDependency */ = {
+		9692FE656D34266FA699BD9FB7EC191D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CheckboxList;
+			target = 8AB2851D0CC817A0400EA3416629E73B /* CheckboxList */;
+			targetProxy = 72BFD623337F09E21CBC1ED09D1FA54E /* PBXContainerItemProxy */;
+		};
+		B7C0EF7D06B9A7BCC55D4991CA1D30FA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = EMTNeumorphicView;
 			target = 8CE6EE7AB67EEDB2785C26554B4B516A /* EMTNeumorphicView */;
-			targetProxy = 86B1C87387B89DFF112864C4587B8936 /* PBXContainerItemProxy */;
-		};
-		CF40A8B57F475996BEEE253C29714FCA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = OBShapedButton;
-			target = 3B4497ED99C1D2F2CB9CE9ADE068BED6 /* OBShapedButton */;
-			targetProxy = A672602B3F02D0E8BCF8CA964B12743A /* PBXContainerItemProxy */;
+			targetProxy = 4E74D17F07369470789F9F3631921BD7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1422B121EAEAEA11307496903FA623C6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		1B832A7447B7943EE5C2AAF7E00B77BB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 47DFFBEF1ABE6BCD373CAF137DB3478D /* EMTNeumorphicView.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/EMTNeumorphicView/EMTNeumorphicView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/EMTNeumorphicView/EMTNeumorphicView-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/EMTNeumorphicView/EMTNeumorphicView.modulemap";
-				PRODUCT_MODULE_NAME = EMTNeumorphicView;
-				PRODUCT_NAME = EMTNeumorphicView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		546ECCC49F145090003D4D7F90D8E02D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF85D7630253D3F3972EF5F1E33C7FAB /* OBShapedButton.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/OBShapedButton/OBShapedButton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/OBShapedButton/OBShapedButton-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/OBShapedButton/OBShapedButton.modulemap";
-				PRODUCT_MODULE_NAME = OBShapedButton;
-				PRODUCT_NAME = OBShapedButton;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		699DF1E26EDF219886EF1885F7B1CB71 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D4A0691B022B0D0DCC89A95406A728A /* OBShapedButton.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/OBShapedButton/OBShapedButton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/OBShapedButton/OBShapedButton-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/OBShapedButton/OBShapedButton.modulemap";
-				PRODUCT_MODULE_NAME = OBShapedButton;
-				PRODUCT_NAME = OBShapedButton;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8AA5928660F19331B6B079E8AE42FF9A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5CA458EABC21EC6AABACCBED20C894BD /* EMTNeumorphicView.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/EMTNeumorphicView/EMTNeumorphicView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/EMTNeumorphicView/EMTNeumorphicView-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/EMTNeumorphicView/EMTNeumorphicView.modulemap";
-				PRODUCT_MODULE_NAME = EMTNeumorphicView;
-				PRODUCT_NAME = EMTNeumorphicView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C171A988DF52BB41109E62E4D03FE9A3 /* Release */ = {
+		00804A22C779687178BC8A73526B5767 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A25C99E45B9A7431AF7A7D76C81AF8A8 /* Pods-TripleR.release.xcconfig */;
 			buildSettings = {
@@ -665,6 +478,248 @@
 			};
 			name = Release;
 		};
+		1422B121EAEAEA11307496903FA623C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		1B832A7447B7943EE5C2AAF7E00B77BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC1629E567A22D59FAA6C7D178E62A25 /* EMTNeumorphicView.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/EMTNeumorphicView/EMTNeumorphicView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EMTNeumorphicView/EMTNeumorphicView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/EMTNeumorphicView/EMTNeumorphicView.modulemap";
+				PRODUCT_MODULE_NAME = EMTNeumorphicView;
+				PRODUCT_NAME = EMTNeumorphicView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8AA5928660F19331B6B079E8AE42FF9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 220E04F133F8E98EF5958B28F0A7D8BF /* EMTNeumorphicView.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/EMTNeumorphicView/EMTNeumorphicView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EMTNeumorphicView/EMTNeumorphicView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/EMTNeumorphicView/EMTNeumorphicView.modulemap";
+				PRODUCT_MODULE_NAME = EMTNeumorphicView;
+				PRODUCT_NAME = EMTNeumorphicView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9D1236CAB5D1DBDE83B34E66006116B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1952B480801605475CAF09DA8AD514B2 /* CheckboxList.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CheckboxList/CheckboxList-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CheckboxList/CheckboxList-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CheckboxList/CheckboxList.modulemap";
+				PRODUCT_MODULE_NAME = CheckboxList;
+				PRODUCT_NAME = CheckboxList;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9F9D10927942C62BD557F68B2EA3D049 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E84CBF73DB255B732DCF40D12DCC117D /* CheckboxList.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CheckboxList/CheckboxList-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CheckboxList/CheckboxList-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CheckboxList/CheckboxList.modulemap";
+				PRODUCT_MODULE_NAME = CheckboxList;
+				PRODUCT_NAME = CheckboxList;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B0A1676CFFA677448ADB3B1662E654D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C9332D7716C20B58F11BCD40A4D85B5 /* Pods-TripleR.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TripleR/Pods-TripleR-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TripleR/Pods-TripleR.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		ED7888FA6713EABBF66D26A8003AD1CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -691,7 +746,6 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -730,47 +784,18 @@
 			};
 			name = Debug;
 		};
-		FE529FAA5974B6235D24B35301A7F9C4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C9332D7716C20B58F11BCD40A4D85B5 /* Pods-TripleR.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-TripleR/Pods-TripleR-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TripleR/Pods-TripleR.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3F2EE4FEEBC2C82A210D38D4BA98407A /* Build configuration list for PBXNativeTarget "Pods-TripleR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0A1676CFFA677448ADB3B1662E654D2 /* Debug */,
+				00804A22C779687178BC8A73526B5767 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -789,20 +814,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D23F97049201B8A19C412B180AC184EB /* Build configuration list for PBXNativeTarget "OBShapedButton" */ = {
+		A0F116664E9A3D7601033D84AD15BF08 /* Build configuration list for PBXNativeTarget "CheckboxList" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				699DF1E26EDF219886EF1885F7B1CB71 /* Debug */,
-				546ECCC49F145090003D4D7F90D8E02D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F54299388AC202E7A1FB71C77C9E9E65 /* Build configuration list for PBXNativeTarget "Pods-TripleR" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FE529FAA5974B6235D24B35301A7F9C4 /* Debug */,
-				C171A988DF52BB41109E62E4D03FE9A3 /* Release */,
+				9F9D10927942C62BD557F68B2EA3D049 /* Debug */,
+				9D1236CAB5D1DBDE83B34E66006116B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="19E287" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CheckListItem" representedClassName="CheckListItem" syncable="YES" codeGenerationType="class">
+        <attribute name="isChecked" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="name" attributeType="String" defaultValueString=""/>
+        <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IncidentDescription" inverseName="item" inverseEntity="IncidentDescription"/>
+    </entity>
+    <entity name="IncidentDescription" representedClassName="IncidentDescription" syncable="YES" codeGenerationType="class">
+        <attribute name="address" optional="YES" attributeType="String" defaultValueString="Address"/>
+        <attribute name="city" optional="YES" attributeType="String" defaultValueString="City"/>
+        <attribute name="comments" optional="YES" attributeType="String" defaultValueString="Additional Comments"/>
+        <attribute name="state" optional="YES" attributeType="String" defaultValueString="State"/>
+        <relationship name="item" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CheckListItem" inverseName="relationship" inverseEntity="CheckListItem"/>
+    </entity>
+    <entity name="OfficerDescription" representedClassName="OfficerDescription" syncable="YES" codeGenerationType="class">
+        <attribute name="agency" optional="YES" attributeType="String" defaultValueString="Agency"/>
+        <attribute name="badgeNum" optional="YES" attributeType="Integer 32" usesScalarValueType="YES"/>
+        <attribute name="comments" optional="YES" attributeType="String" defaultValueString="Additional Comments"/>
+        <attribute name="eyeColor" optional="YES" attributeType="String" defaultValueString="Eye Color"/>
+        <attribute name="hairColor" optional="YES" attributeType="String" defaultValueString="Hair Color"/>
+        <attribute name="licensePlate" optional="YES" attributeType="String" defaultValueString="License Plate Number"/>
+        <attribute name="name" optional="YES" attributeType="String" defaultValueString="Name"/>
+        <attribute name="unifOrPlain" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="VictimInfo" representedClassName="VictimInfo" syncable="YES" codeGenerationType="class">
+        <attribute name="gender" optional="YES" attributeType="String"/>
+        <attribute name="race" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="WitnessInfo" representedClassName="WitnessInfo" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="phoneNum" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="OfficerDescription" positionX="-5926.96484375" positionY="-18143.796875" width="128" height="163"/>
+        <element name="IncidentDescription" positionX="-5724.93359375" positionY="-18130.1875" width="128" height="118"/>
+        <element name="CheckListItem" positionX="-5562.76171875" positionY="-17791.98046875" width="128" height="88"/>
+        <element name="WitnessInfo" positionX="-6308.76171875" positionY="-18116.46484375" width="128" height="73"/>
+        <element name="VictimInfo" positionX="-6136.91796875" positionY="-18115.28125" width="128" height="73"/>
+    </elements>
+</model>
