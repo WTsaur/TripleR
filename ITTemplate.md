@@ -1,8 +1,6 @@
-# <div align="center"> Software Implementation and Testing Document 
-
-## For Group 6
-### Version 1.0
-</div>
+# <div align="center"> Software Implementation and Testing Document </div>
+## <div align="center"> For Group 6 </div>
+ ### <div align="center"> Version 1.0 </div>
 
 
 #### <div align="center"> Authors: </div>
