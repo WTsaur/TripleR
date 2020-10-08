@@ -5,7 +5,7 @@
 
 
 
-#### Authors: 
+<div align="center"> #### Authors: </div>
 <div align="center"> 
 
 Melissa Ma
