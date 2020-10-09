@@ -15,9 +15,19 @@ Rachael Scott
 Orlando Lewis</div>
 
 #### Programming Languages (5 points)
-List the programming languages use in your project, where you use them (what components of your project) and your reason for choosing them (whatever that may be). 
+- Python: along with python we are using flask for the API because of its lightweight structure and python is a language that is easier to understand amongst all. Pairing python database development is also easy to navigate. 
+- Swift: XCode on MacOS. We use this for the front-end development of the TripleR app. We chose this language because a large portion of us were familiar with XCode and mobile app development on iOS. We all also have iOS devices to implement testing in later iterations.
+
 #### Platforms, APIs, Databases, and other technologies used (5 points) 
-List all the platforms, APIs, Databases, and any other technologies you use in your project and where you use them (in what components of your project).
+- Azure Devops:  We use Azure for its server to host the API. It can be accessed from Microsoft Azure site.
+- MongoDB: NoSql Database located on the MongoDb site.
+- Flask: back-end development web framework for API. 
+- XCode: front-end development and deployment in simulated iPhones. 
+- iPhone: testing platform.
+- Cocoapods: CheckboxList and EMTNeumorphicView
+- EMTNeumorphicView is used on the Report, Rights, and Record button to apply a neumorphic design to the buttons
+- CheckboxList will be used in the Report under the Description of Incident section to provide a checklist for actions that the officer took (identified themselves, use force, draw or use weapon, etc.)
+
 #### Execution-based Functional Testing (10 points)
 Describe how/if you performed functional testing for your project (i.e., tested for the functional requirements listed in your RD). 
 #### Execution-based Non-Functional Testing (10 points)
