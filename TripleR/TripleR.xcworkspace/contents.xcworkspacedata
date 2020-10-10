@@ -4,7 +4,10 @@
    <FileRef
       location = "group:TripleR.xcodeproj">
    </FileRef>
+<<<<<<< HEAD
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
+=======
+>>>>>>> master
 </Workspace>
