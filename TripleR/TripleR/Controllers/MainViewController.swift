@@ -7,14 +7,13 @@
 //
 
 import UIKit
-import CoreLocation
 import AVKit
 import AVFoundation
 import MobileCoreServices
+import EMTNeumorphicView
 
 class MainViewController: UIViewController {
     
-//    let locationManager = CLLocationManager()
     var mediaController = UIImagePickerController()
     let fileName = "/video.mp4"
     
@@ -23,6 +22,8 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    
+        
         
 //        recordingSession = AVAudioSession.sharedInstance()
 //
@@ -46,19 +47,9 @@ class MainViewController: UIViewController {
 //        vidPerm = requestMicrophonePermission()
 //        audPerm = requestVideoPermission()
         
-//        locationManager.delegate = self
-//        locationManager.requestWhenInUseAuthorization()
-//
-//        locationManager.requestLocation()
-//        //OR
-//        locationManager.startUpdatingLocation()
-    }
+}
     
-    @IBAction func recordButtonPressed(_ sender: UIButton) {
-        //open camera or start a voice recording
-        
-        //Maybe have setting for user preference on taking video or recording audio
-        
+    @IBAction func recordButtonPressed(_ sender: EMTNeumorphicButton) {
         let vidPerm = requestMediaPermission(for: .video)
         let audPerm = requestMediaPermission(for: .audio)
         
@@ -69,22 +60,8 @@ class MainViewController: UIViewController {
         } else {
             // Permissions not granted
         }
-        
     }
     
-    /* Maybe don't need the 3 functions below */
-    
-    @IBAction func settingsButtonPressed(_ sender: UIButton) {
-        //code
-    }
-    
-    @IBAction func rightsButtonPressed(_ sender: UIButton) {
-        //code
-    }
-    
-    @IBAction func reportButtonPressed(_ sender: UIButton) {
-        //code
-    }
     
     //MARK: - Capture Media
     
@@ -116,6 +93,7 @@ class MainViewController: UIViewController {
         case .restricted:
             return res
         case .denied:
+            
             return res
         @unknown default:
             fatalError()
@@ -137,26 +115,12 @@ class MainViewController: UIViewController {
 
 // MARK: - UIImagePickerControllerDelegate
 extension MainViewController: UIImagePickerControllerDelegate {
-    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+    }
 }
 
 // MARK: - UINavigationControllerDelegate
 extension MainViewController: UINavigationControllerDelegate {
-
+    
 }
-
-
-//MARK: - CLLocationManagerDelegate
-
-//extension MainViewController: CLLocationManagerDelegate {
-//    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-//        if let loc = locations.last {
-//            let lat = loc.coordinate.latitude
-//            let long = loc.coordinate.longitude
-//        }
-//    }
-//
-//    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-//        print(error)
-//    }
-//}

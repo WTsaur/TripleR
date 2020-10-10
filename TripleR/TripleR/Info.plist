@@ -2,14 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>This allows us to ensure that the location of the incident is accurate in the reports as well as give you accurate information regarding your state-specific rights.</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>This allows you to record audio during an incident.</string>
-	<key>NSCameraUsageDescription</key>
-	<string>This allows you to record video during an incident.</string>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>This allows us to save audio and video recordings to your photo library.</string>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -28,6 +24,12 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>This allows you to record video during an incident.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>This allows us to ensure that the location of the incident is accurate in the reports as well as give you accurate information regarding your state-specific rights.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>This allows us to save audio and video recordings to your photo library.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -55,6 +57,8 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleDarkContent</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
