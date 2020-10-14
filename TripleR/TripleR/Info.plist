@@ -27,7 +27,7 @@
 	<key>NSCameraUsageDescription</key>
 	<string>This allows you to record video during an incident.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>This allows us to ensure that the location of the incident is accurate in the reports as well as give you accurate information regarding your state-specific rights.</string>
+	<string>This allows us to autofill in the location, date, and time.</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>This allows us to save audio and video recordings to your photo library.</string>
 	<key>UIApplicationSceneManifest</key>

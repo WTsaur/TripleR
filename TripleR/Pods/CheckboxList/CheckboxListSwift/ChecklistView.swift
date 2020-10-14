@@ -70,7 +70,7 @@ open class ChecklistView: UIView {
     
     - parameter sender: the button pressed
     */
-    func exclusiveToggle(_ sender: AnyObject){
+    @objc func exclusiveToggle(_ sender: AnyObject){
         for aButton in buttons{
             aButton.turnOff()
         }

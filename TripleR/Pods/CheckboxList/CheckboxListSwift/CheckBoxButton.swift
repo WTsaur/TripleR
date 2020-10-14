@@ -58,7 +58,7 @@ class CheckBoxButton: UIButton {
     
     - parameter sender: always self
     */
-    func toggle(_ sender: AnyObject){
+    @objc func toggle(_ sender: AnyObject){
         if isOn == true{
             turnOff()
         }

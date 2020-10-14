@@ -15,32 +15,20 @@ class ReportViewController: UIViewController {
     
     let categoryRowHeight: CGFloat = 80
     
-    var categorySelected: ReportCategory?
+    let catSegueId = [
+        "goToOffDesc",
+        "goToIncDesc",
+        "goToWitInfo",
+        "goToVicInfo"
+    ]
+    
+//    var categorySelected: ReportCategory?
     
     let reportCategories = [
-        ReportCategory(title: K.offD, fields: [
-            Field(text: ["Name", "Badge Number"], type: K.doubleTFC),
-            Field(text: ["License Plate Number", "Officer Agency"], type: K.doubleTFC),
-            Field(text: ["Hair Color", "Eye Color"], type: K.doubleTFC),
-            Field(text: [""], type: K.segC),
-            Field(text: ["Additional Comments"], type: K.textC)
-        ]),
-        ReportCategory(title: K.incD, fields: [
-            Field(text: [""], type: K.dateC),
-            Field(text: [""], type: K.timeC),
-            Field(text: ["State", "City"], type: K.doubleTFC),
-            Field(text: ["Address"], type: K.singleTFC),
-            Field(text: [""], type: K.checkC),
-            Field(text: ["Additional Comments"], type: K.textC)
-        ]),
-        ReportCategory(title: K.witInf, fields: [
-            Field(text: ["Email", "Phone Number"], type: K.doubleTFC),
-            Field(text: ["Additional Comments"], type: K.textC),
-        ]),
-        ReportCategory(title: K.vicInf, fields: [
-            Field(text: ["Race", "Gender"], type: K.doubleTFC),
-            Field(text: ["Additional Comments"], type: K.textC)
-        ])
+        K.offD,
+        K.incD,
+        K.witInf,
+        K.vicInf
     ]
     
     override func viewDidLoad() {
@@ -54,11 +42,6 @@ class ReportViewController: UIViewController {
     
         self.dismiss(animated: true, completion: nil)
     
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! ReportFieldsViewController
-        vc.selectedCategory = categorySelected
     }
     
     /*
@@ -91,14 +74,14 @@ extension ReportViewController: UITableViewDelegate, UITableViewDataSource {
         
         cell.textLabel?.textColor = K.customGray
         cell.textLabel?.font = UIFont(name: "Hiragino Sans W7", size: 15)
-        cell.textLabel?.text = category.title
+        cell.textLabel?.text = category
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        categorySelected = reportCategories[indexPath.row]
-        performSegue(withIdentifier: "goToFields", sender: self)
+        let segueId = catSegueId[indexPath.row]
+        performSegue(withIdentifier: segueId, sender: self)
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
