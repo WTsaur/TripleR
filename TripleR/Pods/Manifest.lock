@@ -1,20 +1,26 @@
 PODS:
-  - CheckboxList (1.0.2)
   - EMTNeumorphicView (1.0.4)
+  - Realm (5.0.3):
+    - Realm/Headers (= 5.0.3)
+  - Realm/Headers (5.0.3)
+  - RealmSwift (5.0.3):
+    - Realm (= 5.0.3)
 
 DEPENDENCIES:
-  - CheckboxList
   - EMTNeumorphicView
+  - RealmSwift
 
 SPEC REPOS:
   trunk:
-    - CheckboxList
     - EMTNeumorphicView
+    - Realm
+    - RealmSwift
 
 SPEC CHECKSUMS:
-  CheckboxList: 08627283f4b543d8aa902616c5f79f87b813800f
   EMTNeumorphicView: cb5e92953e43b1872ab47fefd451a9ce0c16fc77
+  Realm: bfca1699b61b0b17c3a69ae0e648314eae91fbdb
+  RealmSwift: 493c9f089cd3893b3959007973c0e4f640906ba0
 
-PODFILE CHECKSUM: 946870bc089d68cfee9474908ca17f21cfa81d01
+PODFILE CHECKSUM: 6fbc3ad6d0be3bae0d51ee14bddef5f7847e1768
 
 COCOAPODS: 1.9.3

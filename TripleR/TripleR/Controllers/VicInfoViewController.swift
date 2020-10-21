@@ -7,20 +7,59 @@
 //
 
 import UIKit
+import RealmSwift
 
 class VicInfoViewController: UIViewController {
     @IBOutlet weak var raceField: UITextField!
     @IBOutlet weak var genderField: UITextField!
     @IBOutlet weak var commentTextView: UITextView!
     
+    let realm = try! Realm()
+    
+    var data: VicInfoData = VicInfoData()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        super.hideKeyboardWhenTappedAround()
+        
+        loadData()
         // Do any additional setup after loading the view.
     }
     
     @IBAction func backButtonPressed(_ sender: UIButton) {
+        saveData()
+        let vc = ReportViewController()
+        vc.vicInfoData = data
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    func isFormComplete() -> Bool {
+        if raceField.text == "" || genderField.text == "" {
+            return false
+        } else {
+            return true
+        }
+    }
+    
+    func loadData() {
+        data = realm.objects(VicInfoData.self).first ?? VicInfoData()
+        raceField.text = data.race
+        genderField.text = data.gender
+        commentTextView.text = data.addComments
+    }
+    
+    func saveData() {
+        do {
+            try realm.write {
+                data.race = raceField.text ?? ""
+                data.gender = genderField.text ?? ""
+                data.addComments = commentTextView.text ?? ""
+                data.formIsComplete = isFormComplete()
+                realm.add(data)
+            }
+        } catch {
+            print("Error saving Victim Information Data \(error)")
+        }
     }
     
     /*
@@ -34,3 +73,4 @@ class VicInfoViewController: UIViewController {
     */
 
 }
+

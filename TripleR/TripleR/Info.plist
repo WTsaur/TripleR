@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>This allows you to record audio during an incident.</string>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 	<key>CFBundleDevelopmentRegion</key>
@@ -24,12 +22,14 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>This allows us to save media that you have recorded onto your phone.</string>
 	<key>NSCameraUsageDescription</key>
 	<string>This allows you to record video during an incident.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>This allows us to autofill in the location, date, and time.</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>This allows us to save audio and video recordings to your photo library.</string>
+	<string>This allows us to save video recordings to your photo library.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

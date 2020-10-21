@@ -4,7 +4,7 @@ target 'TripleR' do
   use_frameworks!
 
   # Pods for TripleR
-  pod 'CheckboxList'
+  pod 'RealmSwift'
   pod 'EMTNeumorphicView'
   # pod 'RealmSwift'
 

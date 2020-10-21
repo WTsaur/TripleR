@@ -15,48 +15,20 @@ import EMTNeumorphicView
 class MainViewController: UIViewController {
     
     var mediaController = UIImagePickerController()
-    let fileName = "/video.mp4"
     
     var recordingSession: AVAudioSession!
     var audioRecorder: AVAudioRecorder!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
         
-        
-//        recordingSession = AVAudioSession.sharedInstance()
-//
-//        do {
-//            try recordingSession.setCategory(.playAndRecord, mode: .default)
-//            try recordingSession.setActive(true)
-//            recordingSession.requestRecordPermission() { [unowned self] allowed in
-//                DispatchQueue.main.async {
-//                    if allowed {
-//                        self.loadRecordingUI()
-//                    } else {
-//                        // failed to record!
-//                    }
-//                }
-//            }
-//        } catch {
-//            // failed to record!
-//        }
-        
-        
-//        vidPerm = requestMicrophonePermission()
-//        audPerm = requestVideoPermission()
-        
-}
+    }
     
     @IBAction func recordButtonPressed(_ sender: EMTNeumorphicButton) {
         let vidPerm = requestMediaPermission(for: .video)
-        let audPerm = requestMediaPermission(for: .audio)
         
         if vidPerm == true {
             recordVideo()
-        } else if audPerm == true {
-            //setupCaptureSession(for: .audio)
         } else {
             // Permissions not granted
         }
