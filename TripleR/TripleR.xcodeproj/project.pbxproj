@@ -28,8 +28,8 @@
 		6FC81216252DA078003DF4DE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC81215252DA078003DF4DE /* Constants.swift */; };
 		7EA3E332E19635B65CE740BE /* Pods_TripleR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4DCAAADFDBC13A04E6DDDA /* Pods_TripleR.framework */; };
 		A1F65CC2254203A50044949E /* FLRightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F65CC1254203A50044949E /* FLRightsViewController.swift */; };
-		A1F65CC6254204710044949E /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F65CC5254204700044949E /* TipsViewController.swift */; };
-		A1F65CCA254204D00044949E /* ResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F65CC9254204D00044949E /* ResourcesViewController.swift */; };
+		A1F65CCE254224C10044949E /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F65CCD254224C10044949E /* TipsViewController.swift */; };
+		A1F65CD32542252E0044949E /* ResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F65CD22542252E0044949E /* ResourcesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,8 +57,8 @@
 		7B4DCAAADFDBC13A04E6DDDA /* Pods_TripleR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TripleR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B6AA26B62E413073076F9FA /* Pods-TripleR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripleR.debug.xcconfig"; path = "Target Support Files/Pods-TripleR/Pods-TripleR.debug.xcconfig"; sourceTree = "<group>"; };
 		A1F65CC1254203A50044949E /* FLRightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLRightsViewController.swift; sourceTree = "<group>"; };
-		A1F65CC5254204700044949E /* TipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsViewController.swift; sourceTree = "<group>"; };
-		A1F65CC9254204D00044949E /* ResourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesViewController.swift; sourceTree = "<group>"; };
+		A1F65CCD254224C10044949E /* TipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsViewController.swift; sourceTree = "<group>"; };
+		A1F65CD22542252E0044949E /* ResourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesViewController.swift; sourceTree = "<group>"; };
 		EE7E69C2FA02E2AB793847DC /* Pods-TripleR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripleR.release.xcconfig"; path = "Target Support Files/Pods-TripleR/Pods-TripleR.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,8 +130,8 @@
 				6FA5F0B325355F6A00FFC2AB /* OffDescViewController.swift */,
 				6F7F97BF25117E010030237D /* RightsViewController.swift */,
 				A1F65CC1254203A50044949E /* FLRightsViewController.swift */,
-				A1F65CC5254204700044949E /* TipsViewController.swift */,
-				A1F65CC9254204D00044949E /* ResourcesViewController.swift */,
+				A1F65CCD254224C10044949E /* TipsViewController.swift */,
+				A1F65CD22542252E0044949E /* ResourcesViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -292,9 +292,8 @@
 				6FA5F0B425355F6A00FFC2AB /* OffDescViewController.swift in Sources */,
 				6FA5F0BA25355FBA00FFC2AB /* IncDescViewController.swift in Sources */,
 				6FA5F0D3253EB4B100FFC2AB /* OffDescData.swift in Sources */,
-				A1F65CC6254204710044949E /* TipsViewController.swift in Sources */,
-				A1F65CCA254204D00044949E /* ResourcesViewController.swift in Sources */,
 				6F7F97A6251060DD0030237D /* AppDelegate.swift in Sources */,
+				A1F65CD32542252E0044949E /* ResourcesViewController.swift in Sources */,
 				6FA5F0DA253EB4CC00FFC2AB /* WitInfoData.swift in Sources */,
 				6F7F97A8251060DD0030237D /* SceneDelegate.swift in Sources */,
 				6F7F97BE25117DEC0030237D /* ReportViewController.swift in Sources */,
@@ -302,6 +301,7 @@
 				6F7F97C225117EFB0030237D /* MainViewController.swift in Sources */,
 				6F7F97BC25117DD00030237D /* SettingsViewController.swift in Sources */,
 				6F7F97C025117E010030237D /* RightsViewController.swift in Sources */,
+				A1F65CCE254224C10044949E /* TipsViewController.swift in Sources */,
 				6FC81216252DA078003DF4DE /* Constants.swift in Sources */,
 				6FA5F0CE253EB20800FFC2AB /* IncDescData.swift in Sources */,
 				6FA5F0D7253EB4C000FFC2AB /* VicInfoData.swift in Sources */,

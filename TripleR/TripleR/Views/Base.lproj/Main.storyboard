@@ -385,8 +385,15 @@
                                 <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FLORIDA RIGHTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6s-l4-KFF">
+                                <rect key="frame" x="126" y="55" width="163" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="17"/>
+                                <color key="textColor" red="0.40712030440414504" green="0.19714705344281111" blue="0.18413794160449945" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Iw-Pa-nfX">
-                                <rect key="frame" x="20" y="47" width="43" height="36"/>
+                                <rect key="frame" x="20" y="44" width="43" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="19"/>
                                 <state key="normal" title="Back">
@@ -397,13 +404,6 @@
                                     <action selector="backButtonPressed:" destination="NCs-C2-Mmx" eventType="touchUpInside" id="jq6-pX-ADx"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FLORIDA RIGHTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6s-l4-KFF">
-                                <rect key="frame" x="126" y="55" width="163" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="17"/>
-                                <color key="textColor" red="0.40712030440414504" green="0.19714705344281111" blue="0.18413794160449945" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kQ1-4K-ceq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1092,10 +1092,32 @@
         <!--ResourcesViewController-->
         <scene sceneID="sG0-wE-aAR">
             <objects>
-                <viewController id="scT-Kh-1Gr" userLabel="ResourcesViewController" customClass="ResourcesViewController" customModule="TripleR" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="scT-Kh-1Gr" userLabel="ResourcesViewController" customClass="ResourcesViewController" customModule="TripleR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b8y-rJ-cnt">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VaL-pq-WKl">
+                                <rect key="frame" x="20" y="44" width="43" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="19"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.62436548219999999" green="0.62436548219999999" blue="0.62436548219999999" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="Tfq-FJ-CeT" eventType="touchUpInside" id="1ac-F7-xCZ"/>
+                                    <action selector="backButtonPressed:" destination="scT-Kh-1Gr" eventType="touchUpInside" id="A6V-hk-Fac"/>
+                                    <action selector="backButtonPressed:" destination="NCs-C2-Mmx" eventType="touchUpInside" id="jNB-8x-N6M"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RESOURCES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1A-em-iJT">
+                                <rect key="frame" x="147" y="52" width="120" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="17"/>
+                                <color key="textColor" red="0.40712030440000002" green="0.19714705339999999" blue="0.18413794159999999" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6vA-rX-PB8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -1107,13 +1129,36 @@
         <!--TipsViewController-->
         <scene sceneID="fsZ-Vb-7mB">
             <objects>
-                <viewController id="Kgc-De-tp7" userLabel="TipsViewController" customClass="TipsViewController" customModule="TripleR" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="TipsViewController" modalPresentationStyle="fullScreen" id="Kgc-De-tp7" userLabel="TipsViewController" customClass="TipsViewController" customModule="TripleR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xwt-Ti-4Ct">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7SV-t1-qhJ">
+                                <rect key="frame" x="20" y="44" width="43" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="19"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.62436548219999999" green="0.62436548219999999" blue="0.62436548219999999" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="Kgc-De-tp7" eventType="touchUpInside" id="EAy-sP-xt8"/>
+                                    <action selector="backButtonPressed:" destination="Tfq-FJ-CeT" eventType="touchUpInside" id="Rhu-D5-y7n"/>
+                                    <action selector="backButtonPressed:" destination="NCs-C2-Mmx" eventType="touchUpInside" id="fi5-cH-E7y"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TIPS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dTN-1e-CPX">
+                                <rect key="frame" x="185" y="52" width="44" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="17"/>
+                                <color key="textColor" red="0.40712030440000002" green="0.19714705339999999" blue="0.18413794159999999" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ZfH-cu-2nF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pxA-HX-qdU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
