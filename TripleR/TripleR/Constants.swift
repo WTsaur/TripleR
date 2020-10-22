@@ -15,4 +15,9 @@ struct K {
     static let incD = "Description of Incident"
     static let witInf = "Witness Information"
     static let vicInf = "Victim Information"
+    
+    static let rcatC = "rightsCategoryCell"
+    static let flR = "Florida Rights"
+    static let tips = "Tips"
+    static let resources = "Resources"
 }
