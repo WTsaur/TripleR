@@ -22,14 +22,16 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>NSAppleMusicUsageDescription</key>
-	<string>This allows us to save media that you have recorded onto your phone.</string>
-	<key>NSCameraUsageDescription</key>
-	<string>This allows you to record video during an incident.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>This allows us to autofill in the location, date, and time.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>This allows you to record video during an incident.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>This allows you to record sound while recording videos.</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>This allows us to save video recordings to your photo library.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>This allows us to access your photo library so that you can choose a video that you would like to upload.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

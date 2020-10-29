@@ -16,61 +16,52 @@ class MainViewController: UIViewController {
     
     var mediaController = UIImagePickerController()
     
-    var recordingSession: AVAudioSession!
-    var audioRecorder: AVAudioRecorder!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        mediaController.delegate = self
+        mediaController.allowsEditing = false
+        mediaController.mediaTypes = [kUTTypeMovie as String]
+        mediaController.sourceType = .camera
     }
     
     @IBAction func recordButtonPressed(_ sender: EMTNeumorphicButton) {
-        let vidPerm = requestMediaPermission(for: .video)
-        
-        if vidPerm == true {
-            recordVideo()
-        } else {
-            // Permissions not granted
-        }
-    }
-    
-    
-    //MARK: - Capture Media
-    
-    func recordVideo() {
-        if UIImagePickerController.isSourceTypeAvailable(.camera) {
-            mediaController.sourceType = .camera
-            mediaController.mediaTypes = [kUTTypeMovie as String]
-            mediaController.delegate = self
+        //check app permissions for camera, microphone, and photo library
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerController.SourceType.camera) {
             present(mediaController, animated: true, completion: nil)
         } else {
-            //camera is unavailable
+            //camera unavailable
+        }
+        
+        let authVidStatus = AVCaptureDevice.authorizationStatus(for: .video)
+        let authMicStatus = AVCaptureDevice.authorizationStatus(for: .audio)
+        
+        if authVidStatus == .denied || authMicStatus == .denied {
+            dismiss(animated: true) {
+                self.permissionAlert()
+            }
         }
     }
     
-    //MARK: - Request Permissions
-    
-    func requestMediaPermission(for mediaType: AVMediaType) -> Bool {
-        var res = false
-        switch AVCaptureDevice.authorizationStatus(for: mediaType) {
-            case .authorized: // The user has previously granted access to the camera.
-                res = true
-            
-            case .notDetermined: // The user has not yet been asked for camera access.
-                AVCaptureDevice.requestAccess(for: mediaType) { granted in
-                    if granted {
-                        res = true
-                    }
-            }
-        case .restricted:
-            return res
-        case .denied:
-            
-            return res
-        @unknown default:
-            fatalError()
+    func permissionAlert() {
+        let okAction = UIAlertAction(title: "Ok", style: .default) { (action) in
+            // do nothing
         }
-        return res
+        
+        let permissionAlert = UIAlertController(title: "Permission Error", message: "This feature requires permission to access your phone's camera, microphone, and photo library. Please navigate to your phone's settings for TripleR and update the app's permissions.", preferredStyle: .alert)
+        
+        permissionAlert.addAction(okAction)
+        
+        self.present(permissionAlert, animated: true)
+
+    }
+    
+    func presentRecorderView() {
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerController.SourceType.camera) {
+            present(mediaController, animated: true, completion: nil)
+        } else {
+            //camera unavailable
+        }
     }
     
     /*
@@ -88,7 +79,12 @@ class MainViewController: UIViewController {
 // MARK: - UIImagePickerControllerDelegate
 extension MainViewController: UIImagePickerControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        
+        dismiss(animated: true, completion: nil)
+        let videoURL = info[.mediaURL] as? URL
+        let path = videoURL?.path
+        if path != nil {
+            UISaveVideoAtPathToSavedPhotosAlbum(path!, nil, nil, nil)
+        }
     }
 }
 
