@@ -11,7 +11,6 @@ import CollapsibleTableSectionViewController
 
 class FLRightsViewController:  CollapsibleTableSectionViewController {
     
-    @IBOutlet weak var tableView: UITableView!
     let sections: [Section] = rightsData
 
     override func viewDidLoad() {
@@ -22,7 +21,6 @@ class FLRightsViewController:  CollapsibleTableSectionViewController {
     @IBAction func backButtonPressed(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
-    
 }
     
     
