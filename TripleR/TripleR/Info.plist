@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIViewControllerBasedStatusBarAppearance</key>
-	<false/>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -22,10 +20,10 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>This allows us to autofill in the location, date, and time.</string>
 	<key>NSCameraUsageDescription</key>
 	<string>This allows you to record video during an incident.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>This allows us to autofill in the location, date, and time.</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>This allows you to record sound while recording videos.</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
@@ -72,5 +70,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
 </dict>
 </plist>
