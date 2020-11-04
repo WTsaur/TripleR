@@ -6,7 +6,6 @@ target 'TripleR' do
   # Pods for TripleR
   pod 'RealmSwift'
   pod 'EMTNeumorphicView'
-  pod 'CollapsibleTableSectionViewController',  '~> 2.0.1'  
-# pod 'RealmSwift'
+  pod 'CollapsibleTableSectionViewController',  '~> 2.0.1' 
 
 end

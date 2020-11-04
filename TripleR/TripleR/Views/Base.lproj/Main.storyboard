@@ -47,8 +47,8 @@
                                                     <segue destination="axd-cn-343" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="pbp-8Y-Dv7"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGU-8z-URd">
-                                                <rect key="frame" x="123" y="35" width="168" height="90"/>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGU-8z-URd">
+                                                <rect key="frame" x="113.66666666666669" y="35" width="187" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="sGU-8z-URd" secondAttribute="height" multiplier="187:100" id="VD3-8I-nos"/>
                                                 </constraints>
