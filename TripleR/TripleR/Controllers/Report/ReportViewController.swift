@@ -41,20 +41,28 @@ class ReportViewController: UIViewController {
         }
     }
     
+    var videoData: VideoData? {
+        didSet {
+            saveData()
+        }
+    }
+    
     let categoryRowHeight: CGFloat = 80
     
     let catSegueId = [
         "goToOffDesc",
         "goToIncDesc",
         "goToWitInfo",
-        "goToVicInfo"
+        "goToVicInfo",
+        "goToAddVid"
     ]
     
     let reportCategories = [
         K.offD,
         K.incD,
         K.witInf,
-        K.vicInf
+        K.vicInf,
+        K.addVid
     ]
     
     override func viewDidLoad() {
@@ -71,39 +79,47 @@ class ReportViewController: UIViewController {
     }
     
     @IBAction func submitReportButtonPressed(_ sender: UIButton) {
-        //witness information form will be an optional form
-        
-        loadData()
-        
-        var alert: UIAlertController?
-        
-        if offDescData!.formIsComplete && incDescData!.formIsComplete && vicInfoData!.formIsComplete {
-            
-            let cancelAction = UIAlertAction(title: "cancel", style: .cancel) { (action) in
-                // do nothing
-            }
-            
-            let submitAction = UIAlertAction(title: "submit", style: .default) { (action) in
-                // send data to mongoDB
-            }
-            
-            alert = UIAlertController(title: "Report Confirmation", message: "Are you sure you would like to submit your report?", preferredStyle: .alert)
-            
-            alert?.addAction(cancelAction)
-            alert?.addAction(submitAction)
-        
-        } else {    //send alert saying that not all required portions of the form have been filled out
-            
-            let okAction = UIAlertAction(title: "Ok",
-                                    style: .default) { (action) in
-                // Respond to user selection of the action.
-            }
-            
-            alert = UIAlertController(title: "Uh oh!", message: "Not all required report forms have been properly completed.", preferredStyle: .alert)
-         
-            alert!.addAction(okAction)
+        if realm.isEmpty {
+            formFillErrorAlert()
+            return
+        } else {
+            loadData()
         }
         
+        if offDescData!.formIsComplete && incDescData!.formIsComplete && vicInfoData!.formIsComplete {
+            submitConfirmAlert()
+        } else {    //send alert saying that not all required portions of the form have been filled out
+            formFillErrorAlert()
+        }
+    }
+    
+    func submitConfirmAlert() {
+        var alert: UIAlertController?
+        let cancelAction = UIAlertAction(title: "cancel", style: .cancel) { (action) in
+            // do nothing
+        }
+        
+        let submitAction = UIAlertAction(title: "submit", style: .default) { (action) in
+            // send data to mongoDB
+        }
+        
+        alert = UIAlertController(title: "Report Confirmation", message: "Are you sure you would like to submit your report?", preferredStyle: .alert)
+        
+        alert?.addAction(cancelAction)
+        alert?.addAction(submitAction)
+        present(alert!, animated: true)
+    }
+    
+    func formFillErrorAlert() {
+        var alert: UIAlertController?
+        let okAction = UIAlertAction(title: "Ok",
+                                style: .default) { (action) in
+            // Respond to user selection of the action.
+        }
+        
+        alert = UIAlertController(title: "Uh oh!", message: "Not all required report forms have been properly completed.", preferredStyle: .alert)
+     
+        alert!.addAction(okAction)
         present(alert!, animated: true)
     }
     
@@ -113,10 +129,15 @@ class ReportViewController: UIViewController {
         }
         
         let deleteAction = UIAlertAction(title: "Reset", style: .destructive) { (action) in
-            let confirmAction = UIAlertAction(title: "Confirm", style: .destructive) { (resetAction) in
+            let confirmAction = UIAlertAction(title: "Confirm", style: .destructive) { [self] (resetAction) in
                 do {
                     try self.realm.write {
-                        self.realm.deleteAll()
+                        realm.deleteAll()
+//                        realm.add(OffDescData())
+//                        realm.add(IncDescData())
+//                        realm.add(WitInfoData())
+//                        realm.add(VicInfoData())
+//                        realm.add(VideoData())
                     }
                 } catch {
                     print("Could not delete Realm data \(error)")
@@ -152,6 +173,9 @@ class ReportViewController: UIViewController {
         witInfoData = dataWit
         let dataVic = realm.objects(VicInfoData.self).first ?? VicInfoData()
         vicInfoData = dataVic
+        let dataVid = realm.objects(VideoData.self).first ?? VideoData()
+        videoData = dataVid
+        print(videoData?.url ?? "nil")
     }
     
     func saveData() {
@@ -161,6 +185,7 @@ class ReportViewController: UIViewController {
                 realm.add(incDescData ?? IncDescData())
                 realm.add(witInfoData ?? WitInfoData())
                 realm.add(vicInfoData ?? VicInfoData())
+                realm.add(videoData ?? VideoData())
             }
         } catch {
             print("Error saving form Data \(error)")

@@ -14,7 +14,9 @@ class SettingsViewController: UIViewController {
 
     let sectionHeaderHeight: CGFloat = 45
     
-    let settingsData = [
+    let defaults = UserDefaults.standard
+    
+    var settingsData: [(header: String, item: [String])] = [
         (header: "Permissions",
          item: [
             "Camera Access",
@@ -82,20 +84,28 @@ extension SettingsViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "settingCell", for: indexPath)
+        let settingDesc = settingsData[indexPath.section].item[indexPath.row]
         cell.textLabel?.lineBreakMode = .byWordWrapping
         cell.textLabel?.adjustsFontSizeToFitWidth = true
         cell.textLabel?.numberOfLines = 2
         cell.textLabel?.textColor = K.customGray
         cell.textLabel?.font = UIFont(name: "Hiragino Sans W7", size: 12)
-        cell.textLabel?.text = settingsData[indexPath.section].item[indexPath.row]
+        cell.textLabel?.text = settingDesc
         
         let uiSwitch = UISwitch()
-        uiSwitch.isOn = false;
+        let status = defaults.bool(forKey: settingDesc)
+        uiSwitch.isOn = status;
         uiSwitch.onTintColor = K.customGreen
         uiSwitch.thumbTintColor = K.customGray
         cell.accessoryView = uiSwitch
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath)
+        let prevState = defaults.bool(forKey: cell?.textLabel?.text ?? "")
+        defaults.setValue(!prevState, forKey: cell?.textLabel?.text ?? "")
     }
     
 }

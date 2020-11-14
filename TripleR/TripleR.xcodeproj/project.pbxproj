@@ -15,6 +15,8 @@
 		6F7F97BE25117DEC0030237D /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7F97BD25117DEC0030237D /* ReportViewController.swift */; };
 		6F7F97C025117E010030237D /* RightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7F97BF25117E010030237D /* RightsViewController.swift */; };
 		6F7F97C225117EFB0030237D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7F97C125117EFB0030237D /* MainViewController.swift */; };
+		6F91FD02255B51320020AB7A /* AddVidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F91FD01255B51320020AB7A /* AddVidViewController.swift */; };
+		6F91FD05255F66080020AB7A /* VideoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F91FD04255F66080020AB7A /* VideoData.swift */; };
 		6FA0DA382518553700B591D4 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6FA0DA3525184D0D00B591D4 /* Pacifico-Regular.ttf */; };
 		6FA5F0B425355F6A00FFC2AB /* OffDescViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA5F0B325355F6A00FFC2AB /* OffDescViewController.swift */; };
 		6FA5F0B725355FAD00FFC2AB /* WitInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA5F0B625355FAD00FFC2AB /* WitInfoViewController.swift */; };
@@ -45,6 +47,8 @@
 		6F7F97BD25117DEC0030237D /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		6F7F97BF25117E010030237D /* RightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightsViewController.swift; sourceTree = "<group>"; };
 		6F7F97C125117EFB0030237D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		6F91FD01255B51320020AB7A /* AddVidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVidViewController.swift; sourceTree = "<group>"; };
+		6F91FD04255F66080020AB7A /* VideoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoData.swift; sourceTree = "<group>"; };
 		6FA0DA3525184D0D00B591D4 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
 		6FA5F0B325355F6A00FFC2AB /* OffDescViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffDescViewController.swift; sourceTree = "<group>"; };
 		6FA5F0B625355FAD00FFC2AB /* WitInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitInfoViewController.swift; sourceTree = "<group>"; };
@@ -156,6 +160,7 @@
 				6FA5F0D2253EB4B100FFC2AB /* OffDescData.swift */,
 				6FA5F0D6253EB4C000FFC2AB /* VicInfoData.swift */,
 				6FA5F0D9253EB4CC00FFC2AB /* WitInfoData.swift */,
+				6F91FD04255F66080020AB7A /* VideoData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -181,6 +186,7 @@
 				6FA5F0BC25355FC700FFC2AB /* VicInfoViewController.swift */,
 				6FA5F0B625355FAD00FFC2AB /* WitInfoViewController.swift */,
 				6FA5F0B325355F6A00FFC2AB /* OffDescViewController.swift */,
+				6F91FD01255B51320020AB7A /* AddVidViewController.swift */,
 			);
 			path = Report;
 			sourceTree = "<group>";
@@ -320,6 +326,8 @@
 				A1F65CD32542252E0044949E /* ResourcesViewController.swift in Sources */,
 				6FA5F0DA253EB4CC00FFC2AB /* WitInfoData.swift in Sources */,
 				6F7F97A8251060DD0030237D /* SceneDelegate.swift in Sources */,
+				6F91FD05255F66080020AB7A /* VideoData.swift in Sources */,
+				6F91FD02255B51320020AB7A /* AddVidViewController.swift in Sources */,
 				6F7F97BE25117DEC0030237D /* ReportViewController.swift in Sources */,
 				A1F65CC2254203A50044949E /* FLRightsViewController.swift in Sources */,
 				6F7F97C225117EFB0030237D /* MainViewController.swift in Sources */,
