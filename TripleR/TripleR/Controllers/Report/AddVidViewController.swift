@@ -11,6 +11,7 @@ import AVKit
 import MobileCoreServices
 import Photos
 import RealmSwift
+import EMTNeumorphicView
 
 class AddVidViewController: UIViewController {
     
@@ -40,6 +41,12 @@ class AddVidViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func unattachVideoButtonPressed(_ sender: EMTNeumorphicButton) {
+        url = ""
+        saveData()
+        vidAddedImageStatus.image = UIImage(systemName: "xmark")
+        vidAddedImageStatus.tintColor = K.customRed
+    }
     @IBAction func backButtonPressed(_ sender: UIButton) {
         saveData()
         let vc = ReportViewController()

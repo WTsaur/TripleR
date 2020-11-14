@@ -1057,14 +1057,28 @@
                                 <rect key="frame" x="20" y="297.66666666666669" width="374" height="301"/>
                                 <color key="tintColor" red="1" green="0.41176470588235292" blue="0.38823529411764707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TIv-k9-PUE" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="20" y="826" width="374" height="36"/>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="19"/>
+                                <state key="normal" title="Unattach Video">
+                                    <color key="titleColor" red="0.62436548219999999" green="0.62436548219999999" blue="0.62436548219999999" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetFormsButtonPressed:" destination="Be7-Zs-FFG" eventType="touchUpInside" id="t2f-7G-ATU"/>
+                                    <action selector="unattachVideoButtonPressed:" destination="PsC-7T-mZr" eventType="touchUpInside" id="sBT-GU-M51"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="daA-wz-A2h"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="daA-wz-A2h" firstAttribute="trailing" secondItem="vai-eX-tQ8" secondAttribute="trailing" constant="20" id="6JR-Vl-jyV"/>
                             <constraint firstItem="uiI-XH-HLK" firstAttribute="top" secondItem="daA-wz-A2h" secondAttribute="top" constant="5" id="79j-LZ-7Yl"/>
+                            <constraint firstItem="TIv-k9-PUE" firstAttribute="leading" secondItem="daA-wz-A2h" secondAttribute="leading" constant="20" id="930-eb-1er"/>
+                            <constraint firstItem="TIv-k9-PUE" firstAttribute="top" secondItem="vai-eX-tQ8" secondAttribute="bottom" constant="225" id="Bib-7c-dc4"/>
                             <constraint firstItem="6Rr-Vc-4aC" firstAttribute="centerX" secondItem="vvK-3H-nb1" secondAttribute="centerX" id="GOC-Tw-HBP"/>
                             <constraint firstItem="vai-eX-tQ8" firstAttribute="centerX" secondItem="vvK-3H-nb1" secondAttribute="centerX" id="IQV-nO-Xy3"/>
+                            <constraint firstItem="daA-wz-A2h" firstAttribute="trailing" secondItem="TIv-k9-PUE" secondAttribute="trailing" constant="20" id="NZO-Q7-efc"/>
                             <constraint firstItem="Zec-Yx-pzo" firstAttribute="top" secondItem="daA-wz-A2h" secondAttribute="top" constant="5" id="Oc9-Ka-eRi"/>
                             <constraint firstItem="vai-eX-tQ8" firstAttribute="centerY" secondItem="vvK-3H-nb1" secondAttribute="centerY" id="Pvc-j3-FdC"/>
                             <constraint firstItem="daA-wz-A2h" firstAttribute="trailing" secondItem="Zec-Yx-pzo" secondAttribute="trailing" constant="20" id="QX1-Te-nWn"/>
@@ -1072,6 +1086,7 @@
                             <constraint firstItem="6Rr-Vc-4aC" firstAttribute="top" secondItem="daA-wz-A2h" secondAttribute="top" constant="13" id="Xl0-jm-z1y"/>
                             <constraint firstItem="uiI-XH-HLK" firstAttribute="leading" secondItem="daA-wz-A2h" secondAttribute="leading" constant="20" id="bX2-nF-GKI"/>
                             <constraint firstItem="vai-eX-tQ8" firstAttribute="leading" secondItem="daA-wz-A2h" secondAttribute="leading" constant="20" id="gtS-bB-TIG"/>
+                            <constraint firstItem="TIv-k9-PUE" firstAttribute="bottom" secondItem="daA-wz-A2h" secondAttribute="bottom" id="shm-KQ-uEU"/>
                             <constraint firstItem="vai-eX-tQ8" firstAttribute="top" secondItem="uiI-XH-HLK" secondAttribute="bottom" constant="211" id="ybL-wo-hWa"/>
                         </constraints>
                     </view>
