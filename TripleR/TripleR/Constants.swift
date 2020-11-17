@@ -18,4 +18,7 @@ struct K {
     static let flR = "Florida Rights"
     static let tips = "Tips"
     static let resources = "Resources"
+    
+    static let lockDev = "Lock Device After Record"
+    static let shareLoc = "Share Location When Record"
 }

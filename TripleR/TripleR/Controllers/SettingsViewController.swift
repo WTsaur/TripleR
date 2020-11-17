@@ -7,39 +7,130 @@
 //
 
 import UIKit
+import CoreLocation
+import AVFoundation
+import Photos
 
 class SettingsViewController: UIViewController {
-    
-    @IBOutlet weak var settingsTableView: UITableView!
 
     let sectionHeaderHeight: CGFloat = 45
+    @IBOutlet weak var camSwitch: UISwitch!
+    @IBOutlet weak var locSwitch: UISwitch!
+    @IBOutlet weak var photoLibSwitch: UISwitch!
+    @IBOutlet weak var micSwitch: UISwitch!
+    @IBOutlet weak var lockDevSwitch: UISwitch!
+    @IBOutlet weak var shareLocSwitch: UISwitch!
     
     let defaults = UserDefaults.standard
     
-    var settingsData: [(header: String, item: [String])] = [
-        (header: "Permissions",
-         item: [
-            "Camera Access",
-            "Location Services",
-            "Photo Library Access"
-        ]),
-        (header: "Other Features",
-         item: [
-            "Lock device when a recording is stopped",
-            "Share location to specified contacts when a recording is started"
-        ])
-    ]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        settingsTableView.delegate = self
-        settingsTableView.dataSource = self
+
+        let locStatus = CLLocationManager.authorizationStatus()
+        if locStatus == .authorizedAlways || locStatus == .authorizedWhenInUse {
+            locSwitch.isOn = true
+        } else {
+            locSwitch.isOn = false
+        }
+        var phStatus: PHAuthorizationStatus?
+        if #available(iOS 14, *) {
+            phStatus = PHPhotoLibrary.authorizationStatus(for: PHAccessLevel.addOnly)
+        } else {
+            // Fallback on earlier versions
+        }
+        if phStatus == PHAuthorizationStatus.authorized {
+            photoLibSwitch.isOn = true
+        } else {
+            photoLibSwitch.isOn = false
+        }
+
+        camSwitch.isOn = checkMediaStatus(for: .video)
+        micSwitch.isOn = checkMediaStatus(for: .audio)
+        lockDevSwitch.isOn = defaults.bool(forKey: K.lockDev)
+        shareLocSwitch.isOn = defaults.bool(forKey: K.shareLoc)
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func cameraSwitchToggled(_ sender: UISwitch) {
+        alert()
+        if sender.isOn {
+            sender.setOn(false, animated: true)
+        } else {
+            sender.setOn(true, animated: true)
+        }
+    }
+    
+    @IBAction func locationSwitchToggled(_ sender: UISwitch) {
+        alert()
+        if sender.isOn {
+            sender.setOn(false, animated: true)
+        } else {
+            sender.setOn(true, animated: true)
+        }
+    }
+    
+    @IBAction func phSwitchToggled(_ sender: UISwitch) {
+        alert()
+        if sender.isOn {
+            sender.setOn(false, animated: true)
+        } else {
+            sender.setOn(true, animated: true)
+        }
+    }
+    @IBAction func microphoneSwitchToggled(_ sender: UISwitch) {
+        alert()
+        if sender.isOn {
+            sender.setOn(false, animated: true)
+        } else {
+            sender.setOn(true, animated: true)
+        }
+    }
+    
+    @IBAction func lockSwitchToggled(_ sender: UISwitch) {
+        defaults.set(sender.isOn, forKey: K.lockDev)
+    }
+    
+    @IBAction func shareLocSwitchToggled(_ sender: UISwitch) {
+        defaults.set(sender.isOn, forKey: K.shareLoc)
     }
     
     @IBAction func homeButtonPressed(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    func alert() {
+        var alert: UIAlertController?
+        
+        let okAction = UIAlertAction(title: "Cancel", style: .cancel) { (action) in
+            // do nothing
+        }
+        
+        let settingsAction = UIAlertAction(title: "Settings", style: .default) { (_) -> Void in
+
+            guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else {
+                return
+            }
+
+            if UIApplication.shared.canOpenURL(settingsUrl) {
+                UIApplication.shared.open(settingsUrl, completionHandler: { (success) in
+                    //print("Settings opened: \(success)")
+                })
+            }
+        }
+        
+        alert = UIAlertController(title: "Go To Settings?", message: "In order to change these settings, we will take you to your device's settings where you can update TripleR's permissions.", preferredStyle: .alert)
+        
+        alert?.addAction(settingsAction)
+        alert?.addAction(okAction)
+        present(alert!, animated: true)
+    }
+    
+    func checkMediaStatus(for: AVMediaType) -> Bool {
+        if AVCaptureDevice.authorizationStatus(for: .audio) == AVAuthorizationStatus.authorized {
+            return true
+        } else {
+            return false
+        }
     }
     
     /*
@@ -52,60 +143,4 @@ class SettingsViewController: UIViewController {
     }
     */
 
-}
-
-extension SettingsViewController: UITableViewDataSource, UITableViewDelegate {
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return settingsData.count
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return settingsData[section].item.count
-    }
-    
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return sectionHeaderHeight
-    }
-    
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let view = UIView(frame: CGRect(x: 0, y: 0, width: tableView.bounds.width, height: sectionHeaderHeight))
-        view.backgroundColor = .none
-
-        let label = UILabel(frame: CGRect(x: 15, y: 0, width: tableView.bounds.width - 30, height: sectionHeaderHeight))
-        label.font = UIFont.boldSystemFont(ofSize: 15)
-        label.textColor = UIColor.darkGray
-        label.text = settingsData[section].header
-        view.addSubview(label)
-        
-        return view
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "settingCell", for: indexPath)
-        let settingDesc = settingsData[indexPath.section].item[indexPath.row]
-        cell.textLabel?.lineBreakMode = .byWordWrapping
-        cell.textLabel?.adjustsFontSizeToFitWidth = true
-        cell.textLabel?.numberOfLines = 2
-        cell.textLabel?.textColor = K.customGray
-        cell.textLabel?.font = UIFont(name: "Hiragino Sans W7", size: 12)
-        cell.textLabel?.text = settingDesc
-        
-        let uiSwitch = UISwitch()
-        let status = defaults.bool(forKey: settingDesc)
-        uiSwitch.isOn = status;
-        uiSwitch.onTintColor = K.customGreen
-        uiSwitch.thumbTintColor = K.customGray
-        cell.accessoryView = uiSwitch
-        
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cell = tableView.cellForRow(at: indexPath)
-        let prevState = defaults.bool(forKey: cell?.textLabel?.text ?? "")
-        defaults.setValue(!prevState, forKey: cell?.textLabel?.text ?? "")
-    }
-    
 }
