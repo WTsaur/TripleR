@@ -24,12 +24,18 @@ A police misconduct reporting platform iOS app for users to share their experien
 ### Settings
     * See that status of the app's permissions to your device's hardware (Camera, Microphone, Location, Photo Library)
     * Enable/disable special application features
+![Settings Page](https://github.com/WTsaur/TripleR/blob/master/docImages/settingsPage.jpng)
 ### Record
     * Record videos with your main camera and save them to your photo library
+![Record View](https://github.com/WTsaur/TripleR/blob/master/docImages/recordView.jpng)
 ### Report
     * Fill out a form and attach a video to it to submit to our database of reports
+![Report Page](https://github.com/WTsaur/TripleR/blob/master/docImages/reportPage.jpng)
+![Report Section](https://github.com/WTsaur/TripleR/blob/master/docImages/reportSection.jpng)
 ### Rights
     * Learn about the rights that you have including state (Florida) specific rights as well as tips for dealing with encounters with the police
+![Rights Page](https://github.com/WTsaur/TripleR/blob/master/docImages/rightsPage.jpng)
+![Rights Section](https://github.com/WTsaur/TripleR/blob/master/docImages/rightsSection.jpng)
 
 ## Credits
 
