@@ -28,6 +28,7 @@
 		6FA5F0DA253EB4CC00FFC2AB /* WitInfoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA5F0D9253EB4CC00FFC2AB /* WitInfoData.swift */; };
 		6FB34E282516C70D00C66885 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FB34E272516C70D00C66885 /* Assets.xcassets */; };
 		6FC81216252DA078003DF4DE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC81215252DA078003DF4DE /* Constants.swift */; };
+		6FCBC44B2565CA3600172B3D /* formJsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCBC44A2565CA3600172B3D /* formJsonData.swift */; };
 		7EA3E332E19635B65CE740BE /* Pods_TripleR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4DCAAADFDBC13A04E6DDDA /* Pods_TripleR.framework */; };
 		A118D0E7254A3D5A0054375F /* RightsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A118D0E6254A3D5A0054375F /* RightsData.swift */; };
 		A118D0EA254A426C0054375F /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A118D0E9254A426C0054375F /* CustomCell.swift */; };
@@ -60,6 +61,7 @@
 		6FA5F0D9253EB4CC00FFC2AB /* WitInfoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitInfoData.swift; sourceTree = "<group>"; };
 		6FB34E272516C70D00C66885 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6FC81215252DA078003DF4DE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6FCBC44A2565CA3600172B3D /* formJsonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = formJsonData.swift; sourceTree = "<group>"; };
 		7B4DCAAADFDBC13A04E6DDDA /* Pods_TripleR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TripleR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B6AA26B62E413073076F9FA /* Pods-TripleR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripleR.debug.xcconfig"; path = "Target Support Files/Pods-TripleR/Pods-TripleR.debug.xcconfig"; sourceTree = "<group>"; };
 		A118D0E6254A3D5A0054375F /* RightsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightsData.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				6FA5F0D6253EB4C000FFC2AB /* VicInfoData.swift */,
 				6FA5F0D9253EB4CC00FFC2AB /* WitInfoData.swift */,
 				6F91FD04255F66080020AB7A /* VideoData.swift */,
+				6FCBC44A2565CA3600172B3D /* formJsonData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				A118D0EA254A426C0054375F /* CustomCell.swift in Sources */,
 				6FA5F0B425355F6A00FFC2AB /* OffDescViewController.swift in Sources */,
 				A118D0E7254A3D5A0054375F /* RightsData.swift in Sources */,
+				6FCBC44B2565CA3600172B3D /* formJsonData.swift in Sources */,
 				6FA5F0BA25355FBA00FFC2AB /* IncDescViewController.swift in Sources */,
 				6FA5F0D3253EB4B100FFC2AB /* OffDescData.swift in Sources */,
 				6F7F97A6251060DD0030237D /* AppDelegate.swift in Sources */,

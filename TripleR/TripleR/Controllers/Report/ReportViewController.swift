@@ -203,15 +203,36 @@ class ReportViewController: UIViewController {
         }
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func buttonPressed(_ sender: UIButton) {
+        pullRequest()
     }
-    */
+    
+    func pullRequest() {
+        if let url = URL(string: "https://triplerapi.azurewebsites.net/reports") {
+            let session = URLSession(configuration: .default)
+            
+            let task = session.dataTask(with: url) { (data, response, error) in
+                if error != nil {
+                    print(error as Any)
+                    return
+                }
+                if let safeData = data {
+                    self.parseJSON(reportData: safeData)
+                }
+            }
+            task.resume()
+        }
+    }
+    
+    func parseJSON(reportData: Data) {
+        let decoder = JSONDecoder()
+        do {
+            let decodedData = try decoder.decode(Reports.self, from: reportData)
+            print(decodedData.reports.first?.reported_by)
+        } catch {
+            print(error)
+        }
+    }
 
 }
 

@@ -501,6 +501,14 @@
                                     <action selector="resetFormsButtonPressed:" destination="Be7-Zs-FFG" eventType="touchUpInside" id="wAj-Y8-JcI"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58v-8b-032">
+                                <rect key="frame" x="152" y="57" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="Be7-Zs-FFG" eventType="touchUpInside" id="9nJ-Yt-nJh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="b6Y-r1-YvU"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
