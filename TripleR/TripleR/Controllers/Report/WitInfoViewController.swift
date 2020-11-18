@@ -34,10 +34,12 @@ class WitInfoViewController: UIViewController {
     }
     
     func loadData() {
-        data = realm.objects(WitInfoData.self).first ?? WitInfoData()
-        emailField.text = data.email
-        phoneNumField.text = data.phoneNum
-        commentTextView.text = data.addComments
+        if !realm.isEmpty {
+            data = realm.objects(WitInfoData.self).first ?? WitInfoData()
+            emailField.text = data.email
+            phoneNumField.text = data.phoneNum
+            commentTextView.text = data.addComments
+        }
     }
     
     func saveData() {

@@ -136,19 +136,34 @@ class IncDescViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     func loadData() {
-        data = realm.objects(IncDescData.self).first ?? IncDescData()
-        stateField.text  = data.state
-        cityField.text = data.city
-        addressField.text = data.address
-        identifyCB.isSelected = data.idCB
-        forceCB.isSelected = data.forceCB
-        yellCurseCB.isSelected = data.yellCB
-        commentCB.isSelected = data.commentCB
-        weaponCB.isSelected = data.weaponCB
-        citeReasonCB.isSelected = data.reasonCB
-        commentTextView.text = data.addComments
-        datePicker.date = data.date
-        timePicker.date = data.time
+        if !realm.isEmpty {
+            data = realm.objects(IncDescData.self).first ?? IncDescData()
+            stateField.text  = data.state
+            cityField.text = data.city
+            addressField.text = data.address
+            identifyCB.isSelected = data.idCB
+            forceCB.isSelected = data.forceCB
+            yellCurseCB.isSelected = data.yellCB
+            commentCB.isSelected = data.commentCB
+            weaponCB.isSelected = data.weaponCB
+            citeReasonCB.isSelected = data.reasonCB
+            commentTextView.text = data.addComments
+            datePicker.date = data.date
+            timePicker.date = data.time
+        } else {
+            stateField.text  = ""
+            cityField.text =  ""
+            addressField.text = ""
+            identifyCB.isSelected = false
+            forceCB.isSelected = false
+            yellCurseCB.isSelected = false
+            commentCB.isSelected = false
+            weaponCB.isSelected = false
+            citeReasonCB.isSelected = false
+            commentTextView.text = ""
+            datePicker.date = Date()
+            timePicker.date = Date()
+        }
     }
     
     func saveData() {

@@ -51,19 +51,21 @@ class OffDescViewController: UIViewController {
     }
     
     func loadData() {
-        data = realm.objects(OffDescData.self).first ?? OffDescData()
-        fNameField.text = data.firstName
-        lNameField.text = data.lastName
-        plateNumField.text = data.licensePlateNum
-        badgeNumField.text = data.badgeNum
-        offAgencyField.text = data.offAgency
-        hairColorField.text = data.hairColor
-        eyeColorField.text = data.eyeColor
-        raceField.text = data.race
-        genderField.text = data.gender
-        ageSegCtrl.selectedSegmentIndex = data.ageSegNum
-        clothesSegCtrl.selectedSegmentIndex = data.uniformed
-        commentsTextView.text = data.addComments
+        if !realm.isEmpty {
+            data = realm.objects(OffDescData.self).first ?? OffDescData()
+            fNameField.text = data.firstName
+            lNameField.text = data.lastName
+            plateNumField.text = data.licensePlateNum
+            badgeNumField.text = data.badgeNum
+            offAgencyField.text = data.offAgency
+            hairColorField.text = data.hairColor
+            eyeColorField.text = data.eyeColor
+            raceField.text = data.race
+            genderField.text = data.gender
+            ageSegCtrl.selectedSegmentIndex = data.ageSegNum
+            clothesSegCtrl.selectedSegmentIndex = data.uniformed
+            commentsTextView.text = data.addComments
+        }
     }
     
     func saveData() {

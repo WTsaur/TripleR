@@ -42,10 +42,12 @@ class VicInfoViewController: UIViewController {
     }
     
     func loadData() {
-        data = realm.objects(VicInfoData.self).first ?? VicInfoData()
-        raceField.text = data.race
-        genderField.text = data.gender
-        commentTextView.text = data.addComments
+        if !realm.isEmpty {
+            data = realm.objects(VicInfoData.self).first ?? VicInfoData()
+            raceField.text = data.race
+            genderField.text = data.gender
+            commentTextView.text = data.addComments
+        }
     }
     
     func saveData() {

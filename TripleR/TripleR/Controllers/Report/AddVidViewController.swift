@@ -55,8 +55,10 @@ class AddVidViewController: UIViewController {
     }
     
     func loadData() {
-        vidData = realm.objects(VideoData.self).first ?? VideoData()
-        url = vidData.url
+        if !realm.isEmpty {
+            vidData = realm.objects(VideoData.self).first ?? VideoData()
+            url = vidData.url
+        }
     }
     
     func saveData() {

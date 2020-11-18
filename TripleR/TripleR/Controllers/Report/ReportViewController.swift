@@ -15,7 +15,7 @@ class ReportViewController: UIViewController {
     
     @IBOutlet weak var reportTableView: UITableView!
     
-    let realm = try! Realm()
+    var realm = try! Realm()
     
     var offDescData: OffDescData? {
         didSet {
@@ -68,6 +68,8 @@ class ReportViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        realm.autorefresh = true
+        
         reportTableView.delegate = self
         reportTableView.dataSource = self
     }
@@ -101,6 +103,9 @@ class ReportViewController: UIViewController {
         
         let submitAction = UIAlertAction(title: "submit", style: .default) { (action) in
             // send data to mongoDB
+            
+            //reset forms
+            self.resetForms()
         }
         
         alert = UIAlertController(title: "Report Confirmation", message: "Are you sure you would like to submit your report?", preferredStyle: .alert)
@@ -130,18 +135,7 @@ class ReportViewController: UIViewController {
         
         let deleteAction = UIAlertAction(title: "Reset", style: .destructive) { (action) in
             let confirmAction = UIAlertAction(title: "Confirm", style: .destructive) { [self] (resetAction) in
-                do {
-                    try self.realm.write {
-                        realm.deleteAll()
-//                        realm.add(OffDescData())
-//                        realm.add(IncDescData())
-//                        realm.add(WitInfoData())
-//                        realm.add(VicInfoData())
-//                        realm.add(VideoData())
-                    }
-                } catch {
-                    print("Could not delete Realm data \(error)")
-                }
+                resetForms()
             }
             
             let denyAction = UIAlertAction(title: "Cancel", style: .cancel) { (cancelAction) in
@@ -189,6 +183,23 @@ class ReportViewController: UIViewController {
             }
         } catch {
             print("Error saving form Data \(error)")
+        }
+    }
+    
+    func resetForms() {
+        do {
+            try self.realm.write {
+                realm.deleteAll()
+            }
+        } catch {
+            print("Could not delete Realm data \(error)")
+        }
+        
+        var waitAlert: UIAlertController?
+        waitAlert = UIAlertController(title: "Just a second...", message: "Please wait as we clean up your forms.", preferredStyle: .alert)
+        self.present(waitAlert!, animated: true, completion: nil)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
+            waitAlert?.dismiss(animated: true, completion: nil)
         }
     }
     
