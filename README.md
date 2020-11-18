@@ -17,7 +17,7 @@ A police misconduct reporting platform iOS app for users to share their experien
 8. If Xcode gives an error saying that it "Could not launch TripleR", navigate to your device's Settings -> General -> Device Management -> Apple Development ->    Trust
 9. You can now open the application on your device
 
-![Screenshot](homePage.png)
+![Home Page](TripleR/docImages/homePage.png)
 
 ## Features
 
