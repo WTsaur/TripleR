@@ -102,10 +102,16 @@ class ReportViewController: UIViewController {
         }
         
         let submitAction = UIAlertAction(title: "submit", style: .default) { (action) in
-            // send data to mongoDB
+            // send data to database
+            self.uploadData()
             
-            //reset forms
-            self.resetForms()
+//            var waitAlert: UIAlertController?
+//            waitAlert = UIAlertController(title: "Just a second...", message: "Please wait as we upload your report to our database.", preferredStyle: .alert)
+//            self.present(waitAlert!, animated: true, completion: nil)
+//            DispatchQueue.main.asyncAfter(deadline: .now() + 6.0) {
+//                waitAlert?.dismiss(animated: true, completion: nil)
+//            }
+
         }
         
         alert = UIAlertController(title: "Report Confirmation", message: "Are you sure you would like to submit your report?", preferredStyle: .alert)
@@ -207,6 +213,8 @@ class ReportViewController: UIViewController {
         pullRequest()
     }
     
+//MARK: - Database GET and POST
+    
     func pullRequest() {
         if let url = URL(string: "https://triplerapi.azurewebsites.net/reports") {
             let session = URLSession(configuration: .default)
@@ -228,12 +236,67 @@ class ReportViewController: UIViewController {
         let decoder = JSONDecoder()
         do {
             let decodedData = try decoder.decode(Reports.self, from: reportData)
-            print(decodedData.reports.first?.reported_by)
+            print(decodedData.reports)
         } catch {
             print(error)
         }
     }
+    
+    func uploadData() {
+        //prepare data for upload via encoding
+        let encodedData = encodeData()
+        guard let uploadData = try? JSONEncoder().encode(encodedData) else { return }
+        
+        //configure upload request
+        let url = URL(string: "https://triplerapi.azurewebsites.net/report")
+        var request = URLRequest(url: url!)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-type")
+        
+        //create and start upload task
+        let task = URLSession.shared.uploadTask(with: request, from: uploadData) { data, response, error in
+            if error != nil {
+                print(error as Any)
+                return
+            }
+            
+            guard let response = response as? HTTPURLResponse, (200...299).contains(response.statusCode) else {
+                print("server error")
+                return
+            }
+            
+            if let mimeType = response.mimeType, mimeType == "application/json", let data = data, let dataString = String(data: data, encoding: .utf8) {
+                print("got data: \(dataString)")
+            }
+        }
+        task.resume()
+    }
+    
+    func encodeData() -> Report {
+        let repBy = UIDevice.current.identifierForVendor?.uuidString
 
+        let d = DateFormatter()
+        d.dateFormat = "yyyy-MM-dd"
+        let dateStr = d.string(from: incDescData!.date)
+
+        let t = DateFormatter()
+        t.dateFormat = "hh:mm:ss"
+        let timeStr = t.string(from: incDescData!.time)
+        
+        let inc = Incident(state: incDescData!.state, city: incDescData!.city, address: incDescData!.address, idCB: incDescData!.idCB, forceCB: incDescData!.forceCB, yellCB: incDescData!.yellCB, commentCB: incDescData!.commentCB, weaponCB: incDescData!.weaponCB, reasonCB: incDescData!.reasonCB, date: dateStr, time: timeStr, addComments: incDescData!.addComments)
+        
+        let off = Officer(firstName: offDescData!.firstName, lastName: offDescData!.lastName, licensePlateNum: offDescData!.licensePlateNum, badgeNum: offDescData!.badgeNum, offAgency: offDescData!.offAgency, hairColor: offDescData!.hairColor, eyeColor: offDescData!.eyeColor, race: offDescData!.race, gender: offDescData!.gender, ageSegNum: offDescData!.ageSegNum, uniformed: offDescData!.uniformed, addComments: offDescData!.addComments)
+        
+        let vic = Victim(race: vicInfoData!.race, gender: vicInfoData!.gender, addComments: vicInfoData!.addComments)
+        
+        let wit = Witness(email: witInfoData!.email, phoneNum: witInfoData!.phoneNum, addComments: witInfoData!.addComments)
+        
+        let vid = Video(url: videoData!.url)
+        
+        let report = Report(_id: "", reported_by: repBy ?? "no id for vendor", incident: inc, officer: off, victim: vic, witness: wit, video: vid)
+        
+        return report
+    }
 }
 
 //MARK: - UITableView Delegate and DataSource
