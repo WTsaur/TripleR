@@ -7,9 +7,11 @@ A police misconduct reporting platform iOS app for users to share their experien
 ## How to Clone to your computer & Run TripleR on your device (iPhone/iPad)
 * Make sure your iOS device is updated to at least iOS 14
 * Make sure you have **CocoaPods** installed: sudo gem install cocoapods
+   * If your device uses Apple's M1 silicon chip, run this command in addition to the one above: sudo -x86_64 gem install ffi
 1. Clone the git respository
 2. Open up a terminal and cd into the TripleR folder that contains a folder called Pods
 3. Run the command: pod install
+   * if your device uses Apple's M1 silicon chip, run this instead: arch -x86_64 pod install
 4. Open the Xcode file called "TripleR.xcworkspace"
 5. Connect your mobile device (iPhone/iPad) to your computer and select your device in the top left to the right of "TripleR"
 6. Unlock your device
