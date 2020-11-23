@@ -7,28 +7,55 @@
 //
 
 import UIKit
+import CollapsibleTableSectionViewController
 
-class TipsViewController: UIViewController {
+class TipsViewController:  CollapsibleTableSectionViewController {
+    
+    let sections: [Section] = tipsData
 
-    @IBAction func backButtonPressed(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.delegate = self
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func backButtonPressed(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
-    */
-
 }
+    
+    
+extension TipsViewController: CollapsibleTableSectionDelegate {
+    func numberOfSections(_ tableView: UITableView) -> Int {
+            return sections.count
+        }
+        
+    func collapsibleTableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            return sections[section].items.count
+        }
+        
+        func collapsibleTableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            let cell: CustomCell = tableView.dequeueReusableCell(withIdentifier: "Cell") as? CustomCell ??
+                CustomCell(style: .default, reuseIdentifier: "Cell")
+            
+            let item: Item = sections[(indexPath as NSIndexPath).section].items[(indexPath as NSIndexPath).row]
+            
+            cell.nameLabel.text = item.name
+            cell.detailLabel.text = item.detail
+            
+            return cell
+        }
+        
+        func collapsibleTableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+            return 1.0
+        }
+        
+        func collapsibleTableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+            return sections[section].name
+        }
+        
+        func shouldCollapseByDefault(_ tableView: UITableView) -> Bool {
+            return true
+        }
+}
+    
+
