@@ -51,6 +51,10 @@ class VicInfoViewController: UIViewController {
     }
     
     func saveData() {
+        if commentTextView.text == "Additional Comments" {
+            commentTextView.text = ""
+        }
+        
         do {
             try realm.write {
                 data.race = raceField.text ?? ""

@@ -13,6 +13,7 @@ struct K {
     static let witInf = "Witness Information (optional)"
     static let vicInf = "Victim Information"
     static let addVid = "Attach a Video (optional)"
+    static let viewRep = "View Previous Reports"
     
     static let rcatC = "rightsCategoryCell"
     static let flR = "Florida Rights"

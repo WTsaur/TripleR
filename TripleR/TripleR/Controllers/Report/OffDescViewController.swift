@@ -69,6 +69,10 @@ class OffDescViewController: UIViewController {
     }
     
     func saveData() {
+        if commentsTextView.text == "Additional Comments" {
+            commentsTextView.text = ""
+        }
+        
         do {
             try realm.write {
                 data.firstName = fNameField.text ?? ""

@@ -43,6 +43,10 @@ class WitInfoViewController: UIViewController {
     }
     
     func saveData() {
+        if commentTextView.text == "Additional Comments" {
+            commentTextView.text = ""
+        }
+        
         do {
             try realm.write {
                 data.email = emailField.text ?? ""

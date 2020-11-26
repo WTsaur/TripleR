@@ -54,7 +54,8 @@ class ReportViewController: UIViewController {
         "goToIncDesc",
         "goToWitInfo",
         "goToVicInfo",
-        "goToAddVid"
+        "goToAddVid",
+        "goToUserReports"
     ]
     
     let reportCategories = [
@@ -62,7 +63,8 @@ class ReportViewController: UIViewController {
         K.incD,
         K.witInf,
         K.vicInf,
-        K.addVid
+        K.addVid,
+        K.viewRep
     ]
     
     override func viewDidLoad() {
@@ -209,39 +211,8 @@ class ReportViewController: UIViewController {
         }
     }
     
-    @IBAction func buttonPressed(_ sender: UIButton) {
-        pullRequest()
-    }
-    
 //MARK: - Database GET and POST
-    
-    func pullRequest() {
-        if let url = URL(string: "https://triplerapi.azurewebsites.net/reports") {
-            let session = URLSession(configuration: .default)
-            
-            let task = session.dataTask(with: url) { (data, response, error) in
-                if error != nil {
-                    print(error as Any)
-                    return
-                }
-                if let safeData = data {
-                    self.parseJSON(reportData: safeData)
-                }
-            }
-            task.resume()
-        }
-    }
-    
-    func parseJSON(reportData: Data) {
-        let decoder = JSONDecoder()
-        do {
-            let decodedData = try decoder.decode(Reports.self, from: reportData)
-            print(decodedData.reports)
-        } catch {
-            print(error)
-        }
-    }
-    
+        
     func uploadData() {
         //prepare data for upload via encoding
         let encodedData = encodeData()
@@ -280,7 +251,7 @@ class ReportViewController: UIViewController {
         let dateStr = d.string(from: incDescData!.date)
 
         let t = DateFormatter()
-        t.dateFormat = "hh:mm:ss"
+        t.dateFormat = "hh:mm:ss a"
         let timeStr = t.string(from: incDescData!.time)
         
         let inc = Incident(state: incDescData!.state, city: incDescData!.city, address: incDescData!.address, idCB: incDescData!.idCB, forceCB: incDescData!.forceCB, yellCB: incDescData!.yellCB, commentCB: incDescData!.commentCB, weaponCB: incDescData!.weaponCB, reasonCB: incDescData!.reasonCB, date: dateStr, time: timeStr, addComments: incDescData!.addComments)

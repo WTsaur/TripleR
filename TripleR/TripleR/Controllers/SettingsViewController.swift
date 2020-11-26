@@ -18,7 +18,6 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var locSwitch: UISwitch!
     @IBOutlet weak var photoLibSwitch: UISwitch!
     @IBOutlet weak var micSwitch: UISwitch!
-    @IBOutlet weak var lockDevSwitch: UISwitch!
     @IBOutlet weak var shareLocSwitch: UISwitch!
     
     let defaults = UserDefaults.standard
@@ -46,7 +45,6 @@ class SettingsViewController: UIViewController {
 
         camSwitch.isOn = checkMediaStatus(for: .video)
         micSwitch.isOn = checkMediaStatus(for: .audio)
-        lockDevSwitch.isOn = defaults.bool(forKey: K.lockDev)
         shareLocSwitch.isOn = defaults.bool(forKey: K.shareLoc)
         // Do any additional setup after loading the view.
     }
@@ -84,10 +82,6 @@ class SettingsViewController: UIViewController {
         } else {
             sender.setOn(true, animated: true)
         }
-    }
-    
-    @IBAction func lockSwitchToggled(_ sender: UISwitch) {
-        defaults.set(sender.isOn, forKey: K.lockDev)
     }
     
     @IBAction func shareLocSwitchToggled(_ sender: UISwitch) {

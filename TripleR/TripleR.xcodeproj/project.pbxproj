@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F3DE1C7256DE79400D5C5A3 /* ViewReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3DE1C6256DE79400D5C5A3 /* ViewReportViewController.swift */; };
 		6F7F97A6251060DD0030237D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7F97A5251060DD0030237D /* AppDelegate.swift */; };
 		6F7F97A8251060DD0030237D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7F97A7251060DD0030237D /* SceneDelegate.swift */; };
 		6F7F97AD251060DD0030237D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F7F97AB251060DD0030237D /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 		6F7F97BE25117DEC0030237D /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7F97BD25117DEC0030237D /* ReportViewController.swift */; };
 		6F7F97C025117E010030237D /* RightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7F97BF25117E010030237D /* RightsViewController.swift */; };
 		6F7F97C225117EFB0030237D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7F97C125117EFB0030237D /* MainViewController.swift */; };
+		6F8EEC67256DC34200B549A1 /* UserReportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8EEC66256DC34200B549A1 /* UserReportsViewController.swift */; };
 		6F91FD02255B51320020AB7A /* AddVidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F91FD01255B51320020AB7A /* AddVidViewController.swift */; };
 		6F91FD05255F66080020AB7A /* VideoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F91FD04255F66080020AB7A /* VideoData.swift */; };
 		6FA0DA382518553700B591D4 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6FA0DA3525184D0D00B591D4 /* Pacifico-Regular.ttf */; };
@@ -29,15 +31,22 @@
 		6FB34E282516C70D00C66885 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FB34E272516C70D00C66885 /* Assets.xcassets */; };
 		6FC81216252DA078003DF4DE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC81215252DA078003DF4DE /* Constants.swift */; };
 		6FCBC44B2565CA3600172B3D /* formJsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCBC44A2565CA3600172B3D /* formJsonData.swift */; };
-		7EA3E332E19635B65CE740BE /* Pods_TripleR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4DCAAADFDBC13A04E6DDDA /* Pods_TripleR.framework */; };
 		A118D0E7254A3D5A0054375F /* RightsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A118D0E6254A3D5A0054375F /* RightsData.swift */; };
 		A118D0EA254A426C0054375F /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A118D0E9254A426C0054375F /* CustomCell.swift */; };
 		A1F65CC2254203A50044949E /* FLRightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F65CC1254203A50044949E /* FLRightsViewController.swift */; };
 		A1F65CCE254224C10044949E /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F65CCD254224C10044949E /* TipsViewController.swift */; };
 		A1F65CD32542252E0044949E /* ResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F65CD22542252E0044949E /* ResourcesViewController.swift */; };
+		C90815F486F3FAFE3773D422 /* Pods_TripleR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271F57CF6E6C9969295805DD /* Pods_TripleR.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		271F57CF6E6C9969295805DD /* Pods_TripleR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TripleR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E69D070D22222349D7B0961 /* Pods-TripleR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripleR.release.xcconfig"; path = "Target Support Files/Pods-TripleR/Pods-TripleR.release.xcconfig"; sourceTree = "<group>"; };
+		54E269DE9E36149A4365752F /* Pods-TripleR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripleR.debug.xcconfig"; path = "Target Support Files/Pods-TripleR/Pods-TripleR.debug.xcconfig"; sourceTree = "<group>"; };
+		6F3DE1C6256DE79400D5C5A3 /* ViewReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewReportViewController.swift; sourceTree = "<group>"; };
+		6F5806B4256C48EA001A6B5A /* realm-sync.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = "realm-sync.xcframework"; path = "Pods/Realm/core/realm-sync.xcframework"; sourceTree = "<group>"; };
+		6F5806B7256C48F5001A6B5A /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F5806B9256C48FA001A6B5A /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F7F97A2251060DD0030237D /* TripleR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripleR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F7F97A5251060DD0030237D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F7F97A7251060DD0030237D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +57,7 @@
 		6F7F97BD25117DEC0030237D /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		6F7F97BF25117E010030237D /* RightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightsViewController.swift; sourceTree = "<group>"; };
 		6F7F97C125117EFB0030237D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		6F8EEC66256DC34200B549A1 /* UserReportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReportsViewController.swift; sourceTree = "<group>"; };
 		6F91FD01255B51320020AB7A /* AddVidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVidViewController.swift; sourceTree = "<group>"; };
 		6F91FD04255F66080020AB7A /* VideoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoData.swift; sourceTree = "<group>"; };
 		6FA0DA3525184D0D00B591D4 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
@@ -62,14 +72,11 @@
 		6FB34E272516C70D00C66885 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6FC81215252DA078003DF4DE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		6FCBC44A2565CA3600172B3D /* formJsonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = formJsonData.swift; sourceTree = "<group>"; };
-		7B4DCAAADFDBC13A04E6DDDA /* Pods_TripleR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TripleR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B6AA26B62E413073076F9FA /* Pods-TripleR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripleR.debug.xcconfig"; path = "Target Support Files/Pods-TripleR/Pods-TripleR.debug.xcconfig"; sourceTree = "<group>"; };
 		A118D0E6254A3D5A0054375F /* RightsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightsData.swift; sourceTree = "<group>"; };
 		A118D0E9254A426C0054375F /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		A1F65CC1254203A50044949E /* FLRightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLRightsViewController.swift; sourceTree = "<group>"; };
 		A1F65CCD254224C10044949E /* TipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsViewController.swift; sourceTree = "<group>"; };
 		A1F65CD22542252E0044949E /* ResourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesViewController.swift; sourceTree = "<group>"; };
-		EE7E69C2FA02E2AB793847DC /* Pods-TripleR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripleR.release.xcconfig"; path = "Target Support Files/Pods-TripleR/Pods-TripleR.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EA3E332E19635B65CE740BE /* Pods_TripleR.framework in Frameworks */,
+				C90815F486F3FAFE3773D422 /* Pods_TripleR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,8 +94,8 @@
 		60266735668FC95BEB38D08D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8B6AA26B62E413073076F9FA /* Pods-TripleR.debug.xcconfig */,
-				EE7E69C2FA02E2AB793847DC /* Pods-TripleR.release.xcconfig */,
+				54E269DE9E36149A4365752F /* Pods-TripleR.debug.xcconfig */,
+				3E69D070D22222349D7B0961 /* Pods-TripleR.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -190,6 +197,8 @@
 				6FA5F0B625355FAD00FFC2AB /* WitInfoViewController.swift */,
 				6FA5F0B325355F6A00FFC2AB /* OffDescViewController.swift */,
 				6F91FD01255B51320020AB7A /* AddVidViewController.swift */,
+				6F8EEC66256DC34200B549A1 /* UserReportsViewController.swift */,
+				6F3DE1C6256DE79400D5C5A3 /* ViewReportViewController.swift */,
 			);
 			path = Report;
 			sourceTree = "<group>";
@@ -197,7 +206,10 @@
 		D88E7F085C3E66FB97491C45 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7B4DCAAADFDBC13A04E6DDDA /* Pods_TripleR.framework */,
+				6F5806B9256C48FA001A6B5A /* RealmSwift.framework */,
+				6F5806B7256C48F5001A6B5A /* Realm.framework */,
+				6F5806B4256C48EA001A6B5A /* realm-sync.xcframework */,
+				271F57CF6E6C9969295805DD /* Pods_TripleR.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -209,11 +221,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F7F97B6251060E00030237D /* Build configuration list for PBXNativeTarget "TripleR" */;
 			buildPhases = (
-				0DD0B9AB18EE391003FDBF14 /* [CP] Check Pods Manifest.lock */,
+				B9BFAC801B858F97FBBD96EB /* [CP] Check Pods Manifest.lock */,
 				6F7F979E251060DD0030237D /* Sources */,
 				6F7F979F251060DD0030237D /* Frameworks */,
 				6F7F97A0251060DD0030237D /* Resources */,
-				443321F25EAEB9C1BECB3DDB /* [CP] Embed Pods Frameworks */,
+				B44F10E4A6402EDE58033D6B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -236,6 +248,7 @@
 				TargetAttributes = {
 					6F7F97A1251060DD0030237D = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1220;
 					};
 				};
 			};
@@ -272,7 +285,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0DD0B9AB18EE391003FDBF14 /* [CP] Check Pods Manifest.lock */ = {
+		B44F10E4A6402EDE58033D6B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TripleR/Pods-TripleR-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TripleR/Pods-TripleR-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TripleR/Pods-TripleR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9BFAC801B858F97FBBD96EB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -292,23 +322,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		443321F25EAEB9C1BECB3DDB /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TripleR/Pods-TripleR-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TripleR/Pods-TripleR-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TripleR/Pods-TripleR-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -331,8 +344,10 @@
 				6FA5F0DA253EB4CC00FFC2AB /* WitInfoData.swift in Sources */,
 				6F7F97A8251060DD0030237D /* SceneDelegate.swift in Sources */,
 				6F91FD05255F66080020AB7A /* VideoData.swift in Sources */,
+				6F3DE1C7256DE79400D5C5A3 /* ViewReportViewController.swift in Sources */,
 				6F91FD02255B51320020AB7A /* AddVidViewController.swift in Sources */,
 				6F7F97BE25117DEC0030237D /* ReportViewController.swift in Sources */,
+				6F8EEC67256DC34200B549A1 /* UserReportsViewController.swift in Sources */,
 				A1F65CC2254203A50044949E /* FLRightsViewController.swift in Sources */,
 				6F7F97C225117EFB0030237D /* MainViewController.swift in Sources */,
 				6F7F97BC25117DD00030237D /* SettingsViewController.swift in Sources */,
@@ -370,6 +385,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					x86_64,
+					x86,
+				);
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -403,6 +422,8 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = arm64;
+				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -424,6 +445,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -431,6 +453,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					x86_64,
+					x86,
+				);
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -464,6 +490,8 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_ARCHS = arm64;
+				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -475,28 +503,38 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		6F7F97B7251060E00030237D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8B6AA26B62E413073076F9FA /* Pods-TripleR.debug.xcconfig */;
+			baseConfigurationReference = 54E269DE9E36149A4365752F /* Pods-TripleR.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					x86,
+					x86_64,
+				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M6ZKVURVW6;
+				DEVELOPMENT_TEAM = DZCJKHLK73;
+				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = TripleR/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = TripleR;
+				PRODUCT_BUNDLE_IDENTIFIER = TripleR.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -504,18 +542,25 @@
 		};
 		6F7F97B8251060E00030237D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE7E69C2FA02E2AB793847DC /* Pods-TripleR.release.xcconfig */;
+			baseConfigurationReference = 3E69D070D22222349D7B0961 /* Pods-TripleR.release.xcconfig */;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					x86,
+					x86_64,
+				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M6ZKVURVW6;
+				DEVELOPMENT_TEAM = DZCJKHLK73;
+				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = TripleR/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = TripleR;
+				PRODUCT_BUNDLE_IDENTIFIER = TripleR.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

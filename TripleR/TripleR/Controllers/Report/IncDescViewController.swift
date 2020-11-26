@@ -167,6 +167,9 @@ class IncDescViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     func saveData() {
+        if commentTextView.text == "Additional Comments" {
+            commentTextView.text = ""
+        }
         do {
             try realm.write {
                 data.state = stateField.text ?? ""

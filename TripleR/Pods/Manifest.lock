@@ -1,11 +1,11 @@
 PODS:
   - CollapsibleTableSectionViewController (2.0.1)
   - EMTNeumorphicView (1.0.4)
-  - Realm (10.1.1):
-    - Realm/Headers (= 10.1.1)
-  - Realm/Headers (10.1.1)
-  - RealmSwift (10.1.1):
-    - Realm (= 10.1.1)
+  - Realm (10.1.4):
+    - Realm/Headers (= 10.1.4)
+  - Realm/Headers (10.1.4)
+  - RealmSwift (10.1.4):
+    - Realm (= 10.1.4)
 
 DEPENDENCIES:
   - CollapsibleTableSectionViewController (~> 2.0.1)
@@ -22,9 +22,9 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   CollapsibleTableSectionViewController: 40d97d684d870044522a0dc29b128a6acaaa99df
   EMTNeumorphicView: cb5e92953e43b1872ab47fefd451a9ce0c16fc77
-  Realm: 784ca1da1453e31a9c9adc14445421a81f316119
-  RealmSwift: cc52fe0dcea56387274dff36e19219e055a3bb84
+  Realm: 80f4fb2971ccb9adc27a47d0955ae8e533a7030b
+  RealmSwift: 0e566ca714edb377bba8ea0811eafcea0b93734e
 
-PODFILE CHECKSUM: 27dad4d3f547c42173bd325667e920a471ea82ac
+PODFILE CHECKSUM: 86dc351c376306935d3947be86b8a86e2d8ca4fe
 
 COCOAPODS: 1.10.0
