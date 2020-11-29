@@ -9,53 +9,58 @@
 import UIKit
 import CollapsibleTableSectionViewController
 
-class ResourcesViewController:  CollapsibleTableSectionViewController {
+class ResourcesViewController:  UIViewController {
     
-    let sections: [Section] = resourcesData
-
+    @IBOutlet weak var ACLUtextView: UITextView!
+    @IBOutlet weak var FLstatutestextview: UITextView!
+    @IBOutlet weak var NAACPtextView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.delegate = self
+        addHyperlinks()
     }
     
     @IBAction func backButtonPressed(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
+    
+    func addHyperlinks() {
+        let ACLUstring = NSMutableAttributedString(string: "American Civil Liberties Union (ACLU)")
+        let FLstring = NSMutableAttributedString(string: "Florida Statutes")
+        let NAACPstring = NSMutableAttributedString(string: "National Association for the Advancement of Colored People")
+        
+        let underline = [NSAttributedString.Key.underlineStyle: NSUnderlineStyle.single]
+        
+        ACLUstring.addAttributes(underline, range:(ACLUstring.string as NSString).range(of: "American Civil Liberties Union (ACLU)"))
+        ACLUstring.addAttribute(.link, value: "https://www.aclufl.org/",  range:(ACLUstring.string as NSString).range(of: "American Civil Liberties Union (ACLU)"))
+        
+        FLstring.addAttributes(underline, range:(FLstring.string as NSString).range(of: "Florida Statutes"))
+        FLstring.addAttribute(.link, value: "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0776/0776.html", range:(FLstring.string as NSString).range(of: "Florida Statutes"))
+        
+        NAACPstring.addAttributes(underline, range:(NAACPstring.string as NSString).range(of: "National Association for the Advancement of Colored People"))
+        NAACPstring.addAttribute(.link, value: "http://www.flnaacp.com/local-branch/", range:(NAACPstring.string as NSString).range(of: "National Association for the Advancement of Colored People"))
+        
+        ACLUtextView.linkTextAttributes = [
+            NSAttributedString.Key.foregroundColor: [K.customGreen]
+        ]
+        ACLUtextView.attributedText = ACLUstring
+       
+        FLstatutestextview.linkTextAttributes = [
+            NSAttributedString.Key.foregroundColor: [K.customGreen]
+        ]
+        FLstatutestextview.attributedText = FLstring
+        
+        NAACPtextView.linkTextAttributes = [
+            NSAttributedString.Key.foregroundColor: [K.customGreen]
+        ]
+        NAACPtextView.attributedText = NAACPstring
+    }
+    
+    func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
+           UIApplication.shared.open(URL)
+           return false
+       }
+    
 }
     
     
-extension ResourcesViewController: CollapsibleTableSectionDelegate {
-    func numberOfSections(_ tableView: UITableView) -> Int {
-            return sections.count
-        }
-        
-    func collapsibleTableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return sections[section].items.count
-        }
-        
-        func collapsibleTableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell: CustomCell = tableView.dequeueReusableCell(withIdentifier: "Cell") as? CustomCell ??
-                CustomCell(style: .default, reuseIdentifier: "Cell")
-            
-            let item: Item = sections[(indexPath as NSIndexPath).section].items[(indexPath as NSIndexPath).row]
-            
-            cell.nameLabel.text = item.name
-            cell.detailLabel.text = item.detail
-            
-            return cell
-        }
-        
-        func collapsibleTableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-            return 1.0
-        }
-        
-        func collapsibleTableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-            return sections[section].name
-        }
-        
-        func shouldCollapseByDefault(_ tableView: UITableView) -> Bool {
-            return true
-        }
-}
-    
-
