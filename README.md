@@ -22,8 +22,8 @@ A police misconduct reporting platform iOS app for users to share their experien
 ## Features
 
 ### Settings
-    * See that status of the app's permissions to your device's hardware (Camera, Microphone, Location, Photo Library)
-    * Enable/disable special application features
+    * View the status of the app's permissions of your device's hardware (Camera, Microphone, Location, Photo Library)
+    * Enable/disable settings permissions
 ![Settings Page](https://github.com/WTsaur/TripleR/blob/master/docImages/settingsPage.jpg)
 ### Record
     * Record videos with your main camera and save them to your photo library
