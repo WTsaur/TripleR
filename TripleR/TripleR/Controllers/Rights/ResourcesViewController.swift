@@ -29,31 +29,29 @@ class ResourcesViewController:  UIViewController {
         let FLstring = NSMutableAttributedString(string: "Florida Statutes")
         let NAACPstring = NSMutableAttributedString(string: "National Association for the Advancement of Colored People")
         
-        let underline = [NSAttributedString.Key.underlineStyle: NSUnderlineStyle.single]
-        
-        ACLUstring.addAttributes(underline, range:(ACLUstring.string as NSString).range(of: "American Civil Liberties Union (ACLU)"))
         ACLUstring.addAttribute(.link, value: "https://www.aclufl.org/",  range:(ACLUstring.string as NSString).range(of: "American Civil Liberties Union (ACLU)"))
         
-        FLstring.addAttributes(underline, range:(FLstring.string as NSString).range(of: "Florida Statutes"))
         FLstring.addAttribute(.link, value: "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0776/0776.html", range:(FLstring.string as NSString).range(of: "Florida Statutes"))
-        
-        NAACPstring.addAttributes(underline, range:(NAACPstring.string as NSString).range(of: "National Association for the Advancement of Colored People"))
+
         NAACPstring.addAttribute(.link, value: "http://www.flnaacp.com/local-branch/", range:(NAACPstring.string as NSString).range(of: "National Association for the Advancement of Colored People"))
         
-        ACLUtextView.linkTextAttributes = [
-            NSAttributedString.Key.foregroundColor: [K.customGreen]
-        ]
-        ACLUtextView.attributedText = ACLUstring
-       
-        FLstatutestextview.linkTextAttributes = [
-            NSAttributedString.Key.foregroundColor: [K.customGreen]
-        ]
-        FLstatutestextview.attributedText = FLstring
+        NAACPstring.addAttribute(NSAttributedString.Key.foregroundColor, value: K.customBlue, range: (NAACPstring.string as NSString).range(of: "National Association for the Advancement of Colored People"))
+
+        ACLUstring.addAttribute(NSAttributedString.Key.foregroundColor, value: K.customBlue, range: (ACLUstring.string as NSString).range(of: "American Civil Liberties Union (ACLU)"))
+
+        FLstring.addAttribute(NSAttributedString.Key.foregroundColor, value: K.customBlue, range: (FLstring.string as NSString).range(of: "Florida Statutes"))
         
-        NAACPtextView.linkTextAttributes = [
-            NSAttributedString.Key.foregroundColor: [K.customGreen]
-        ]
-        NAACPtextView.attributedText = NAACPstring
+        NAACPstring.addAttribute(NSAttributedString.Key.font, value: K.contentFont!, range: (NAACPstring.string as NSString).range(of: "National Association for the Advancement of Colored People"))
+        
+        ACLUstring.addAttribute(NSAttributedString.Key.font, value: K.contentFont!, range: (ACLUstring.string as NSString).range(of: "American Civil Liberties Union (ACLU)"))
+        
+        FLstring.addAttribute(NSAttributedString.Key.font, value: K.contentFont!, range: (FLstring.string as NSString).range(of: "Florida Statutes"))
+        
+        ACLUtextView.attributedText = NSAttributedString(attributedString: ACLUstring)
+        
+        FLstatutestextview.attributedText = NSAttributedString(attributedString: FLstring)
+
+        NAACPtextView.attributedText = NSAttributedString(attributedString: NAACPstring)
     }
     
     func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
@@ -62,5 +60,5 @@ class ResourcesViewController:  UIViewController {
        }
     
 }
-    
+
     
