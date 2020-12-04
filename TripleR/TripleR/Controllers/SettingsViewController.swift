@@ -46,7 +46,6 @@ class SettingsViewController: UIViewController {
         camSwitch.isOn = checkMediaStatus(for: .video)
         micSwitch.isOn = checkMediaStatus(for: .audio)
         shareLocSwitch.isOn = defaults.bool(forKey: K.shareLoc)
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func cameraSwitchToggled(_ sender: UISwitch) {
@@ -107,7 +106,6 @@ class SettingsViewController: UIViewController {
 
             if UIApplication.shared.canOpenURL(settingsUrl) {
                 UIApplication.shared.open(settingsUrl, completionHandler: { (success) in
-                    //print("Settings opened: \(success)")
                 })
             }
         }
@@ -126,15 +124,4 @@ class SettingsViewController: UIViewController {
             return false
         }
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

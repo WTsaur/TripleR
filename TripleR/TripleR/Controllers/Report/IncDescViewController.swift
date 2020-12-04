@@ -50,8 +50,6 @@ class IncDescViewController: UIViewController, CLLocationManagerDelegate {
         citeReasonCB.setImage(UIImage(systemName: "checkmark"), for: UIControl.State.selected)
         
         loadData()
-        
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func backButtonPressed(_ sender: UIButton) {
@@ -191,16 +189,6 @@ class IncDescViewController: UIViewController, CLLocationManagerDelegate {
             print("Error saving Incident Description Data \(error)")
         }
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
 extension UIViewController {

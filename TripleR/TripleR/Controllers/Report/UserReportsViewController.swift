@@ -27,7 +27,6 @@ class UserReportsViewController: UIViewController {
         super.viewDidLoad()
         reportsTable.delegate = self
         reportsTable.dataSource = self
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func backButtonPressed(_ sender: UIButton) {
@@ -68,17 +67,6 @@ class UserReportsViewController: UIViewController {
         let vc = segue.destination as? ViewReportViewController
         vc?.data = selectedReport
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 

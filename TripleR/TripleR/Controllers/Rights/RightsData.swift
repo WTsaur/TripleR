@@ -9,9 +9,8 @@
 import Foundation
 import CollapsibleTableSectionViewController
 
-//
 // MARK: - Section Data Structure
-//
+
 public struct Item {
     public var name: String
     public var detail: String
@@ -90,12 +89,3 @@ public var tipsData: [Section] = [
     ])
 
 ]
-
-//public var resourcesData: [Section] = [
-//    Section(name: "ACLU", items: [
-//            Item(name: "", detail: "")]),
-//    Section(name: "Florida Statutes", items: [
-//                Item(name: "", detail: ""
-//                )])
-//]
-

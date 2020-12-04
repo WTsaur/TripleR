@@ -106,14 +106,6 @@ class ReportViewController: UIViewController {
         let submitAction = UIAlertAction(title: "submit", style: .default) { (action) in
             // send data to database
             self.uploadData()
-            
-//            var waitAlert: UIAlertController?
-//            waitAlert = UIAlertController(title: "Just a second...", message: "Please wait as we upload your report to our database.", preferredStyle: .alert)
-//            self.present(waitAlert!, animated: true, completion: nil)
-//            DispatchQueue.main.asyncAfter(deadline: .now() + 6.0) {
-//                waitAlert?.dismiss(animated: true, completion: nil)
-//            }
-
         }
         
         alert = UIAlertController(title: "Report Confirmation", message: "Are you sure you would like to submit your report?", preferredStyle: .alert)
@@ -211,7 +203,7 @@ class ReportViewController: UIViewController {
         }
     }
     
-//MARK: - Database GET and POST
+//MARK: - Database POST
         
     func uploadData() {
         //prepare data for upload via encoding
